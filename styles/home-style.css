@@ -4,15 +4,11 @@ h1{
 
 }
 
-
-
 .home-intro-title{
     width : 600px;
     margin-left: 50px;
     margin-top : 70px;
     height: 330px;
-    
-    
 }
 
 .home-section-1{
@@ -69,6 +65,7 @@ h1{
 
 .section-2-investments-block{
     display: flex;
+    height: 180px;
     flex-direction: row;
     margin-left: 150px;
     margin-top: 70px;
@@ -77,8 +74,42 @@ h1{
     
 }
 .section-2-investments{
+    display: flex;
+    flex-direction: column;
     width: 170px;
     height: 200px;
-    background-color: green;
+    background-color: #807a79;
     border-radius: 18px;
 }
+
+.section-2-block-up{
+    margin: 4px;
+    color: white;
+    height: 100px;
+    align-items:center;
+    
+}
+
+.section-2-block-up p {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.section-2-block-down{
+    margin-left: 4px;
+    margin-right : 4px;
+    padding: 0;
+    height: 400px;
+}
+
+
+.section-2-block-down p{
+    font-size: 14px;
+    text-align: center;
+    margin-top:0;
+    color: white;
+}
+
+
+
