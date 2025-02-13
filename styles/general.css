@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    background-image: url("https://github.com/rivindu-ashinsa/sdg-awareness-site/blob/main/images/background.svg");
     background-color: #FFF7F2;
 }
 
@@ -7,8 +8,8 @@ body{
 .header-bar{
     display: flex;
     flex-direction: row;
-    background-color: black;
-    opacity: 70%;
+    background-color: rgba(19,22,26,0.75);
+    height: 60px;
     justify-content: space-between;
 }
 
@@ -26,4 +27,7 @@ body{
 
 .header-navigation li a{
     color : white;
+    text-decoration: none;
+    font-family : DM sans;
+    font-size: 12px;
 }
