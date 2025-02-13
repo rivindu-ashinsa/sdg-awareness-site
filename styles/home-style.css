@@ -12,23 +12,33 @@ p{
 .home-intro-title{
     width : 600px;
     margin-left: 50px;
-    margin-top : 100px;
+    margin-top : 80px;
     
 }
+
 
 .home-section-1{
     display: grid;
     grid-template-columns: 500px 1fr;
 }
 
-.home-background-img{
+
+
+
+.home-background-img-div{
     height: 200px;
+    position: relative;
 }
+
 
 .background-img-home{
     width: 763px;
 
+
 }
+
+
+
 
 .home-description{
     margin-left: 50px;
