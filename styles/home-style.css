@@ -1,28 +1,2 @@
-body{
-    margin: 0px;
-}
 
-ul {
-    list-style-type: none;
-}
-
-.header-bar{
-    display: flex;
-    flex-direction: row;
-    background-color: black;
-    opacity: 70%;
-    justify-content: space-between;
-}
-
-.header-navigation{
-    max-width: 600px;
-}
-.header-navigation li{
-    display: inline;
-    padding: 16px;
-}
-
-.header-navigation li a{
-    color : white;
-}
 
