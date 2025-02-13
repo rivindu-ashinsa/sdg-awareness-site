@@ -7,7 +7,7 @@ body{
 .header-bar {
     display: flex;
     flex-direction: row;
-    background-color: rgba(19, 22, 26, 0.6); /* Semi-transparent background */
+    background-color: rgba(19, 22, 26, 0.7); /* Semi-transparent background */
     height: 60px;
     justify-content: space-between;
     position: fixed; /* Fix the header at the top */
@@ -25,9 +25,9 @@ body{
     */
 
 .header-navigation{
-    max-width: 600px;
+    max-width: 700px;
     min-width: 500px;
-    background-color: transparent;
+
 }
 
 .header-navigation ul{
@@ -43,5 +43,19 @@ body{
     color : white;
     text-decoration: none;
     font-family : DM sans;
-    font-size: 12px;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.header-logo{
+    display: flex;
+    width: 100px;
+    margin-left: 50px;
+}
+.logo-img{
+    width: 50px;
 }
