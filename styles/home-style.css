@@ -35,9 +35,8 @@ h1{
 }
 
 .explore-button{
-    background-color: #FD6824;
+    background-color: #f7b9a1;
     padding:10px;
-    opacity: 0.7;
     width: 130px;
     border: none;
     border-radius: 20px;
@@ -125,9 +124,38 @@ h1{
 }
 
 .section-3-blocks{
-    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px ;
     margin-left:150px;
     margin-right:150px;
     height : 400px;
-    background-color: #807a79;
+}
+
+.section-3-block{
+    width: 260px;
+    height: 300px;
+    background-color: #f7b9a1;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.section-3-image{
+    height: 200px;
+    width: 200px;
+}
+
+.section-3-img{
+    width: 220px;
+}
+
+.section-3-image-text{
+    margin-top: 40px;
+    text-align: center;
+    vertical-align: bottom;
+    padding-left: 20px;
+    padding-right: 20px ;
 }
