@@ -6,7 +6,7 @@ color codes :
 
 body margin : 
     50px from left and right
-    100px from top and bottom 
+    100px from top and bottom of a section
 
 
 font families : 
