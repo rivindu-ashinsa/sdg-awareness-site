@@ -112,5 +112,22 @@ h1{
     color: white;
 }
 
+.section-3-head{
+    margin-top: 100px;
+    text-align: center;
+}
 
 
+.section-3-description{
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.section-3-blocks{
+    background-color: aqua;
+    margin-left:150px;
+    margin-right:150px;
+    height : 400px;
+    background-color: #807a79;
+}
