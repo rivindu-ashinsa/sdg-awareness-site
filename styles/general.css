@@ -3,6 +3,11 @@ body{
     background-color: #FFF7F2;
 }
 
+h1{
+    font-family : syne;
+    font-size: 56px;
+}
+
 p{
     font-family:DM sans;
     font-size: 20px;
