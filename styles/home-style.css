@@ -30,7 +30,7 @@ h1{
     margin-left: 50px;
     width : 700px;
     margin-bottom: 50px;
-    line-height: 30px;
+    line-height: 28px;
 
 }
 
@@ -60,6 +60,7 @@ h1{
     margin-left: 150px;
     margin-right: 150px;
     text-align:center;
+    line-height: 28px
 }
 
 .section-2-investments-block{
@@ -121,6 +122,8 @@ h1{
     margin-left: 100px;
     margin-right: 100px;
     text-align: center;
+    line-height: 28px
+
 }
 
 .section-3-blocks{
@@ -130,7 +133,7 @@ h1{
     margin-top: 50px ;
     margin-left:150px;
     margin-right:150px;
-    height : 400px;
+    height : 350px;
 }
 
 .section-3-block{
@@ -158,4 +161,15 @@ h1{
     vertical-align: bottom;
     padding-left: 20px;
     padding-right: 20px ;
+}
+
+.section-3-see-more{
+    text-align: center;
+    margin-top: 0;
+
+}
+
+.section-3-see-more p a{
+    color: black;
+    text-decoration: none;
 }

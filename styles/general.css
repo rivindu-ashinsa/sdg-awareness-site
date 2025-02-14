@@ -39,7 +39,7 @@ p{
 
 .profile-icon{
     width: 40px;
-    margin-left: 30px;
+    margin-right: 50px;
 }
 
 .header-navigation{
@@ -67,7 +67,6 @@ p{
 a{
     text-decoration: none;
 }
-
 
 .header-logo{
     display: flex;
