@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    padding: 0;
+    padding: 50;
     background-color: black;
     overflow: hidden;
 }
@@ -16,6 +16,7 @@ body{
 }
 .intro{
     position: absolute;
+    margin-top: 3%;
     top:20%;
     transform: translate(0%, -50%);
     text-align: center;
@@ -28,9 +29,9 @@ body{
     font-family: 'syne';
 }
 .intro p{
-    font-size: 150%;
-    padding: 0 15%;
-    margin-top: -3.5%;
+    font-size: 120%;
+    padding: 0 13%;
+    margin-top: -2.5%;
     font-family: 'DM Sans';
 }
 .logo{
