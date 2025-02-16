@@ -20,24 +20,26 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header-bar">
-        <div class="header-logo" style="color: white;">
-            <img class="logo-img" src="images-home/logo.svg" alt="">
+    <header>
+        <div class="header-bar">
+            <div class="header-logo" style="color: white;">
+                <img class="logo-img" src="images-home/logo.svg" alt="">
+            </div>
+            <div class="header-navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="content.html">Content</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">Team</a></li>
+                </ul>
+            </div>
+            <div class="header-profile" style="color: white;">
+                <img class="profile-icon" src="images-home/profile-icon.svg" alt="">
+            </div>
         </div>
-        <div class="header-navigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="content.html">Content</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="team.html">Team</a></li>
-            </ul>
-        </div>
-        <div class="header-profile" style="color: white;">
-            <img class="profile-icon" src="images-home/profile-icon.svg" alt="">
-        </div>
-    </div>
+    </header>
     <section>
         <div class="home-section-1">
             <div class="home-intro-title">
@@ -129,27 +131,56 @@
     </section>
     <section>
         <div class="section-4-block">
-            <div>
-                <img src="images-home/section-4-img.svg" alt="">
+            <div class="section-4-img-block">
+                <img class="section-4-img" src="images-home/section-4-img.svg" alt="">
             </div>
-            <div>
+            <div">
                 <div>
-                    <h1>Build Tomorrow's Smart Cities Today!</h1>
+                    <h1 style="font-size: 50px;
+                    margin-bottom: 15px;">Build Tomorrow's Smart Cities Today!</h1>
                 </div>
                 <div>
-                    <p>Join us in creating innovative, connected, and sustainable urban environments. Embrace advanced technologies and modern infrastructure to enhance the quality of life and pave the way for smarter cities of the future.</p>
+                    <p style="margin-top: 0;">Join us in creating innovative, connected, and sustainable urban environments. Embrace advanced technologies and modern infrastructure to enhance the quality of life and pave the way for smarter cities of the future.</p>
                 </div>
-                <div>
-                    <div>6 days</div>
-                    <div>22 hours</div>
-                    <div>46 mins</div>
+                <div class="section-4-time">
+                    <div class="section-4-time-block">
+                        <div style="font-size: 36px; font-family: DM sans; font-weight: bold;">06</div>
+                        <p>Days</p>
+                    </div>
+                    <div class="section-4-time-block">
+                        <div style="font-size: 36px; font-family: DM sans; font-weight: bold;">22</div>
+                        <p>Hours</p>
+                    </div>
+                    <div class="section-4-time-block">
+                        <div style="font-size: 36px; font-family: DM sans; font-weight: bold;">46</div>
+                        <p>Min</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section>
         <footer>
-            footer 
+            <div class="footer-block">
+                <div class="footer-block-up">
+                    <div class="footer-block-up-logo"></div>
+                    <div class="footer-block-up-editors"></div>
+                    <div class="footer-block-up-company"></div>
+                    <div class="footer-block-up-contact-info"></div>
+                    <div class="footer-block-up-stayuptodate"></div>
+                </div>
+                <div class="footer-block-down">
+                    <div><p>Copyright &copy;2025; Designed by <span>NextGenIndustries</span></p></div>
+                    <div style="display: grid;grid-template-columns: auto auto auto;">
+                        <div><p>Terms</p></div>
+                        <div><p>Privacy</p></div>
+                        <div><p>Cookies</p></div>
+                    </div>
+                    <div>
+                        <p>Designed by Team G15(10)</p>
+                    </div>
+                </div>
+            </div>
         </footer>
     </section>
 </body>

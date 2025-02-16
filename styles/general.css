@@ -3,6 +3,11 @@ body{
     background-color: #FFF7F2;
 }
 
+h1{
+    font-family : syne;
+    font-size: 56px;
+}
+
 p{
     font-family:DM sans;
     font-size: 20px;
@@ -13,7 +18,7 @@ p{
 .header-bar {
     display: flex;
     flex-direction: row;
-    background-color: rgba(19, 22, 26, 0.7); /* Semi-transparent background */
+    background-color: rgba(19, 22, 26, 0.8); /* Semi-transparent background */
     height: 60px;
     justify-content: space-between;
     position: fixed; /* Fix the header at the top */
@@ -59,10 +64,17 @@ p{
 
 .header-navigation li a{
     color : white;
+    opacity: 0.8;
     text-decoration: none;
     font-family : DM sans;
     font-size: 16px;
 }
+
+.header-navigation li a:hover{
+    color: white;
+    opacity: 1;
+}
+
 
 a{
     text-decoration: none;
@@ -76,3 +88,68 @@ a{
 .logo-img{
     width: 50px;
 }
+
+
+
+/* footer */
+
+.footer-block{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    background-color: #FD6824;
+    height: 400px;
+}
+
+.footer-block-up{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    height: 300px;
+    margin-left: 75px ;
+    margin-right: 75px;
+}
+.footer-block-up-logo{
+    width: 200px;
+    margin: 12px;
+    background-color: skyblue;
+}
+
+.footer-block-up-editors{
+    width: 200px;
+    margin: 12px;
+    background-color: skyblue;
+}
+
+.footer-block-up-company{
+    width: 200px;
+    margin: 12px;
+    background-color: skyblue;
+}
+
+.footer-block-up-contact-info{
+    width: 200px;
+    margin: 12px;
+    background-color: skyblue;
+}
+
+.footer-block-up-stayuptodate{
+    width: 200px;
+    margin: 12px;
+    background-color: skyblue;
+}
+
+.footer-block-down{
+    display: flex;
+    margin-left: 75px;
+    margin-right : 75px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-block-down p{
+    font-size: 10px;
+    margin: 10px;
+}
+
+
