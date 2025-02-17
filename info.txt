@@ -3,6 +3,7 @@ color codes :
     light orage : #f7b9a1
     background color : #FFF7F2
     ash color : #807a79
+    dark ash : #504E4D
 
 body margin : 
     10% from left and right
