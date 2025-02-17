@@ -5,7 +5,7 @@ color codes :
     ash color : #807a79
 
 body margin : 
-    50px from left and right
+    10% from left and right
     100px from top and bottom of a section
 
 
