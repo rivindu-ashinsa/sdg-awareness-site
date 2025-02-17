@@ -8,10 +8,10 @@
 
 .home-section-1{
     display: grid;
-    grid-template-columns: 500px 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
-.home-background-img-div{
+/* .home-background-img-div{
     height: 200px;
     position: relative;
 }
@@ -20,7 +20,7 @@
 .background-img-home{
     width: 763px;
     margin-left: 0px
-}
+} */
 
 .home-description{
     margin-left: 50px;
