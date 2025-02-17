@@ -1,13 +1,23 @@
 .home-page {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto',sans-serif; 
+    background-size: cover;
     color: #333;
-    text-align: center;
+    text-align: left;
     background-color: #FFF7F2;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background:  url('../images-home/background-img.png');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 10vh;
+    background-size: cover;
+    background-position: center;
 }
+
+
+
 
 .home-section-1{
     margin-top: 100px;
@@ -15,7 +25,10 @@
     flex-direction: column;
     min-width: 768px; 
     height: 100vh;
-    align-items: center;
+    align-items: left;
+    margin-left: 5%;
+    margin-bottom: 10%;
+
 
 }
 
@@ -29,15 +42,15 @@
     color: #504E4D;
     font-weight: bold;
     font-family: Lora, serif;
-    font-size: 4rem;
-    line-height: 5rem;
+    font-size: 3.2rem;
+    line-height: 3.4rem;
 }
 
 .home-description{
     color: #333;
     margin-top: 40px;
-    max-width: 768px;
-    min-width: 768px;
+    max-width: 600px;
+    min-width: 100px;
 
 }
 
@@ -72,13 +85,11 @@
 }
 
 .section-2-head{
-
     margin-bottom: 20px;
     max-width: 900px;
-
 }
 
-.section-2-head h1{
+.section-2-head-h1 {
     color: #504E4D;
     font-weight: bold;
     font-family: Lora, serif;
