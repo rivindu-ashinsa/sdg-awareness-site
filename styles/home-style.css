@@ -73,6 +73,15 @@
 
 .section-2-head{
 
+    margin-bottom: 20px;
+    max-width: 900px;
 
+}
 
+.section-2-head h1{
+    color: #504E4D;
+    font-weight: bold;
+    font-family: Lora, serif;
+    font-size: 4rem;
+    line-height: 5rem;
 }
