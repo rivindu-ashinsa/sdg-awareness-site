@@ -1,5 +1,6 @@
 body{
     margin: 0px;
+    min-height: ;
     background-color: #FFF7F2;
 }
 
@@ -75,6 +76,10 @@ p{
     opacity: 1;
 }
 
+.container{
+    height: 100vh;
+    margin-top: 1;
+}
 
 a{
     text-decoration: none;
