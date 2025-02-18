@@ -1,5 +1,5 @@
 .home-page {
-    font-family: 'Roboto',sans-serif; 
+    font-family: 'Roboto', sans-serif;
     background-size: cover;
     color: #333;
     text-align: left;
@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background:  url('../images-home/background-img.png');
+    background: url('../images-home/background-img.png');
     background-repeat: no-repeat;
     width: 100%;
     height: 10vh;
@@ -16,53 +16,44 @@
     background-position: center;
 }
 
-
-
-
-.home-section-1{
+.home-section-1 {
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    min-width: 768px; 
+    min-width: 768px;
     height: 100vh;
-    align-items: left;
+    align-items: flex-start;
     margin-left: 5%;
-    margin-bottom: 10%;
-
-
+    margin-bottom: 3.5rem;
 }
 
-
-.home-intro-title{
+.home-intro-title {
     margin-bottom: 20px;
     max-width: 900px;
 }
 
-.home-intro-title h1{
+.home-intro-title h1 {
     color: #504E4D;
     font-weight: bold;
     font-family: Lora, serif;
-    font-size: 3.2rem;
-    line-height: 3.4rem;
+    font-size: 3.4rem;
+    line-height: 3.8rem;
 }
 
-.home-description{
+.home-description {
     color: #333;
-    margin-top: 40px;
+    margin-top: auto;
     max-width: 600px;
     min-width: 100px;
-
 }
 
-.home-description-p{
-    margin-bottom: 20px;
+.home-description-p {
     font-size: 1.3rem;
     line-height: 1.7rem;
-    margin-bottom: 80px;
-
-    
+    margin-bottom: 10%;
 }
-.explore-button{
+
+.explore-button {
     text-decoration: none;
     color: #FFF7F2;
     background-color: #504E4D;
@@ -74,17 +65,15 @@
     align-items: center;
 }
 
-
-.home-section-2{
-    display: flex;  
+.home-section-2 {
+    display: flex;
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    min-width: 768px; 
-
+    min-width: 768px;
 }
 
-.section-2-head{
+.section-2-head {
     margin-bottom: 20px;
     max-width: 900px;
 }
@@ -95,4 +84,59 @@
     font-family: Lora, serif;
     font-size: 4rem;
     line-height: 5rem;
+}
+
+/* For larger screen sizes */
+@media screen and (min-width: 1700px) {
+    .section-2-head {
+        margin-top: 300px;
+    }
+    .home-section-1 {
+        margin-top: 200px;
+    }
+    .home-section-1 h1 {
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+}
+
+/* For tablets and mobile phones */
+@media screen and (max-width: 768px) {
+    .home-section-1 {
+        margin-top: 120px;
+        min-width: 100%;
+        margin-left: 0;
+        padding: 0 20px;
+    }
+    .home-page{
+         background: none;  
+    }
+    .home-intro-title h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .home-description {
+        max-width: 100%;
+    }
+
+    .home-description-p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .explore-button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .home-section-2 {
+        min-width: 100%;
+        padding: 0 20px;
+    }
+
+    .section-2-head-h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
 }
