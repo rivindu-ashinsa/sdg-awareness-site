@@ -94,10 +94,28 @@
     .home-section-1 {
         margin-top: 200px;
         margin-bottom: 12rem;
-
     }
     .home-section-1 h1 {
         font-size: 4rem;
+        line-height: 4.5rem;
+    }
+}
+
+/* For high resolution laptops */
+@media screen and (min-width: 1200px) and (max-width: 1699px) {
+    .home-section-1 {
+        margin-top: 150px;
+        margin-bottom: 8rem;
+    }
+    .home-section-1 h1 {
+        font-size: 3.6rem;
+        line-height: 4rem;
+    }
+    .section-2-head {
+        margin-top: 200px;
+    }
+    .section-2-head-h1 {
+        font-size: 3.6rem;
         line-height: 4.5rem;
     }
 }
@@ -110,33 +128,28 @@
         margin-left: 0;
         padding: 0 20px;
     }
-    .home-page{
-         background: none;  
+    .home-page {
+        background: none;
     }
     .home-intro-title h1 {
         font-size: 2.5rem;
         line-height: 3rem;
     }
-
     .home-description {
         max-width: 100%;
     }
-
     .home-description-p {
         font-size: 1rem;
         line-height: 1.5rem;
     }
-
     .explore-button {
         font-size: 1rem;
         padding: 8px 16px;
     }
-
     .home-section-2 {
         min-width: 100%;
         padding: 0 20px;
     }
-
     .section-2-head-h1 {
         font-size: 3rem;
         line-height: 4rem;
