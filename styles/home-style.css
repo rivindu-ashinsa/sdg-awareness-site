@@ -96,8 +96,31 @@
         margin-bottom: 12rem;
     }
     .home-section-1 h1 {
-        font-size: 4rem;
-        line-height: 4.5rem;
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+    .home-description {
+        color: #333;
+        margin-top: 2rem;
+        max-width: 20rem;
+        min-width: 55%;
+    }
+    
+    .home-description-p {
+        font-size: 2rem;
+        line-height: 2.6rem;
+        margin-bottom: 10%;
+    }
+    .explore-button {
+        text-decoration: none;
+        color: #FFF7F2;
+        background-color: #504E4D;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        transition: 0.3s;
+        align-items: center;
     }
 }
 
