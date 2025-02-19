@@ -365,7 +365,6 @@
     .section-3-head {
         text-align: center;
         max-width: 900px;
-        height: 100vh;
     }
     
     .section-3-head-h1 {
@@ -385,8 +384,10 @@
     }
     
     .section-3-description p {
-        font-size: 1.2rem;
-        line-height: 1.8rem;
+        margin-top: 2rem;
+        font-size: 2rem;
+        line-height: 2.6rem;
+        margin-bottom: 2rem;
     }
     
     .section-3-blocks{
@@ -396,17 +397,44 @@
         align-self: center;
         margin-top: 2rem;
         margin-bottom: 2rem;
-        height: 18rem;
+        height: 22rem;
     }
     
     .section-3-block{
         display: grid;
-        grid-template-rows: 1fr 1fr ;
-        background-color: #FD6824;
-        max-width: 12rem;
-        margin: 1rem;
+        grid-template-rows: 13rem 5rem ;
+        background-color: #f7b9a1;
+        margin: 2rem;
         border-radius: 10px;
-        width: 192px;
+        height:100%;
+        width: 15rem;
+    }
+    
+    .section-3-image{
+        align-items: bottom; 
+        height: 100%;
+        width: 13rem;
+        vertical-align: bottom;
+    
+    }
+    
+    .section-3-img {
+        border-radius: 10px;
+        width: 13rem;
+    
+    }
+    
+    .section-3-image-text{
+        text-align: center;
+        vertical-align: center;
+    }
+    
+    .section-3-image-text p{
+        margin: 1rem;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        color: #333;
+        font-weight: 700;
     }
 }
 
@@ -585,7 +613,7 @@
     
     .section-2-block-down p{
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1rem;
         color: #FFF7F2;
     }
 
