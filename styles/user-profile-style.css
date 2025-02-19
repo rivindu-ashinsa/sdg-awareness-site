@@ -25,7 +25,7 @@
 .right-side-container{
     display: flex;
     flex-direction: column;
-    padding: 5%;
+    padding: 3%;
 }
 
 .pfp-card{
@@ -118,9 +118,6 @@
 }
 
 .descritpion-container{
-    display: flex;
-    flex-direction: column;
-    
 }
 
 
