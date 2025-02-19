@@ -13,7 +13,19 @@
     height: auto;
     border-radius: 25px;
     background-color: #fbbfa0;
+    justify-content: space-between;
+}
+
+.left-side-container{
+    display: flex;
     flex-direction: column;
+    width: 75%;
+}
+
+.right-side-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
 }
 
 .pfp-card{
@@ -21,9 +33,7 @@
     border-radius: 25px 0px 0px 0px;
     padding: 25px;
     text-align: center;
-    max-width: 350px;
-    width: 90%;
-    margin-bottom: 0.5%;
+    margin-bottom: 0.7%;
 }
 
 .pfp-container{
@@ -61,10 +71,6 @@
     display: flex;
 }
 
-.pg-details strong {
-    flex: 1;
-}
-
 .pf-details span {
     text-align: left;
     margin-left: 20%;
@@ -72,13 +78,12 @@
 
 .pf-skills{
     background: #FD6824;
-    border-radius: 0px 0px 0px 25px;
     padding: 2.35%;
-    max-width: 338px;
-    width: 100%;
+    margin-top: 0.7%;
 }
 
 .pf-skills h3{
+    margin-top: -0.5rem;
     margin-bottom: 6%;
     font-size: 2.3rem;
 }
@@ -88,7 +93,6 @@
 }
 
 .skill label{
-    display: block;
     font-weight: bold;
 }
 
@@ -107,14 +111,16 @@
 }
 
 .card-divider{
-    padding: 0.15rem;
-    max-width: 395px;
-    width: 90%;
+    display: flex;
+    padding: 0.6%;
+    width: 98.7%;
     background-color: #FD6824;
-    margin-bottom: 0.2rem;
-    margin-top: -0.15rem;
 }
 
+.descritpion-container h2{
+    font-size: 220%;
+    
+}
 
 
 @media screen {
