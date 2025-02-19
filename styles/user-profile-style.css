@@ -25,7 +25,7 @@
 .right-side-container{
     display: flex;
     flex-direction: column;
-    padding: 3%;
+    padding: 2%;
 }
 
 .pfp-card{
@@ -117,7 +117,9 @@
     background-color: #FD6824;
 }
 
-.descritpion-container{
+.descritpion-container h2{
+    font-size: 220%;
+    
 }
 
 
