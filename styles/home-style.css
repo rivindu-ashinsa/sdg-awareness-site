@@ -164,13 +164,56 @@
     align-items: center;
     width: 70%; 
     margin: auto;
-    margin-top: 2rem;
+    margin-top: 5rem;
 }
 
 .section-3-head {
     text-align: center;
     max-width: 900px;
 }
+
+.section-3-head-h1 {
+    color: #504E4D;
+    font-weight: bold;
+    font-family: Lora, serif;
+    font-size: 4rem;
+    line-height: 5rem;
+}
+
+.section-3-description{
+    color: #333;
+    min-width: 100px;   
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-3-description p {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.section-3-blocks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 18rem;
+}
+
+.section-3-block{
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    background-color: #FD6824;
+    max-width: 12rem;
+    margin: 1rem;
+    border-radius: 10px;
+    width: 192px;
+}
+
+
 /* For larger screen sizes */
 @media screen and (min-width: 1700px) {
     .section-2-head {
@@ -221,7 +264,7 @@
     .section-2-investments-orange{
         display: grid;
         grid-template-rows: 1fr 1fr ;
-        background-color: #333;
+        background-color: #FD6824;
         height: 80%;
         border-radius: 10px;
     }
@@ -229,7 +272,7 @@
     .section-2-investments-ash{
         display: grid;
         grid-template-rows: 1fr 1fr ;
-        background-color: #FD6824;
+        background-color: #807a79;
         height: 80%;
         border-radius: 10px;
         
@@ -299,7 +342,7 @@
     .section-2-investments-orange{
         display: grid;
         grid-template-rows: 1fr 1fr ;
-        background-color: #333;
+        background-color: #FD6824;
         height: 80%;
         border-radius: 10px;
     }
@@ -307,7 +350,7 @@
     .section-2-investments-ash{
         display: grid;
         grid-template-rows: 1fr 1fr ;
-        background-color: #FD6824;
+        background-color: #807a79;
         height: 80%;
         border-radius: 10px;
         
@@ -401,7 +444,7 @@
     .section-2-investments-orange{
         display: grid;
         grid-template-rows: 1fr 1fr ;
-        background-color: #333;
+        background-color: #FD6824;
         height: 80%;
         border-radius: 10px;
     }
@@ -409,7 +452,7 @@
     .section-2-investments-ash{
         display: grid;
         grid-template-rows: 1fr 1fr ;
-        background-color: #FD6824;
+        background-color: #807a79;
         height: 80%;
         border-radius: 10px;
         
