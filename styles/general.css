@@ -90,7 +90,7 @@ a{
 }
 
 /* Mobile-specific styles */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .header-navigation {
         display: none; /* Hide menu by default */
         position: absolute;
@@ -123,7 +123,7 @@ a{
 }
 
 /* Desktop: Keep original navigation visible */
-@media (min-width: 769px) {
+@media (min-width: 768px) {
     .menu-toggle {
         display: none;
     }
