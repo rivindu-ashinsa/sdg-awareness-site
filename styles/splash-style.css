@@ -129,6 +129,9 @@ html, body{
 }
 
 @media screen and (max-width: 320px) { 
+    #content{
+        width: 95%;
+    }
     .intro h1{
         font-size: 1.4rem;
     }
