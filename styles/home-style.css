@@ -517,7 +517,7 @@
 }
 
 
-/* For tablets  */
+/* For tablets and mobile phones */
 @media screen and (max-width: 1080px) and (min-width:768px) {
     .home-section-1 {
         margin-top: 120px;
@@ -620,7 +620,6 @@
 
 }
 
-/* For mobile phones */
 @media (max-width: 767px) {
     .home-page {
         font-family: 'Roboto', sans-serif;
@@ -631,64 +630,13 @@
         flex-direction: column;
         justify-content: space-between;
         background:none;
-        width: 100%;
+        width: 100vw;
         height: 100vh;
         background-size: cover;
 
     }
 
-    .home-section-1 {
-        margin-top: 10rem;
-        display: flex;
-        flex-direction: column;
-        min-width: 768px;
-        height: 100vh;
-        align-items: center;
-        margin-left: 0;
-        margin-bottom: 3.5rem;
-    }
-
-    .home-intro-title{
-        margin-bottom: 20px;
-        max-width: 900px;
-        height: 80%;
-    }
-    .home-intro-title h1{
-        text-align: center;
-        font-size: 5rem;
-        line-height: 5.5rem;
-    }
-    .home-description{
-        color: #333;
-        margin-top: auto;
-        max-width: 600px;
-        min-width: 100px;
-        
-    }  
-    .home-description-p{
-        font-size: 1.5rem;
-        line-height: 2rem;
-        margin-top: 3rem;
-        margin-bottom: 4rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-
-        text-align: center;
-    }
-    .explore-button{
-        text-decoration: none;
-        color: #FFF7F2;
-        padding: 10px 20px;
-        border-radius: 10px;
-        font-size: 1.5rem;
-        font-weight: 700;
-        transition: 0.3s;
-        align-items: center;
-        margin: auto;
-    }
-    .explore-button{
-        text-align: center;
-    }
+    
 }
 
 
