@@ -9,6 +9,19 @@
     font-family: 'Roboto', serif;
 
 }
+.volunteer .headings{
+    justify-content: center;
+    text-align: center;
+}
+.volunteer .headings h1{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 20px;
+}
+.volunteer.headings p{
+    font-size: 1.2em;
+    margin-top: 10px;
+}
 .topics{
     justify-content: center;
     display: flex;
@@ -61,17 +74,18 @@
     gap: 10px;
 }
 .advantages p{
+    margin-bottom: 15px;
     text-wrap: wrap;
     width: 180px;
 }
 .advantages .map, .advantages .time, .advantages .benifits{
-    padding: 2px;
     border-radius: 20px;
+    padding-top: 15px;
     background: #E0AF97;
 }
 .advantages img{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
 }
 .outstanding{
     display: flex;
@@ -99,16 +113,40 @@
     gap: 10px;
 }
 .reviews .review{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
     background: #E0AF97;
     border-radius: 10px;
     text-align: center;
-    width: 190px;
     position: relative;
     overflow: hidden;
 }
-.reviews .review img{
-    width: 30px;
+.reviews .review .head img{
+    width: 25px;
     height: auto;
+}
+.reviews .review .head{
+    display: flex;
+    justify-content: center;
+    gap: 15px; ;
+}
+.reviews .review .head h5{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.reviews .review p{
+    font-size: 0.8rem;
+    padding: 10px;
+    line-height: 20px;
+    text-align: left;
+}
+.reviews .review p em{
+    font-size: 0.85rem;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: bold;
 }
 .move{
     display: flex;
@@ -116,4 +154,55 @@
     flex-wrap: wrap;
     margin-top: 10px;
     gap: 40px;
+}
+.sendreview{
+    background: #E0AF97;
+    text-align: center;
+    width: 190px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.sendreview h5{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.sendreview textarea{
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #E0AF97;
+    color: black;
+    border-color: black;
+}
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+    padding-bottom: 5px;
+}
+.rating img{
+    width: 20px;
+    height: 20px;
+}
+.rating-review{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 11px;
+    margin-left: 275px;
+}
+.rating-review img{
+    width: 25px;
+    height: 25px;
+}
+.sendreview .rate{
+    display: flex;
+    gap: 10px;
 }
