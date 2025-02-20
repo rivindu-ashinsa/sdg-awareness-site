@@ -15,7 +15,7 @@ a{
 .header{
     display: flex;
     width: 100%;
-    min-width: 768px;
+    /* min-width: 768px; */
     justify-content: space-between;
     align-items: space-between;
     padding: 15px 50px;
@@ -90,16 +90,26 @@ a{
 }
 
 /* Mobile-specific styles */
+
 @media (max-width: 767px) {
     .header-navigation {
         display: none; /* Hide menu by default */
         position: absolute;
         top: 60px; /* Adjust based on header height */
         left: 0;
+        /* max-width: 430px; */
         width: 100%;
         background-color: #333;
         text-align: center;
         padding: 10px 0;
+    }
+
+    .header {
+        width: 100vw; /* Make header width responsive to device width */
+        padding: 10px 20px; /* Adjust padding for mobile */
+    }
+    .header-profile{
+        display: none;
     }
 
     .header-navigation ul {
@@ -119,6 +129,7 @@ a{
         font-size: 2rem;
         color: white;
         cursor: pointer;
+        width: 50px;
     }
 }
 
