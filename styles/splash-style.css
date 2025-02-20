@@ -129,8 +129,14 @@ html, body{
 }
 
 @media screen and (max-width: 320px) { 
+    .content{
+        padding: 10px;
+    }
     #content{
-        width: 95%;
+        width: 98%;
+    }
+    .intro{
+        padding: 8px;
     }
     .intro h1{
         font-size: 1.4rem;
@@ -140,18 +146,18 @@ html, body{
     }
     .logo{
         width: 90px;
-        margin-top: 6%;
+        margin-top: 5%;
     }
     .members{
-        margin-top: 4px;
+        margin-top: 2px;
     }
     .members h3{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .member-list{
         font-size: 0.7rem;
         flex-direction: column;
-        gap: 0.6rem;
+        gap: 0.4rem;
     }
 }
 @media screen and (max-width: 480px) and (min-width: 321px) { 
