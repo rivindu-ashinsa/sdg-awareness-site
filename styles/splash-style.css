@@ -11,7 +11,7 @@ html, body{
     text-align: center;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .background_image{
@@ -34,27 +34,30 @@ html, body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: auto;
     padding: 20px;
 }
 #content{
     background-color: rgba(0, 0, 0, 0.6);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
-    height: 90%;
+    height: auto;
     width: 90%;
     padding: 2% 0;
 }
+.intro{
+    padding: 10px;
+}
 .intro h1{
-    font-size: 4.8rem;
+    font-size: 4.6rem;
     margin-bottom: 10px;
     max-width: 120rem;
     text-transform: uppercase;
 }
 
 .intro p{
-    font-size: 1.5rem;
-    padding:  0 15%;
+    font-size: 1.6rem;
+    padding:  0 8%;
 }
 
 .logo{
@@ -125,57 +128,150 @@ html, body{
     }
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (max-width: 320px) { 
+    .content{
+        padding: 10px;
+    }
+    #content{
+        width: 98%;
+    }
+    .intro{
+        padding: 8px;
+    }
     .intro h1{
-        font-size: 6rem;
+        font-size: 1.4rem;
     }
     .intro p{
-        font-size: 2.2rem;
-        padding: 0 10%;
+        font-size: 1rem;
     }
     .logo{
-        width: 20rem;
+        width: 90px;
+        margin-top: 5%;
+    }
+    .members{
+        margin-top: 2px;
     }
     .members h3{
-        font-size: 2.2rem;
+        font-size: 0.9rem;
     }
     .member-list{
+        font-size: 0.7rem;
+        flex-direction: column;
+        gap: 0.4rem;
+    }
+}
+@media screen and (max-width: 480px) and (min-width: 321px) { 
+    .intro h1{
+        font-size: 2rem;
+    }
+    .intro p{
+        font-size: 1.2rem;
+    }
+    .logo{
+        width: 100px;
+        margin-top: 6%;
+    }
+    .members{
+        margin-top: 4px;
+    }
+    .members h3{
+        font-size: 1.2rem;
+    }
+    .member-list{
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+}
+@media screen and (max-width: 576px) and (min-width: 481px) {
+    .intro h1{
+        font-size: 2.4rem;
+    }
+    .intro p{
+        font-size: 1.2rem;
+    }
+    .logo{
+        width: 120px;
+        margin-top: 6%;
+    }
+    .members{
+        margin-top: 4px;
+    }
+    .members h3{
+        font-size: 1.4rem;
+    }
+    .member-list{
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 577px) { 
+    .intro h1{
+        font-size: 3.2rem;
+    }
+    .intro p{
+        font-size: 1.4rem;
+    }
+    .logo{
+        width: 130px;
+        margin-top: 6%;
+    }
+    .members{
+        margin-top: 4px;
+    }
+    .members h3{
         font-size: 1.6rem;
+    }
+    .member-list{
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
 }
-}
-@media screen and (min-width: 1080px) and (max-width: 1699px) {
+@media screen and (max-width: 992px) and (min-width: 769px) { 
     .intro h1{
-        font-size: 4.8rem;
+        font-size: 3.8rem;
     }
     .intro p{
-        font-size: 2.0rem;
-        padding: 0 8%;
+        font-size: 1.6rem;
     }
     .logo{
-        width: 15rem;
+        width: 140px;
+        margin-top: 6%;
+    }
+    .members{
+        margin-top: 4px;
     }
     .members h3{
-        font-size: 2.0rem;
+        font-size: 1.6rem;
     }
-    .members-list{
-        font-size: 1.5rem;
+    .member-list{
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
 }
-}
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1200px) and (min-width: 993px) { 
     .intro h1{
-        font-size: 4.4rem;
+        font-size: 4rem;
     }
     .intro p{
-        font-size: 1.8rem;
-        padding: 0 8%;
+        font-size: 1.6rem;
     }
     .logo{
-        width: 10rem;
+        width: 150px;
+        margin-top: 6%;
+    }
+    .members{
+        margin-top: 4px;
     }
     .members h3{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
     }
-    .members-list{
-        font-size: 1.3rem;
-}
+    .member-list{
+        font-size: 1rem;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
 }
