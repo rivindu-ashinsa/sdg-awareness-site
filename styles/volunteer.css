@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.volunteer{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Roboto', serif;
+
+}
+.topics{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.topics h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 1%;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.subtopic{
+    background: #FEBE9F;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin: 10px;
+    text-align: center;
+    width: 650px;
+    position: relative;
+    overflow: hidden;
+}
+.subtopic h3{
+    font-family: 'Roboto', serif;
+    font-size: 1.5em;
+    padding: 10px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+.subtopic p{
+    font-family: 'Roboto', serif;
+    font-size: 1em;
+    padding: 10px;
+    line-height: 20px;
+    font-weight: bolder;
+}
+.subtopic img{
+    width: 100%;
+    height: 210px;
+    object-fit:cover;
+}
+.advantages{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
+}
+.advantages p{
+    text-wrap: wrap;
+    width: 180px;
+}
+.advantages .map, .advantages .time, .advantages .benifits{
+    padding: 2px;
+    border-radius: 20px;
+    background: #E0AF97;
+}
+.advantages img{
+    width: 50px;
+    height: 50px;
+}
+.outstanding{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 30px;
+    background: #E0AF97;
+    padding: 10px 0;
+}
+.outstanding h4{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-wrap: wrap;
+    width: 180px;
+}
+.outstanding p{
+    text-align: left;
+}
+.reviews{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
+}
+.reviews .review{
+    background: #E0AF97;
+    border-radius: 10px;
+    text-align: center;
+    width: 190px;
+    position: relative;
+    overflow: hidden;
+}
+.reviews .review img{
+    width: 30px;
+    height: auto;
+}
+.move{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 40px;
+}
