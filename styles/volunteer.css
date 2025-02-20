@@ -186,6 +186,7 @@
     background-color: #E0AF97;
     color: black;
     border-color: black;
+    width: 90%;
 }
 .rating{
     display: flex;
