@@ -102,6 +102,10 @@ a{
         padding: 10px 0;
     }
 
+    .header-profile{
+        display: none;
+    }
+
     .header-navigation ul {
         flex-direction: column; /* Stack items */
         gap: 10px;
