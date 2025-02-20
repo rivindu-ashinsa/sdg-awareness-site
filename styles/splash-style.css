@@ -127,9 +127,33 @@ html, body{
         transform: scale(1);
     }
 }
-@media (max-width: 480px) { 
+
+@media screen and (max-width: 320px) { 
     .intro h1{
-        font-size: 2.2rem;
+        font-size: 1.4rem;
+    }
+    .intro p{
+        font-size: 1rem;
+    }
+    .logo{
+        width: 90px;
+        margin-top: 6%;
+    }
+    .members{
+        margin-top: 4px;
+    }
+    .members h3{
+        font-size: 1rem;
+    }
+    .member-list{
+        font-size: 0.8rem;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+}
+@media screen and (max-width: 480px) and (min-width: 321px) { 
+    .intro h1{
+        font-size: 2rem;
     }
     .intro p{
         font-size: 1.2rem;
@@ -141,13 +165,16 @@ html, body{
     .members{
         margin-top: 4px;
     }
+    .members h3{
+        font-size: 1.2rem;
+    }
     .member-list{
         font-size: 1rem;
         flex-direction: column;
         gap: 0.6rem;
     }
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) and (min-width: 481px) {
     .intro h1{
         font-size: 2.4rem;
     }
@@ -161,13 +188,16 @@ html, body{
     .members{
         margin-top: 4px;
     }
+    .members h3{
+        font-size: 1.4rem;
+    }
     .member-list{
         font-size: 1rem;
         flex-direction: column;
         gap: 0.6rem;
     }
 }
-@media (max-width: 768px) { 
+@media screen and (max-width: 768px) and (min-width: 577px) { 
     .intro h1{
         font-size: 3.2rem;
     }
@@ -181,13 +211,16 @@ html, body{
     .members{
         margin-top: 4px;
     }
+    .members h3{
+        font-size: 1.6rem;
+    }
     .member-list{
         font-size: 1rem;
         flex-direction: column;
         gap: 0.6rem;
     }
 }
-@media (max-width: 992px) { 
+@media screen and (max-width: 992px) and (min-width: 769px) { 
     .intro h1{
         font-size: 3.8rem;
     }
@@ -201,13 +234,16 @@ html, body{
     .members{
         margin-top: 4px;
     }
+    .members h3{
+        font-size: 1.6rem;
+    }
     .member-list{
         font-size: 1rem;
         flex-direction: column;
         gap: 0.6rem;
     }
 }
-@media (max-width: 1200px) { 
+@media screen and (max-width: 1200px) and (min-width: 993px) { 
     .intro h1{
         font-size: 4rem;
     }
@@ -220,6 +256,9 @@ html, body{
     }
     .members{
         margin-top: 4px;
+    }
+    .members h3{
+        font-size: 1.6rem;
     }
     .member-list{
         font-size: 1rem;
