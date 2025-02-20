@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
 }
@@ -13,19 +13,27 @@
     justify-content: center;
     text-align: center;
 }
-.volunteer .headings h1{
-    font-size: 2.5em;
+.volunteer .headings h1, .volunteer .headings em{
+    font-size: 3rem;
     font-weight: bold;
     margin-top: 20px;
+    line-height: normal;
 }
-.volunteer.headings p{
+.volunteer .headings em{
+    color: #FD6824;
+}
+.volunteer .headings p{
     font-size: 1.2em;
     margin-top: 10px;
+    width: 70%;
+    font-weight:550;
+    line-height: 25px;
 }
 .topics{
     justify-content: center;
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 .topics h2{
     font-size: 1.5em;
