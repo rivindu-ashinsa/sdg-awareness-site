@@ -1,16 +1,16 @@
 *{
     margin: 0 auto;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:content-box;
 }
 .volunteer{
     display: flex;
     flex-wrap: wrap;
     font-family: 'Roboto', serif;
-
 }
 .volunteer .headings{
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
     text-align: center;
 }
 .volunteer .headings h1, .volunteer .headings em{
@@ -214,4 +214,63 @@
 .sendreview .rate{
     display: flex;
     gap: 10px;
+}
+
+@media (max-width: 1200px) {
+    .subtopic {
+        width: 700px;
+    }
+}
+
+@media (max-width: 992px) {
+    .subtopic {
+        width: 600px;
+    }
+    .volunteer .headings h1, .volunteer .headings em {
+        font-size: 2.6rem;
+    }
+    .volunteer .headings p {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .subtopic {
+        width: 550px;
+    }
+    .volunteer .headings h1, .volunteer .headings em {
+        font-size: 2.2rem;
+    }
+    .volunteer .headings p {
+        width: 90%;
+    }
+    .reviews .review {
+        width: 150px;
+    }
+    .rating-review{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .subtopic {
+        width: 100%;
+    }
+    .volunteer .headings h1, .volunteer .headings em {
+        font-size: 1.9rem;
+    }
+    .volunteer .headings p {
+        width: 100%;
+    }
+    .reviews .review {
+        width: 100%;
+    }
+    .rating-review{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .rating-review img{
+        width: 20px;
+        height: 20px;
+    }
 }
