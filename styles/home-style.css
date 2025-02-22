@@ -394,7 +394,6 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-self: center;
         margin-top: 2rem;
         margin-bottom: 2rem;
         height: 22rem;
@@ -663,13 +662,10 @@
         font-size: 1rem;
         padding: 8px 16px;
     }
-    .home-section-2 {
-        width: 100%;
-        padding: 0 20px;
-    }
-    .section-2-head-h1 {
-        font-size: 3rem;
-        line-height: 4rem;
+    .section-2-description p{
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5rem;
     }
     .explore-button {
         text-decoration: none;
@@ -682,29 +678,42 @@
         transition: 0.3s;
         align-items: center;
     }
+    .home-section-2 {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .section-2-head-h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
     .section-2-investments-block{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        height: 13rem;
-        width: 100%;
+        height: 8rem;
+        width: 90vw;
+       
     }
     
     .section-2-investments-orange{
         display: grid;
         grid-template-rows: 1fr 1fr ;
+        margin: auto;
         background-color: #FD6824;
         height: 80%;
         border-radius: 10px;
+        width: 85%;
+        
     }
     
     .section-2-investments-ash{
         display: grid;
+        margin: auto;
         grid-template-rows: 1fr 1fr ;
         background-color: #807a79;
         height: 80%;
+        width: 85%;
         border-radius: 10px;
         
     }
@@ -714,20 +723,23 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
         padding: 0.2rem;
     }
     
     .section-2-block-up p{
-        font-size: 1.8rem;
+        font-size: 100%;
         text-align: center;
         font-weight: 500;
         color: #FFF7F2;
+        line-height: 100%;
+        padding: 3px;
     }
     
     .section-2-block-down p{
         text-align: center;
-        font-size: 1rem;
-        line-height: 1.2rem;
+        font-size: 50%;
+        line-height: 100%;
         color: #FFF7F2;
     }
 

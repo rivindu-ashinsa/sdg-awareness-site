@@ -1,18 +1,39 @@
 *{
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing:content-box;
 }
 .volunteer{
     display: flex;
     flex-wrap: wrap;
     font-family: 'Roboto', serif;
-
+}
+.volunteer .headings{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.volunteer .headings h1, .volunteer .headings em{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 20px;
+    line-height: normal;
+}
+.volunteer .headings em{
+    color: #FD6824;
+}
+.volunteer .headings p{
+    font-size: 1.2em;
+    margin-top: 10px;
+    width: 70%;
+    font-weight:550;
+    line-height: 25px;
 }
 .topics{
     justify-content: center;
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
 .topics h2{
     font-size: 1.5em;
@@ -61,17 +82,18 @@
     gap: 10px;
 }
 .advantages p{
+    margin-bottom: 15px;
     text-wrap: wrap;
     width: 180px;
 }
 .advantages .map, .advantages .time, .advantages .benifits{
-    padding: 2px;
     border-radius: 20px;
+    padding-top: 15px;
     background: #E0AF97;
 }
 .advantages img{
-    width: 50px;
-    height: 50px;
+    width: 45px;
+    height: 45px;
 }
 .outstanding{
     display: flex;
@@ -99,16 +121,40 @@
     gap: 10px;
 }
 .reviews .review{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
     background: #E0AF97;
     border-radius: 10px;
     text-align: center;
-    width: 190px;
     position: relative;
     overflow: hidden;
 }
-.reviews .review img{
-    width: 30px;
+.reviews .review .head img{
+    width: 25px;
     height: auto;
+}
+.reviews .review .head{
+    display: flex;
+    justify-content: center;
+    gap: 15px; ;
+}
+.reviews .review .head h5{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.reviews .review p{
+    font-size: 0.8rem;
+    padding: 10px;
+    line-height: 20px;
+    text-align: left;
+}
+.reviews .review p em{
+    font-size: 0.85rem;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: bold;
 }
 .move{
     display: flex;
@@ -116,4 +162,115 @@
     flex-wrap: wrap;
     margin-top: 10px;
     gap: 40px;
+}
+.sendreview{
+    background: #E0AF97;
+    text-align: center;
+    width: 190px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.sendreview h5{
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 10px;
+}
+.sendreview textarea{
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #E0AF97;
+    color: black;
+    border-color: black;
+    width: 90%;
+}
+.rating{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+    padding-bottom: 5px;
+}
+.rating img{
+    width: 20px;
+    height: 20px;
+}
+.rating-review{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 11px;
+    margin-left: 230px;
+}
+.rating-review img{
+    width: 25px;
+    height: 25px;
+}
+.sendreview .rate{
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 1200px) {
+    .subtopic {
+        width: 700px;
+    }
+}
+
+@media (max-width: 992px) {
+    .subtopic {
+        width: 600px;
+    }
+    .volunteer .headings h1, .volunteer .headings em {
+        font-size: 2.6rem;
+    }
+    .volunteer .headings p {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .subtopic {
+        width: 550px;
+    }
+    .volunteer .headings h1, .volunteer .headings em {
+        font-size: 2.2rem;
+    }
+    .volunteer .headings p {
+        width: 90%;
+    }
+    .reviews .review {
+        width: 150px;
+    }
+    .rating-review{
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 576px) {
+    .subtopic {
+        width: 100%;
+    }
+    .volunteer .headings h1, .volunteer .headings em {
+        font-size: 1.9rem;
+    }
+    .volunteer .headings p {
+        width: 100%;
+    }
+    .reviews .review {
+        width: 100%;
+    }
+    .rating-review{
+        margin-left: 0;
+        margin-top: 15px;
+    }
+    .rating-review img{
+        width: 20px;
+        height: 20px;
+    }
 }
