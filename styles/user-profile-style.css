@@ -11,7 +11,7 @@
     display: flex;
     margin: 0 5%;
     height: auto;
-    border-radius: 25px;
+    border-radius: 25px 25px 0px 0px;
     background-color: #fbbfa0;
     justify-content: space-between;
 }
@@ -25,7 +25,6 @@
 .right-side-container{
     display: flex;
     flex-direction: column;
-    padding: 2%;
 }
 
 .pfp-card{
@@ -117,12 +116,48 @@
     background-color: #FD6824;
 }
 
-.descritpion-container h2{
-    font-size: 220%;
-    
+.descritpion-container{
+    padding: 2%;
 }
 
+.descritpion-container h2{
+    font-size: 220%;
+}
 
+.descritpion-container p{
+    font-size: 120%;
+}
+
+.cal-int-card{
+    display: flex;
+    justify-content: space-around;
+}
+
+.calander-card{
+    margin-left: 2%;
+    padding: 2%;
+    background-color: #E0AF97;
+    width: 13rem;
+    height: 30rem;
+}
+
+.interest-card{
+    margin-right: 2%;
+    padding: 2%;
+    background-color: #E0AF97;
+    width: 25rem;
+    height: 30rem;
+}
+
+.experience-card{
+    margin-top: 5%;
+    padding: 2%;
+    background-color: #E0AF97;
+    width: 41rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
 @media screen {
 
 }
