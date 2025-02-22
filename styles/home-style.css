@@ -362,6 +362,15 @@
         font-size: 1.2rem;
         color: #FFF7F2;
     }
+    .home-section-3{
+        display: flex;
+        flex-direction: column;
+        height: 95vh;
+        align-items: center;
+        width: 70%; 
+        margin: auto;
+    }
+
     .section-3-head {
         text-align: center;
         max-width: 900px;
@@ -619,7 +628,7 @@
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .home-page {
         font-family: 'Roboto', sans-serif;
         background-size: cover;
@@ -742,8 +751,95 @@
         line-height: 100%;
         color: #FFF7F2;
     }
-
     
+    .home-section-3{
+        display: flex;
+        flex-direction: column;
+        height: 95vh;
+        align-items: center;
+        width: 70vw; 
+        margin: auto;
+    }
+    
+    .section-3-head {
+        text-align: center;
+        max-width: 900px;
+    }
+    
+    .section-3-head-h1 {
+        color: #504E4D;
+        font-weight: bold;
+        font-family: Lora, serif;
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+    
+    .section-3-description{
+        color: #333;
+        min-width: 100px;   
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .section-3-description p {
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+    
+    .section-3-blocks{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        height: 22rem;
+    }
+    .section-3-blocks {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        overflow-x: auto;
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .section-3-block {
+        display: grid;
+        grid-template-rows: 13rem 5rem;
+        background-color: #f7b9a1;
+        margin: 0 1rem;
+        border-radius: 10px;
+        height: 100%;
+        width: 15rem;
+        flex: 0 0 auto;
+    }
+
+    .section-3-image {
+        align-items: bottom;
+        height: 100%;
+        width: 13rem;
+        vertical-align: bottom;
+    }
+
+    .section-3-img {
+        border-radius: 10px;
+        width: 13rem;
+    }
+
+    .section-3-image-text {
+        text-align: center;
+        vertical-align: center;
+    }
+
+    .section-3-image-text p {
+        margin: 1rem;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+        color: #333;
+        font-weight: 700;
+    }
 }
 
 

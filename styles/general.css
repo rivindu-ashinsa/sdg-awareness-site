@@ -134,7 +134,7 @@ a{
 }
 
 /* Desktop: Keep original navigation visible */
-@media (min-width: 768px) {
+@media (min-width: 767px) {
     .menu-toggle {
         display: none;
     }
