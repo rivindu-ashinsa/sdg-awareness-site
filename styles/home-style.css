@@ -663,14 +663,7 @@
         font-size: 1rem;
         padding: 8px 16px;
     }
-    .home-section-2 {
-        width: 100%;
-        padding: 0 20px;
-    }
-    .section-2-head-h1 {
-        font-size: 3rem;
-        line-height: 4rem;
-    }
+
     .explore-button {
         text-decoration: none;
         color: #FFF7F2;
@@ -682,14 +675,24 @@
         transition: 0.3s;
         align-items: center;
     }
+        .home-section-2 {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .section-2-head-h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
     .section-2-investments-block{
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        height: 13rem;
+        height: 8rem;
         width: 100%;
+        gap: 0rem;
+       
     }
     
     .section-2-investments-orange{
@@ -698,6 +701,8 @@
         background-color: #FD6824;
         height: 80%;
         border-radius: 10px;
+        width: 3rem;
+        
     }
     
     .section-2-investments-ash{
@@ -705,6 +710,7 @@
         grid-template-rows: 1fr 1fr ;
         background-color: #807a79;
         height: 80%;
+        width: 3rem;
         border-radius: 10px;
         
     }
@@ -714,20 +720,22 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
         padding: 0.2rem;
     }
     
     .section-2-block-up p{
-        font-size: 1.8rem;
+        font-size: 0.7rem;
         text-align: center;
         font-weight: 500;
         color: #FFF7F2;
+        line-height: 0.7rem;
     }
     
     .section-2-block-down p{
         text-align: center;
-        font-size: 1rem;
-        line-height: 1.2rem;
+        font-size: 0.4rem;
+        line-height: 0.5rem;
         color: #FFF7F2;
     }
 
