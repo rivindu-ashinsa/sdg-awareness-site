@@ -4,35 +4,554 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Volunteer</title>
-    <!-- <link rel="stylesheet" href="styles/home-style.css"> -->
+    <link rel="stylesheet" href="styles/home-style.css">
     <link rel="stylesheet" href="styles/general.css">
-    <!-- <link rel="stylesheet" href="styles/navbar.css"> -->
+    <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/volunteer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <button class="menu-toggle" onclick="toggleMenu()">
-        ☰
-    </button>   
-        <div class="header-logo">
-            <img class="logo-img" src="images-home/logo.svg" alt="">
+    <div id="navbar"></div>
+    <script src="navbar.js"></script>
+
+    <div class="volunteer">
+        <div class="headings">
+            <h1>Join the Movement for a <em>Sustainable Tomorrow!</em></h1>
+            <p>Be part of our community and drive sustainable, innovative solutions for a greener future in industry and infrastructure. Together, we can make a difference!</p>
         </div>
-        <div class="header-navigation">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="content.html">Content</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="team.html">Team</a></li>
-            </ul>
+        <div class="topics" id="GreenTech&Sustain">
+            <h2>Green Technology & Sustainability</h2>
+            <div class="content">
+                <div class="subtopic" id="topic1">
+                    <h3> Urban Green Spaces Initiative</h3>
+                    <p>Help transform underutilized spaces into vibrant green areas. Volunteers will plant trees, maintain gardens, and improve public spaces.</p>
+                    <img src="https://www.toronto.ca/wp-content/uploads/2023/01/96a1-tree-planting-stewardship-events-banner.png" alt="Green Spaces">
+                    <div class="advantages">
+                        <div class="map">
+                            <img src="images-volunteer/map.png" alt="Map">
+                            <p>Community Parks & Public Spaces</p>
+                        </div>
+                        <div class="time">
+                            <img src="images-volunteer/time.png" alt="Time">
+                            <p>Flexible, ongoing</p>
+                        </div>
+                        <div class="benifits">
+                            <img src="images-volunteer/benefits.png" alt="Benifits">
+                            <p>Hands-On environmental work</p>
+                        </div>
+                    </div>
+                    <div class="outstanding">
+                        <h4>9.6/10 Outstanding!</h4>
+                        <p>Exceptional. (155 reviews)<br>Reviews are verified unless labeled otherwise</p>
+                    </div>
+                    <div class="reviews">
+                        <div class="review" id="review1">
+                            <div class="head">
+                                <h5>Peter Griffin</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was actually a good experience. I learned about how to plant a tree properly along with gaining an handful experience about equipment's.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                            </div>
+                        </div>
+                        <div class="review" id="review2">
+                            <div class="head">
+                                <h5>Lois Davis</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was a fruitful experience where I learned proper tree planting techniques and gained hands-on experience with the equipment.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                            </div>
+                        </div>
+                        <div class="review" id="review3">
+                            <div class="head">
+                                <h5>Stewie Garcia</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was an enriching experience that taught me proper tree planting techniques and provided practical experience with various tools.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="move">
+                        <h6><</h6>
+                        <h6>></h6>
+                    </div>
+                    <div class="sendreview">
+                        <div class="rate">
+                            <h5>Send us your review</h5>
+                            <div class="rating-review">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                        <form action="">
+                            <textarea name="comment" id="comment" rows="3" placeholder="please type it in here..."></textarea>
+                        </form>
+                    </div>
+                </div>
+                <div class="subtopic" id="topic2">
+                    <h3>Zero-Waste Community Drive</h3>
+                    <p>Help transform underutilized spaces into vibrant green areas. Volunteers will plant trees, maintain gardens, and improve public spaces.</p>
+                    <img src="https://www.toronto.ca/wp-content/uploads/2023/01/96a1-tree-planting-stewardship-events-banner.png" alt="Zero-Waste Community">
+                    <div class="advantages">
+                        <div class="map">
+                            <img src="images-volunteer/map.png" alt="Map">
+                            <p>Community Parks & Public Spaces</p>
+                        </div>
+                        <div class="time">
+                            <img src="images-volunteer/time.png" alt="Time">
+                            <p>1-Day Event (Monthly)</p>
+                        </div>
+                        <div class="benifits">
+                            <img src="images-volunteer/benefits.png" alt="Benifits">
+                            <p>Hands-On environmental work</p>
+                        </div>
+                    </div>
+                    <div class="outstanding">
+                        <h4>7.8/10 Outstanding!</h4>
+                        <p>Exceptional. (305 reviews)<br>Reviews are verified unless labeled otherwise</p>
+                    </div>
+                    <div class="reviews">
+                        <div class="review" id="review1">
+                            <div class="head">
+                                <h5>Peter Griffin</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was actually a good experience. I learned about how to plant a tree properly along with gaining an handful experience about equipment's.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                        <div class="review" id="review2">
+                            <div class="head">
+                                <h5>Lois Davis</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was a fruitful experience where I learned proper tree planting techniques and gained hands-on experience with the equipment.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                        <div class="review" id="review3">
+                            <div class="head">
+                                <h5>Stewie Garcia</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was an enriching experience that taught me proper tree planting techniques and provided practical experience with various tools.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="move">
+                        <h6><</h6>
+                        <h6>></h6>
+                    </div>
+                    <div class="sendreview">
+                        <div class="rate">
+                            <h5>Send us your review</h5>
+                            <div class="rating-review">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                        <form action="">
+                            <textarea name="comment" id="comment" rows="3" placeholder="please type it in here..."></textarea>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="header-profile">
-            <img class="profile-icon" src="images-home/profile-icon.svg" alt="">
+        <div class="topics" id="SmartCities&Infra">
+            <h2>Smart Cities & Infrastructure</h2>
+            <div class="content">
+                <div class="subtopic" id="topic1">
+                    <h3>Sustainable Transport Advocacy</h3>
+                    <p>Advocate for greener transport by promoting cycling, public transit, and walkable cities through community events and social media campaigns.</p>
+                    <img src="images-volunteer/Cyclists and pedestrians on a green city street.png" alt="Green Spaces">
+                    <div class="advantages">
+                        <div class="map">
+                            <img src="images-volunteer/map.png" alt="Map">
+                            <p> Local communities & online platforms</p>
+                        </div>
+                        <div class="time">
+                            <img src="images-volunteer/time.png" alt="Time">
+                            <p>1-Day Event (Monthly)</p>
+                        </div>
+                        <div class="benifits">
+                            <img src="images-volunteer/benefits.png" alt="Benifits">
+                            <p>Hands-On environmental work</p>
+                        </div>
+                    </div>
+                    <div class="outstanding">
+                        <h4>9.0/10 Outstanding!</h4>
+                        <p>Exceptional. (180 reviews)<br>Reviews are verified unless labeled otherwise</p>
+                    </div>
+                    <div class="reviews">
+                        <div class="review" id="review1">
+                            <div class="head">
+                                <h5>Peter Griffin</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was actually a good experience. I learned about how to plant a tree properly along with gaining an handful experience about equipment's.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                            </div>
+                        </div>
+                        <div class="review" id="review2">
+                            <div class="head">
+                                <h5>Lois Davis</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was a fruitful experience where I learned proper tree planting techniques and gained hands-on experience with the equipment.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                            </div>
+                        </div>
+                        <div class="review" id="review3">
+                            <div class="head">
+                                <h5>Stewie Garcia</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was an enriching experience that taught me proper tree planting techniques and provided practical experience with various tools.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="move">
+                        <h6><</h6>
+                        <h6>></h6>
+                    </div>
+                    <div class="sendreview">
+                        <div class="rate">
+                            <h5>Send us your review</h5>
+                            <div class="rating-review">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                        <form action="">
+                            <textarea name="comment" id="comment" rows="3" placeholder="please type it in here..."></textarea>
+                        </form>
+                    </div>
+                </div>
+                <div class="subtopic" id="topic2">
+                    <h3>Sustainable Transport Advocacy</h3>
+                    <p>Advocate for greener transport by promoting cycling, public transit, and walk-able cities through community events and social media campaigns.</p>
+                    <img src="images-volunteer/Cyclists and pedestrians on a green city street.png" alt="Zero-Waste Community">
+                    <div class="advantages">
+                        <div class="map">
+                            <img src="images-volunteer/map.png" alt="Map">
+                            <p> Local communities & online platforms</p>
+                        </div>
+                        <div class="time">
+                            <img src="images-volunteer/time.png" alt="Time">
+                            <p>1-Day Event (Monthly)</p>
+                        </div>
+                        <div class="benifits">
+                            <img src="images-volunteer/benefits.png" alt="Benifits">
+                            <p>Hands-On environmental work</p>
+                        </div>
+                    </div>
+                    <div class="outstanding">
+                        <h4>8.2/10 Outstanding!</h4>
+                        <p>Exceptional. (230 reviews)<br>Reviews are verified unless labeled otherwise</p>
+                    </div>
+                    <div class="reviews">
+                        <div class="review" id="review1">
+                            <div class="head">
+                                <h5>Peter Griffin</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was actually a good experience. I learned about how to plant a tree properly along with gaining an handful experience about equipment's.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                        <div class="review" id="review2">
+                            <div class="head">
+                                <h5>Lois Davis</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was a fruitful experience where I learned proper tree planting techniques and gained hands-on experience with the equipment.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                        <div class="review" id="review3">
+                            <div class="head">
+                                <h5>Stewie Garcia</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was an enriching experience that taught me proper tree planting techniques and provided practical experience with various tools.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="move">
+                        <h6><</h6>
+                        <h6>></h6>
+                    </div>
+                    <div class="sendreview">
+                        <div class="rate">
+                            <h5>Send us your review</h5>
+                            <div class="rating-review">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                        <form action="">
+                            <textarea name="comment" id="comment" rows="3" placeholder="please type it in here..."></textarea>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
-    </header>
+        <div class="topics" id="InnoIndustries">
+            <h2> Innovative Industries</h2>
+            <div class="content">
+                <div class="subtopic" id="topic1">
+                    <h3>Renewable Energy Awareness Program</h3>
+                    <p>Advocate for greener transport by promoting cycling, public transit, and walkable cities through community events and social media campaigns.</p>
+                    <img src="https://www.futurismtechnologies.com/wp-content/uploads/2024/03/AI-use-cases-in-Manufacturing-Sector.jpg" alt="Green Spaces">
+                    <div class="advantages">
+                        <div class="map">
+                            <img src="images-volunteer/map.png" alt="Map">
+                            <p> Local communities & online platforms</p>
+                        </div>
+                        <div class="time">
+                            <img src="images-volunteer/time.png" alt="Time">
+                            <p>1-Day Event (Monthly)</p>
+                        </div>
+                        <div class="benifits">
+                            <img src="images-volunteer/benefits.png" alt="Benifits">
+                            <p>Hands-On environmental work</p>
+                        </div>
+                    </div>
+                    <div class="outstanding">
+                        <h4>9.0/10 Outstanding!</h4>
+                        <p>Exceptional. (400 reviews)<br>Reviews are verified unless labeled otherwise</p>
+                    </div>
+                    <div class="reviews">
+                        <div class="review" id="review1">
+                            <div class="head">
+                                <h5>Peter Griffin</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was actually a good experience. I learned about how to plant a tree properly along with gaining an handful experience about equipment's.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                            </div>
+                        </div>
+                        <div class="review" id="review2">
+                            <div class="head">
+                                <h5>Lois Davis</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was a fruitful experience where I learned proper tree planting techniques and gained hands-on experience with the equipment.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                            </div>
+                        </div>
+                        <div class="review" id="review3">
+                            <div class="head">
+                                <h5>Stewie Garcia</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was an enriching experience that taught me proper tree planting techniques and provided practical experience with various tools.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="move">
+                        <h6><</h6>
+                        <h6>></h6>
+                    </div>
+                    <div class="sendreview">
+                        <div class="rate">
+                            <h5>Send us your review</h5>
+                            <div class="rating-review">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                        <form action="">
+                            <textarea name="comment" id="comment" rows="3" placeholder="please type it in here..."></textarea>
+                        </form>
+                    </div>
+                </div>
+                <div class="subtopic" id="topic2">
+                    <h3>Renewable Energy Awareness Program</h3>
+                    <p>Advocate for greener transport by promoting cycling, public transit, and walkable cities through community events and social media campaigns.</p>
+                    <img src="https://www.futurismtechnologies.com/wp-content/uploads/2024/03/AI-use-cases-in-Manufacturing-Sector.jpg" alt="Zero-Waste Community">
+                    <div class="advantages">
+                        <div class="map">
+                            <img src="images-volunteer/map.png" alt="Map">
+                            <p> Local communities & online platforms</p>
+                        </div>
+                        <div class="time">
+                            <img src="images-volunteer/time.png" alt="Time">
+                            <p>1-Day Event (Monthly)</p>
+                        </div>
+                        <div class="benifits">
+                            <img src="images-volunteer/benefits.png" alt="Benifits">
+                            <p>Hands-On environmental work</p>
+                        </div>
+                    </div>
+                    <div class="outstanding">
+                        <h4>7.7/10 Outstanding!</h4>
+                        <p>Exceptional. (100 reviews)<br>Reviews are verified unless labeled otherwise</p>
+                    </div>
+                    <div class="reviews">
+                        <div class="review" id="review1">
+                            <div class="head">
+                                <h5>Peter Griffin</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was actually a good experience. I learned about how to plant a tree properly along with gaining an handful experience about equipment's.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                        <div class="review" id="review2">
+                            <div class="head">
+                                <h5>Lois Davis</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was a fruitful experience where I learned proper tree planting techniques and gained hands-on experience with the equipment.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                        <div class="review" id="review3">
+                            <div class="head">
+                                <h5>Stewie Garcia</h5>
+                                <h5><img src="https://www.pngmart.com/files/17/USA-Flag-Transparent-PNG.png" alt="'Flag"> US</h5>
+                            </div>
+                            <p>It was an enriching experience that taught me proper tree planting techniques and provided practical experience with various tools.<br><em>See more></em></p>
+                            <div class="rating">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-yellow.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="move">
+                        <h6><</h6>
+                        <h6>></h6>
+                    </div>
+                    <div class="sendreview">
+                        <div class="rate">
+                            <h5>Send us your review</h5>
+                            <div class="rating-review">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                                <img src="images-volunteer/star-white.png" alt="star">
+                            </div>
+                        </div>
+                        <form action="">
+                            <textarea name="comment" id="comment" rows="3" placeholder="please type it in here..."></textarea>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
