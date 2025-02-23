@@ -1,34 +1,12 @@
-/* *{
+*{
     margin: 0 auto;
     padding: 0;
     box-sizing:content-box;
-} */
-
-.volunteer-page{
-    font-family: 'Roboto', sans-serif;
-    background-size: cover;
-    color: #333;
-    text-align: left;
-    background-color: #FFF7F2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 100vw;
-    
-    height: 100vh;
 }
 .volunteer{
-    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
     font-family: 'Roboto', serif;
-
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 100%;
-    /* background-color: #E0AF97; */
-    padding: 5rem;
-    
 }
 .volunteer .headings{
     display: flex;
@@ -39,9 +17,6 @@
     font-size: 3rem;
     font-weight: bold;
     margin-top: 20px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     line-height: normal;
 }
 .volunteer .headings em{
@@ -53,42 +28,25 @@
     width: 70%;
     font-weight:550;
     line-height: 25px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .topics{
     justify-content: center;
     display: flex;
     flex-direction: column;
     margin-top: 30px;
-    width: 100%;
-    margin-right: auto;
-    margin-top: auto;
 }
 .topics h2{
     font-size: 1.5em;
     font-weight: bold;
     margin-left: 1%;
-;
 }
-.content {
+.content{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    /* background-color: #333; */
-    height: 100%;
-    width: 100%;
-    max-width: 1600px;
-    margin-left: auto;
-    margin-right: auto;
-
-    
 }
 .subtopic{
     background: #FEBE9F;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     margin: 10px;
