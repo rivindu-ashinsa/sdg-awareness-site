@@ -157,7 +157,8 @@
 
 }
 
-.home-section-3{    
+.home-section-3{   
+     
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -241,6 +242,80 @@
     font-weight: 700;
 }
 
+
+.home-section-4{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    height: 100vh;
+    background-color: #f7b9a1;
+    align-items: center;
+    width: 80%; 
+    margin: auto;
+    padding: 10px;
+    margin-top: 5rem;
+}
+
+.section-4-img{
+    width: 90%;
+    padding: 2rem
+}
+
+.section-4-img-block{
+    width: 100%;
+}
+
+.section-4-description{
+    width: 100%;
+}
+
+.section-4-head{
+    text-align: left;
+    max-width: 900px;
+}
+
+.section-4-head h1{
+    color: black;
+    font-weight: bold;
+    font-family: Lora, serif;
+    font-size: 3rem;
+    line-height: 3.4rem;
+}
+
+.section-4-paragraph{
+    color: #333;
+    min-width: 100px;   
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.section-4-paragraph p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+}
+
+
+.section-4-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.section-4-time-block{
+    padding: 1rem;
+    width: 80px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    text-align: center;
+    height: 90px;
+}
+
+.number{
+    font-size: 2rem;
+    font-weight: bold;
+}
 /* For larger screen sizes */
 @media screen and (min-width: 1700px) {
     .section-2-head {
@@ -369,6 +444,7 @@
         align-items: center;
         width: 70%; 
         margin: auto;
+        margin-top: 10rem;
     }
 
     .section-3-head {
@@ -447,7 +523,7 @@
 }
 
 /* For high resolution laptops */
-@media screen and (min-width: 1080px) and (max-width: 1699px) {
+@media screen and (min-width: 1080px) and (max-width: 1700px) {
     .home-section-1 {
         margin-top: 150px;
         margin-bottom: 9rem;

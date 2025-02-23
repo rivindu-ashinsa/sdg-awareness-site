@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
-    <link rel="stylesheet" href="styles/home-style.css">
+    <link rel="stylesheet" href="styles/table-style.css">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,26 +15,100 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header-bar">
-            <div class="header-logo" style="color: white;">
-                <img class="logo-img" src="images-home/logo.svg" alt="">
-            </div>
-            <div class="header-navigation">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="volunteer.html">Volunteer</a></li>
-                    <li><a href="sitemap.html">Sitemap</a></li>
-                    <li><a href="content.html">Content</a></li>
-                    <li><a href="feedback.html">Feedback</a></li>
-                    <li><a href="team.html">Team</a></li>
-                </ul>
-            </div>
-            <div class="header-profile" style="color: white;">
-                <img class="profile-icon" src="images-home/profile-icon.svg" alt="">
-            </div>
+    <header class="header">
+        <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>   
+        <div class="header-logo">
+            <img class="logo-img" src="images-home/logo.svg" alt="">
+        </div>
+        <div class="header-navigation">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="sitemap.html">Sitemap</a></li>
+                <li><a href="content.html">Content</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+        </div>
+        <div class="header-profile">
+            <img class="profile-icon" src="images-home/profile-icon.svg" alt="">
         </div>
     </header>
-
+    <table>
+        <tr>
+            <th><img src="logo.png" alt="Logo"></th>
+            <th>Industry</th>
+            <th>Latest Innovation</th>
+            <th>Impact</th>
+            <th>Challenges</th>
+            <th>More Info</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Renewable Energy</td>
+            <td>Solar Windows</td>
+            <td>Reduces energy consumption</td>
+            <td>High initial costs</td>
+            <td><a href="#">Learn More</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Biotechnology</td>
+            <td>CRISPR Gene Editing</td>
+            <td>Advances in healthcare</td>
+            <td>Ethical concerns</td>
+            <td><a href="#">Learn More</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Information Technology</td>
+            <td>AI-Powered Automation</td>
+            <td>Increases productivity</td>
+            <td>Job displacement</td>
+            <td><a href="#">Learn More</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Advanced Manufacturing</td>
+            <td>3D Printing</td>
+            <td>Reduces waste</td>
+            <td>Material limitations</td>
+            <td><a href="#">Learn More</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Smart Cities</td>
+            <td>Smart Grids</td>
+            <td>Efficient energy management</td>
+            <td>Cybersecurity risks</td>
+            <td><a href="#">Learn More</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Transportation</td>
+            <td>Autonomous Vehicles</td>
+            <td>Reduces traffic congestion</td>
+            <td>Safety regulations</td>
+            <td><a href="#">Learn More</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Water Management</td>
+            <td>Smart Irrigation Systems</td>
+            <td>Conserves water resources</td>
+            <td>High maintenance costs</td>
+            <td><a href="#">Learn More</a></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Waste Management</td>
+            <td>Circular Economy Models</td>
+            <td>Minimizes waste generation</td>
+            <td>Complex supply chains</td>
+            <td><a href="#">Learn More</a></td>
+        </tr>
+    </table>
 </body>
 </html>
