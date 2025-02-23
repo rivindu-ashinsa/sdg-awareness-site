@@ -120,7 +120,6 @@ footer{
     justify-content: space-between;
     padding-left: 20px;
     padding-right:20px;
-    align-items: center;
 }
 
 footer ul{
@@ -135,6 +134,16 @@ footer h5{
 }
 
 
+footer p{
+    text-align: left;
+
+}
+
+.footer-block-down-down{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
 
 
 /* Mobile-specific styles */
