@@ -77,7 +77,7 @@
 
 .pf-skills{
     background: #FD6824;
-    padding: 2.35%;
+    padding: 10%;
     margin-top: 0.7%;
 }
 
@@ -158,6 +158,45 @@
     margin-right: auto;
 
 }
-@media screen {
 
+.contact-card{
+    padding: 1%;
+    width: 88%;
+    border-radius: 0px 0px 25px 25px;
+    background-color:#FD6824;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-card h2{
+    margin-top: 0%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column; /* Stack left and right containers vertically */
+        margin: 0 2%; /* Reduce margin for smaller screens */
+    }
+
+    .left-side-container,
+    .right-side-container {
+        width: 100%; /* Full width for stacked containers */
+    }
+
+    .cal-int-card {
+        flex-direction: column; /* Stack calendar and interest cards vertically */
+        align-items: center; /* Center align the cards */
+    }
+
+    .calander-card,
+    .interest-card {
+        width: 80%; /* Adjust width for stacked cards */
+        margin: 2% 0; /* Add margin between stacked cards */
+    }
+
+    .experience-card {
+        width: 90%; /* Adjust width for smaller screens */
+    }
 }
