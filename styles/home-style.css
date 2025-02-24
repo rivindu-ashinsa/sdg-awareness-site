@@ -62,8 +62,12 @@
     border-radius: 10px;
     font-size: 1.2rem;
     font-weight: 700;
-    transition: 0.3s;
+    transition: background-color 0.3s;
     align-items: center;
+}
+
+.explore-button:hover {
+    background-color: #FD6824;
 }
 
 

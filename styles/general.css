@@ -28,7 +28,7 @@ a {
     position: fixed;
     top: 0;
     z-index: 1000;
-    animation: slideDown 0.5s ease-out;
+    animation: slideDown 1s ease-out;
 }
 
 @keyframes slideDown {
@@ -86,6 +86,9 @@ a {
     opacity: 0;
     animation: fadeIn 0.5s forwards;
     animation-delay: 0.2s;
+}
+#profile-le {
+    display: none;
 }
 
 @keyframes fadeIn {
@@ -303,7 +306,8 @@ footer p {
     }
 }
 
-@media (max-width: 767px) {
+
+@media (max-width: 768px) {
     .header-navigation {
         display: none;
         position: absolute;
@@ -314,14 +318,46 @@ footer p {
         text-align: center;
         padding: 10px 0;
         transform: translateY(-100%);
-        transition: transform 0.5s ease-in-out;
+        transition: transform 0.3s ease-in-out;
+        flex-direction: column; /* Ensure items are stacked vertically */
     }
 
     .header-navigation.show {
         display: flex;
-        flex-direction: column;
+        transform: translateY(0);
+        animation: dropdown 0.5s ease-in-out;
+    }
+
+    .header-navigation .menu-item {
+        display: block; /* Make sure each item is on a separate line */
+        opacity: 0;
+        transform: translateY(-10px);
+        animation: dropdownItem 0.5s ease-in-out forwards;
+    }
+
+    .header-navigation.show .menu-item {
+        opacity: 1;
         transform: translateY(0);
     }
+
+    .header-navigation .menu-item:nth-child(1) {
+        animation-delay: 0.2s;
+    }
+
+    .header-navigation .menu-item:nth-child(2) {
+        animation-delay: 0.4s;
+    }
+
+    .header-navigation .menu-item:nth-child(3) {
+        animation-delay: 0.6s;
+    }
+
+    /* Adjust for each item */
+    .profile-li {
+        display: block;
+
+    }
+   
 
     .menu-toggle {
         display: block;
@@ -337,14 +373,50 @@ footer p {
     .header-profile {
         display: none;
     }
+
+    #profile-le  {
+        display: inline-block;
+        text-align: center;
+    
+    }
+    #profile-le a {
+        text-align: center;
+        justify-content: center;
+        margin-left: 20px;
+    }
 }
+
 
 @media (min-width: 768px) {
     .menu-toggle {
         display: none;
     }
-
+    #profile-li {
+        display: none;
+    }
     .header-navigation {
         display: flex !important;
+    }
+}
+
+@keyframes dropdown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes dropdownItem {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
