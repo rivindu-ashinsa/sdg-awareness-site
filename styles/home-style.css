@@ -702,6 +702,79 @@
         line-height: 1.2rem;
         color: #FFF7F2;
     }
+    .home-section-4{
+
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr 1fr ; */
+        height: 100vh;
+        background-color: #f7b9a1;
+        width: 80%; 
+        margin: auto;
+        align-items: center;
+        
+        padding: 10px;
+        margin-top: 5rem;
+    }
+    
+    .section-4-img{
+        display: none;
+        width: 90%;
+        padding: 2rem
+    }
+    .section-4-description{
+        width: 100%;
+    }
+    
+    .section-4-head{
+        text-align: center;
+        max-width: 900px;
+
+    }
+    
+    .section-4-head h1{
+        color: black;
+        font-weight: bold;
+        font-family: Lora, serif;
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+    
+    .section-4-paragraph{
+        color: #333;
+        min-width: 100px;   
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .section-4-paragraph p {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+    
+    
+    .section-4-time {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 60%;
+        gap: 10px;
+        margin: 0 auto;
+    }
+    .section-4-time-block{
+        padding: 1rem;
+        width: 80px;
+        border-radius: 10px;
+        background-color: aliceblue;
+        text-align: center;
+        height: 90px;
+    }
+    
+    .number{
+        font-size: 2rem;
+        font-weight: bold;
+    }
 
 }
 
@@ -917,6 +990,79 @@
         font-size: 1.2rem;
         color: #333;
         font-weight: 700;
+    }
+    .home-section-4{
+
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr 1fr ; */
+        height: 100vh;
+        background-color: #f7b9a1;
+        width: 80%; 
+        margin: auto;
+        align-items: center;
+        
+        padding: 10px;
+        margin-top: 5rem;
+    }
+    
+    .section-4-img{
+        display: none;
+        width: 90%;
+        padding: 2rem
+    }
+    .section-4-description{
+        width: 100%;
+    }
+    
+    .section-4-head{
+        text-align: center;
+        max-width: 900px;
+
+    }
+    
+    .section-4-head h1{
+        color: black;
+        font-weight: bold;
+        font-family: Lora, serif;
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+    
+    .section-4-paragraph{
+        color: #333;
+        min-width: 100px;   
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .section-4-paragraph p {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+    
+    
+    .section-4-time {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 60%;
+        gap: 10px;
+        margin: 0 auto;
+    }
+    .section-4-time-block{
+        padding: 1rem;
+        width: 80px;
+        border-radius: 10px;
+        background-color: aliceblue;
+        text-align: center;
+        height: 90px;
+    }
+    
+    .number{
+        font-size: 2rem;
+        font-weight: bold;
     }
 }
 
