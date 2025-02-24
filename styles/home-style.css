@@ -316,6 +316,7 @@
     font-size: 2rem;
     font-weight: bold;
 }
+
 /* For larger screen sizes */
 @media screen and (min-width: 1700px) {
     .section-2-head {
