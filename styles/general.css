@@ -8,10 +8,10 @@
     padding: 0;
     font: 400 1rem/1.975rem "Open Sans", sans-serif;
 }
+
 body::-webkit-scrollbar {
     display: none;
 }
-
 
 a {
     text-decoration: none;
@@ -19,21 +19,38 @@ a {
 
 .header {
     display: flex;
-    width: 100%; /* Changed from 100vw to 100% */
+    width: 100%;
     justify-content: space-between;
-    align-items: center; /* Center items vertically */
+    align-items: center;
     padding: 15px 50px;
     background-color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     z-index: 1000;
+    animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .header-logo {
     width: 50px;
     height: 50px;
     margin-left: 0;
+    transition: transform 0.3s ease;
+}
+
+.header-logo:hover {
+    transform: scale(1.1);
 }
 
 .logo-img {
@@ -58,12 +75,6 @@ a {
     border-radius: 10px;
 }
 
-/* .header-navigation li:hover{
-    background-color: white;
-    color: black;
-    transition: 0.3s;
-} */
-
 .header-navigation a {
     text-decoration: none;
     color: #FFF7F2;
@@ -71,37 +82,70 @@ a {
     border-radius: 10px;
     font-size: 1rem;
     font-weight: 700;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .header-navigation a:hover {
     color: #504E4D;
     background-color: #FFF7F2;
     transition: 0.3s;
+    transform: scale(1.1);
 }
 
 .header-profile {
     width: 50px;
     height: 50px;
     margin-right: 0;
+    transition: transform 0.3s ease;
 }
 
 .header-profile img {
     width: 50px;
     height: 50px;
     object-fit: cover;
-
 }
 
-footer{
+.header-profile:hover {
+    transform: rotate(360deg);
+    transition: 0.6s ease-in-out;
+}
+
+footer {
     background-color: #FD6824;
     margin-top: 3rem;
     color: white;
     text-align: center;
     padding: 20px 0;
     color: black;
+    animation: fadeUp 0.6s ease-out;
 }
 
-.footer-block{
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -109,43 +153,41 @@ footer{
     margin: 0;
     padding: 0 50px;
 }
-.footer-block-up{
+
+.footer-block-up {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    gap: 30px;  
+    gap: 30px;
     text-align: left;
-
 }
 
-.footer-block-up-logo-img{
+.footer-block-up-logo-img {
     display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically if necessary */
-    width: 100%; /* Center the image */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.footer-block-up-logo-social{
+.footer-block-up-logo-social {
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
-    padding-right:20px;
+    padding-right: 20px;
 }
 
-footer ul{
+footer ul {
     list-style: none;
     text-align: left;
 }
 
-footer h5{
+footer h5 {
     font-weight: bolder;
     font-size: 1.3rem;
     text-align: left;
 }
 
-
-footer p{
+footer p {
     text-align: left;
-
 }
 
 .footer-block-up-stayuptodate {
@@ -160,24 +202,14 @@ footer p{
     margin: auto;
 }
 
-.footer-block-up-stayuptodate h5 {
-    font-size: 1.5rem;
-    color: #333;
-}
-
-.footer-block-up-stayuptodate p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 15px;
-}
-
 .subscribe-form {
     display: flex;
     width: 100%;
     max-width: 350px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    overflow: hidden; /* Ensures border-radius applies properly */
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .subscribe-form input[type="email"] {
@@ -185,23 +217,23 @@ footer p{
     padding: 10px;
     border: none;
     font-size: 1rem;
-    outline: none; /* Remove focus outline */
+    outline: none;
 }
 
 .subscribe-form button {
-    background-color: #333; /* Matches footer color */
+    background-color: #333;
     color: white;
     padding: 10px 15px;
     border: none;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .subscribe-form button:hover {
-    background-color: #d6541a; /* Slightly darker on hover */
+    background-color: #d6541a;
+    transform: scale(1.1);
 }
-
 
 .footer-block-down {
     display: flex;
@@ -215,13 +247,11 @@ footer p{
     color: #333;
 }
 
-/* Copyright Section (Left Aligned) */
 .copy-right-sec {
     flex: 1;
     text-align: left;
 }
 
-/* Terms, Privacy, Cookies (Centered) */
 .termps-privacy-cookies {
     display: flex;
     gap: 20px;
@@ -229,8 +259,7 @@ footer p{
     flex: 1;
 }
 
-/* Designed By Section (Right Aligned) */
-.designed-by  {
+.designed-by {
     flex: 1;
 }
 
@@ -239,24 +268,18 @@ footer p{
     text-align: right;
 }
 
-/* Styling for Text */
-.footer-block-down p {
-    margin: 0;
-}
-
-/* Highlight 'NextGenIndustries' */
 .copy-right-sec span {
     font-weight: bold;
-    color: #333; /* Matches the footer color */
+    color: #333;
 }
 
 @media screen and (max-width: 1080px) {
     .footer-block-up {
-        display: none; /* Hide the upper part of the footer */
+        display: none;
     }
 
     .footer-block {
-        padding: 0; /* Remove unnecessary padding */
+        padding: 0;
     }
 
     .footer-block-down {
@@ -278,39 +301,26 @@ footer p{
         align-items: center;
         gap: 10px;
     }
-    
-
 }
 
-
-/* Mobile-specific styles */
 @media (max-width: 767px) {
     .header-navigation {
-        display: none; /* Hide menu by default */
+        display: none;
         position: absolute;
-        top: 60px; /* Adjust based on header height */
+        top: 60px;
         left: 0;
         width: 100%;
         background-color: #333;
         text-align: center;
         padding: 10px 0;
-    }
-
-    .header {
-        width: 100%; /* Use 100% to prevent horizontal overflow */
-        padding: 10px 20px; /* Adjust padding for mobile */
-    }
-
-    /* Remove display: none for .header-profile so it remains visible on mobile */
-    
-    .header-navigation ul {
-        flex-direction: column; /* Stack items */
-        gap: 10px;
+        transform: translateY(-100%);
+        transition: transform 0.5s ease-in-out;
     }
 
     .header-navigation.show {
-        display: flex; /* Show when toggled */
+        display: flex;
         flex-direction: column;
+        transform: translateY(0);
     }
 
     .menu-toggle {
@@ -323,12 +333,12 @@ footer p{
         width: 50px;
         margin-left: 0;
     }
+
     .header-profile {
         display: none;
     }
 }
 
-/* Desktop: Keep original navigation visible */
 @media (min-width: 768px) {
     .menu-toggle {
         display: none;
@@ -337,5 +347,4 @@ footer p{
     .header-navigation {
         display: flex !important;
     }
-    
 }
