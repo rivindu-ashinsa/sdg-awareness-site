@@ -16,13 +16,16 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header-bar">
-        <div class="header-logo" style="color: white;">
-            <img class="logo-img" src="images/logo.svg" alt="">
+    <header class="header">
+        <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>   
+        <div class="header-logo">
+            <img class="logo-img" src="images-home/logo.svg" alt="">
         </div>
         <div class="header-navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="volunteer.html">Volunteer</a></li>
                 <li><a href="sitemap.html">Sitemap</a></li>
                 <li><a href="content.html">Content</a></li>
@@ -30,12 +33,17 @@
                 <li><a href="team.html">Team</a></li>
             </ul>
         </div>
-    </div>
+        <div class="header-profile">
+            <img class="profile-icon" src="images-home/profile-icon.svg" alt="">
+        </div>
+    </header>
     <div class="container">
         <iframe id="Student1" src="content_student1.html"></iframe>
         <iframe id="Student2" src="content_student2.html"></iframe>
         <iframe id="Student3" src="content_student3.html"></iframe>
         <iframe id="Student4" src="content_student4.html"></iframe>
     </div>
+    <script src="js/nav.js"></script>
+
 </body>
 </html>
