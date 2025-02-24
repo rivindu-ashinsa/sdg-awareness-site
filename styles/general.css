@@ -321,7 +321,32 @@ footer p {
         transition: transform 0.3s ease-in-out;
         flex-direction: column; /* Ensure items are stacked vertically */
     }
-
+    .header-navigation a {
+        text-decoration: none;
+        color: #FFF7F2;
+        padding: 10px 10px;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: 700;
+        transition: all 0.3s ease-in-out;
+        opacity: 0;
+        animation: fadeIn 0.5s forwards;
+        animation-delay: 0.2s;
+    }
+    #profile-le {
+        display: none;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
     .header-navigation.show {
         display: flex;
         transform: translateY(0);
