@@ -221,15 +221,53 @@
 
 @media (max-width: 768px) {
     .subtopic {
-        width: 550px;
+        width: 600px;
     }
     .volunteer .headings h1, .volunteer .headings em {
         font-size: 2.2rem;
     }
-    .reviews .review {
-        width: 150px;
-    }
     .rating-review{
         margin-left: 100px;
     }
+}
+
+@media (max-width: 576px) {
+    .subtopic {
+        width: 600px;
+    }
+    .volunteer .headings h1, .volunteer .headings em {
+        font-size: 1.8rem;
+    }
+    .rating-review{
+        margin-left: 50px;
+    }
+    
+}
+@media (max-width: 400px) {
+    .subtopic {
+        width: 600px;
+    }
+    .volunteer .headings h1, .volunteer .headings em {
+        font-size: 2rem;
+    }
+    .rating-review{
+        margin-left: 20px;
+    }
+    
+}
+
+@media (max-width: 320px) {
+    .subtopic {
+        width: 600px;
+    }
+    .volunteer .headings h1, .volunteer .headings em {
+        font-size: 1.8rem;
+    }
+    .volunteer .headings p {
+        font-size: 1.2rem;
+    }
+    .rating-review{
+        margin-left: 10px;
+    }
+    
 }
