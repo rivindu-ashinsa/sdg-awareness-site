@@ -1,3 +1,4 @@
+/* This file contains the styles for the volunteer page */ 
 .volunteer{
     margin-top: 100px;
     display: grid;
@@ -204,3 +205,67 @@
     gap: 10px;
 }
 
+@media screen and (min-width: 1700px) {
+    .subtopic{
+        width: 700px;
+    }
+}
+@media screen and (min-width: 1080px) and (max-width: 1700px) {
+    .subtopic{
+        width: 650px;
+    }
+}
+@media screen and (max-width: 1080px) and (min-width:768px) {
+    .subtopic{
+        width: 650px;
+    }
+}
+@media (max-width: 768px) {
+    .subtopic{
+        width: 400px;
+    }
+    .advantages{
+        flex-wrap: wrap;
+    }
+    .advantages .map, .advantages .time, .advantages .benifits{
+        width: 100%;
+    }
+    .advantages p{
+        width: 100%;
+    }
+    .outstanding{
+        flex-wrap: wrap;
+    }
+    .outstanding h4{
+        width: 100%;
+    }
+    .reviews{
+        flex-wrap: wrap;
+    }
+    .reviews .review{
+        width: 100%;
+    }
+    .sendreview{
+        width: 100%;
+    }
+    .sendreview h5{
+        width: 100%;
+    }
+    .sendreview textarea{
+        width: 100%;
+    }
+    .rating-review{
+        margin-left: 0;
+    }
+    .rating-review img{
+        width: 20px;
+        height: 20px;
+    }
+    .rating img{
+        width: 15px;
+        height: 15px;
+    }
+    .sendreview .rate{
+        gap: 5px;
+    }
+}
