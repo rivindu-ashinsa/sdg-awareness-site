@@ -1,3 +1,8 @@
+body{
+    margin-top: 15%;
+}
+
+
 .up-intro-title{
     text-align: center;
     padding: 0;
@@ -7,10 +12,15 @@
     color: #FD6824;
 }
 
+.up-intro-title h1,span{
+    font-size: 5rem;
+}
+
 .container{
     display: flex;
     margin: 0 5%;
     height: auto;
+    margin-top: 5%;
     border-radius: 25px 25px 0px 0px;
     background-color: #fbbfa0;
     justify-content: space-between;
@@ -44,7 +54,7 @@
     width: 100%;
     height: 100%;
     margin-top: -5%;
-    margin-bottom: -1.25%;
+    margin-bottom: -2.5%;
 }
 
 .pfp-card h3 {
@@ -112,16 +122,18 @@
 .card-divider{
     display: flex;
     padding: 0.6%;
-    width: 98.7%;
     background-color: #FD6824;
 }
 
 .descritpion-container{
-    padding: 2%;
+    margin-top: 2%;
+    padding: 4%;
 }
 
 .descritpion-container h2{
     font-size: 220%;
+    font-weight: bold;
+    margin-bottom: 2%;
 }
 
 .descritpion-container p{
@@ -135,17 +147,17 @@
 
 .calander-card{
     margin-left: 2%;
-    padding: 2%;
+    padding: 4%;
     background-color: #E0AF97;
-    width: 13rem;
+    width: 30%;
     height: 30rem;
 }
 
 .interest-card{
     margin-right: 2%;
-    padding: 2%;
+    padding: 4%;
     background-color: #E0AF97;
-    width: 25rem;
+    width: 60%;
     height: 30rem;
 }
 
@@ -153,15 +165,15 @@
     margin-top: 5%;
     padding: 2%;
     background-color: #E0AF97;
-    width: 41rem;
+    width: 93%;
     margin-left: auto;
     margin-right: auto;
 
 }
 
 .contact-card{
-    padding: 1%;
-    width: 88%;
+    padding: 2%;
+    width: 90%;
     border-radius: 0px 0px 25px 25px;
     background-color:#FD6824;
     margin-left: auto;
@@ -175,28 +187,28 @@
 
 
 @media screen and (max-width: 1024px) {
+
     .container {
-        flex-direction: column; /* Stack left and right containers vertically */
-        margin: 0 2%; /* Reduce margin for smaller screens */
+        flex-direction: column;
     }
 
     .left-side-container,
     .right-side-container {
-        width: 100%; /* Full width for stacked containers */
+        width: 100%;
     }
 
     .cal-int-card {
-        flex-direction: column; /* Stack calendar and interest cards vertically */
-        align-items: center; /* Center align the cards */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .calander-card,
     .interest-card {
-        width: 80%; /* Adjust width for stacked cards */
-        margin: 2% 0; /* Add margin between stacked cards */
+        width: 90%; 
+        margin: 2% 0; 
     }
 
     .experience-card {
-        width: 90%; /* Adjust width for smaller screens */
+        width: 90%; 
     }
 }

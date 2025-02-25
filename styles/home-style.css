@@ -62,8 +62,12 @@
     border-radius: 10px;
     font-size: 1.2rem;
     font-weight: 700;
-    transition: 0.3s;
+    transition: background-color 0.3s;
     align-items: center;
+}
+
+.explore-button:hover {
+    background-color: #FD6824;
 }
 
 
@@ -316,6 +320,7 @@
     font-size: 2rem;
     font-weight: bold;
 }
+
 /* For larger screen sizes */
 @media screen and (min-width: 1700px) {
     .section-2-head {
@@ -701,6 +706,79 @@
         line-height: 1.2rem;
         color: #FFF7F2;
     }
+    .home-section-4{
+
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr 1fr ; */
+        height: 100vh;
+        background-color: #f7b9a1;
+        width: 80%; 
+        margin: auto;
+        align-items: center;
+        
+        padding: 10px;
+        margin-top: 5rem;
+    }
+    
+    .section-4-img{
+        display: none;
+        width: 90%;
+        padding: 2rem
+    }
+    .section-4-description{
+        width: 100%;
+    }
+    
+    .section-4-head{
+        text-align: center;
+        max-width: 900px;
+
+    }
+    
+    .section-4-head h1{
+        color: black;
+        font-weight: bold;
+        font-family: Lora, serif;
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+    
+    .section-4-paragraph{
+        color: #333;
+        min-width: 100px;   
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .section-4-paragraph p {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+    
+    
+    .section-4-time {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 60%;
+        gap: 10px;
+        margin: 0 auto;
+    }
+    .section-4-time-block{
+        padding: 1rem;
+        width: 80px;
+        border-radius: 10px;
+        background-color: aliceblue;
+        text-align: center;
+        height: 90px;
+    }
+    
+    .number{
+        font-size: 2rem;
+        font-weight: bold;
+    }
 
 }
 
@@ -917,6 +995,176 @@
         color: #333;
         font-weight: 700;
     }
+    .home-section-4{
+
+        display: flex;
+        flex-direction: column;
+        /* grid-template-columns: 1fr 1fr ; */
+        height: 100vh;
+        background-color: #f7b9a1;
+        width: 80%; 
+        margin: auto;
+        align-items: center;
+        
+        padding: 10px;
+        margin-top: 5rem;
+    }
+    
+    .section-4-img{
+        display: none;
+        width: 90%;
+        padding: 2rem
+    }
+    .section-4-description{
+        width: 100%;
+    }
+    
+    .section-4-head{
+        text-align: center;
+        max-width: 900px;
+
+    }
+    
+    .section-4-head h1{
+        color: black;
+        font-weight: bold;
+        font-family: Lora, serif;
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+    
+    .section-4-paragraph{
+        color: #333;
+        min-width: 100px;   
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    
+    .section-4-paragraph p {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+    
+    
+    .section-4-time {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 60%;
+        gap: 10px;
+        margin: 0 auto;
+    }
+    .section-4-time-block{
+        padding: 1rem;
+        width: 80px;
+        border-radius: 10px;
+        background-color: aliceblue;
+        text-align: center;
+        height: 90px;
+    }
+    
+    .number{
+        font-size: 2rem;
+        font-weight: bold;
+    }
 }
 
 
+/* General Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Slide-up Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Button Hover Effect */
+@keyframes buttonHover {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Zoom-in Effect */
+@keyframes zoomIn {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* Initially hide sections */
+.home-section-1,
+.home-section-2,
+.home-section-3,
+.home-section-4,
+.home-intro-title h1,
+.section-2-head-h1,
+.section-3-head-h1,
+.section-4-head h1,
+.home-description,
+.section-2-description p,
+.section-3-description p,
+.section-4-paragraph p {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+/* Class added when element is visible */
+.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+/* Explore Button Hover Effect */
+.explore-button:hover {
+    animation: buttonHover 0.3s ease-in-out forwards;
+}
+
+/* Zoom-in Effect for Images */
+.section-3-img,
+.section-4-img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.section-3-img:hover,
+.section-4-img:hover {
+    animation: zoomIn 0.3s ease-in-out forwards;
+}
+
+/* Hover Effect for Cards */
+.section-2-investments-orange,
+.section-2-investments-ash,
+.section-3-block {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.section-2-investments-orange:hover,
+.section-2-investments-ash:hover,
+.section-3-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
