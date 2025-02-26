@@ -46,6 +46,7 @@
     margin: 10px;
     text-align: center;
     flex-grow: 1;
+    justify-content: space-evenly;
     width: 650px;
     position: relative;
     overflow: hidden;

@@ -11,7 +11,7 @@ html, body{
     text-align: center;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .background_image{
@@ -34,7 +34,7 @@ html, body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 100dvh;
     padding: 20px;
 }
 #content{
@@ -61,12 +61,12 @@ html, body{
 }
 
 .logo{
-    width: 150px;
+    width: 10dvw;
     margin-top: 50px;
 }
 
 .members{
-    max-width: 100rem;
+    width: 100%;
     padding: 20px;
     margin-top: 30px;
 }
@@ -142,17 +142,17 @@ html, body{
         font-size: 1.4rem;
     }
     .intro p{
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
     .logo{
-        width: 90px;
+        width: 20dvw;
         margin-top: 5%;
     }
     .members{
         margin-top: 2px;
     }
     .members h3{
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     .member-list{
         font-size: 0.7rem;
@@ -162,13 +162,13 @@ html, body{
 }
 @media screen and (max-width: 480px) and (min-width: 321px) { 
     .intro h1{
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     .intro p{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .logo{
-        width: 100px;
+        width: 20dvw;
         margin-top: 6%;
     }
     .members{
@@ -191,7 +191,7 @@ html, body{
         font-size: 1.2rem;
     }
     .logo{
-        width: 120px;
+        width: 20dvw;
         margin-top: 6%;
     }
     .members{
@@ -214,7 +214,7 @@ html, body{
         font-size: 1.4rem;
     }
     .logo{
-        width: 130px;
+        width: 15dvw;
         margin-top: 6%;
     }
     .members{
@@ -234,43 +234,43 @@ html, body{
         font-size: 3.8rem;
     }
     .intro p{
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
     .logo{
-        width: 140px;
+        width: 12dvh;
         margin-top: 6%;
     }
     .members{
         margin-top: 4px;
     }
     .members h3{
-        font-size: 1.6rem;
+        font-size: 1.45rem;
     }
     .member-list{
-        font-size: 1rem;
+        font-size: 1.1rem;
         flex-direction: column;
         gap: 0.6rem;
     }
 }
 @media screen and (max-width: 1200px) and (min-width: 993px) { 
     .intro h1{
-        font-size: 4rem;
+        font-size: 4.3rem;
     }
     .intro p{
-        font-size: 1.6rem;
+        font-size: 1.9rem;
     }
     .logo{
-        width: 150px;
+        width: 13dvw;
         margin-top: 6%;
     }
     .members{
-        margin-top: 4px;
+        margin-top: 4.2px;
     }
     .members h3{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     .member-list{
-        font-size: 1rem;
+        font-size: 1.4rem;
         flex-direction: column;
         gap: 0.6rem;
     }
