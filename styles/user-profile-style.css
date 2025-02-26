@@ -181,8 +181,30 @@ body{
 }
 
 .contact-card h2{
+    font-size: 200%;
+    font-weight: bold;
     margin-top: 0%;
+    margin-bottom: 2%;
     text-align: center;
+}
+
+.contact-section{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.contact-mail, .contact-moblie, .contact-location, .contact-linkedin, .contact-twitter {
+    display: flex;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-mail img, .contact-moblie img, .contact-location img, .contact-linkedin img, .contact-twitter img {
+    width: auto;
+    height: auto;
+
 }
 
 
@@ -210,5 +232,9 @@ body{
 
     .experience-card {
         width: 90%; 
+    }
+
+    .contact-section{
+        flex-direction: column;
     }
 }
