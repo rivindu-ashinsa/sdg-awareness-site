@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    
 </head>
 <body class="home-page">
     <header class="header">
@@ -20,14 +21,15 @@
             <img class="logo-img" src="images-home/logo.svg" alt="">
         </div>
         <div class="header-navigation">
-            <ul>
+            <!-- <ul> -->
                 <li><a href="home.html">Home</a></li>
                 <li><a href="volunteer.html">Volunteer</a></li>
                 <li><a href="sitemap.html">Sitemap</a></li>
                 <li><a href="content.html">Content</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
                 <li><a href="team.html">Team</a></li>
-            </ul>
+                <li id="profile-le"><a href="user-profile.html">Profile</a></li>
+            <!-- </ul> -->
         </div>
         <div class="header-profile">
             <img class="profile-icon" src="images-home/profile-icon.svg" alt="">
@@ -86,67 +88,93 @@
         </div>
         <div class="section-3-blocks">
             <div class="section-3-block">
-                <div class="section-3-image">
-                    <img class="section-3-img" src="images-home/sec-3-imge1.svg" alt="">
-                </div>
-                <div class="section-3-image-text">
-                    <p> Innovative Industries</p>
-                </div>
-            </div>
-            <div class="section-3-block">
-                <div class="section-3-image">
-                    <img class="section-3-img" src="images-home/sec-3-imge2.svg" style="margin-top: 3rem;" alt="">
-                </div>
-                <div class="section-3-image-text">
-                    <p>Smart Cities & Infrastructure</p>
+                <div class="section-3-card">
+                    <!-- Front Side -->
+                    <div class="section-3-front">
+                        <img class="section-3-img" src="images-home/sec-3-imge1.svg" alt="">
+                        <p>Innovative Industries</p>
+                    </div>
+                    
+                    <!-- Back Side -->
+                    <div class="section-3-back">
+                        <p>Explore cutting-edge industries driving innovation.</p>
+                    </div>
                 </div>
             </div>
+        
             <div class="section-3-block">
-                <div class="section-3-image">
-                    <img class="section-3-img" src="images-home/sec-3-imge3.svg" alt="">
+                <div class="section-3-card">
+                    <!-- Front Side -->
+                    <div class="section-3-front">
+                        <img class="section-3-img" src="images-home/sec-3-imge2.svg" style="margin-top: 3rem;" alt="">
+                        <p>Smart Cities & Infrastructure</p>
+                    </div>
+        
+                    <!-- Back Side -->
+                    <div class="section-3-back">
+                        <p>Discover how smart cities are reshaping urban living.</p>
+                    </div>
                 </div>
-                <div class="section-3-image-text">
-                    <p>Green Technology & Sustainability</p>
-                </div>          
+            </div>
+        
+            <div class="section-3-block">
+                <div class="section-3-card">
+                    <!-- Front Side -->
+                    <div class="section-3-front">
+                        <img class="section-3-img" src="images-home/sec-3-imge3.svg" alt="">
+                        <p>Green Technology & Sustainability</p>
+                    </div>
+        
+                    <!-- Back Side -->
+                    <div class="section-3-back">
+                        <p>Learn about sustainable technologies for a greener future.</p>
+                    </div>
+                </div>
             </div>
         </div>
+        
         <div class="section-3-see-more">
-            <p style="text-align: center;"><a href="#" style="color: black;">See More > </a></p> 
+            <p style="text-align: center;"><a href="#" style="color: black;">See More ></a></p> 
         </div>
     </section>
     <section class="home-section-4">
-            <div class="section-4-img-block">
-                <img class="section-4-img" src="images-home/section-4-img.svg" alt="">
+        <div class="section-4-img-block">
+            <img class="section-4-img" id="section-4-img" src="images-home/section-4-img1.svg" alt="">
+        </div>
+        <div class="section-4-description" id="section-4-content">
+            <div class="section-4-head">
+                <h1 id="section-4-title">Build Tomorrow's Smart Cities Today!</h1>
             </div>
-            <div class="section-4-description">
-                <div class="section-4-head">
-                    <h1>Build Tomorrow's Smart Cities Today!</h1>
+            <div class="section-4-paragraph">
+                <p id="section-4-text">Join us in creating innovative, connected, and sustainable urban environments. Embrace advanced technologies and modern infrastructure to enhance the quality of life and pave the way for smarter cities of the future.</p>
+            </div>
+            <div class="section-4-time">
+                <div class="section-4-time-block">
+                    <div class="number" id="days">06</div>
+                    <p>Days</p>
                 </div>
-                <div class="section-4-paragraph">
-                    <p>Join us in creating innovative, connected, and sustainable urban environments. Embrace advanced technologies and modern infrastructure to enhance the quality of life and pave the way for smarter cities of the future.</p>
+                <div class="section-4-time-block">
+                    <div class="number" id="hours">22</div>
+                    <p>Hours</p>
                 </div>
-                <div class="section-4-time">
-                    <div class="section-4-time-block">
-                        <div class="number">06</div>
-                        <p>Days</p>
-                    </div>
-                    <div class="section-4-time-block">
-                        <div class="number">22</div>
-                        <p>Hours</p>
-                    </div>
-                    <div class="section-4-time-block">
-                        <div class="number">46</div>
-                        <p>Min</p>
-                    </div>
+                <div class="section-4-time-block">
+                    <div class="number" id="minutes">46</div>
+                    <p>Min</p>
                 </div>
             </div>
+        </div>
     </section>
+    
+    
+    
+    <script src="js/section-4-animation.js">
+    </script>
     <section>
         <footer>
             <div class="footer-block">
                 <div class="footer-block-up">
                     <div class="footer-block-up-logo">
-                        <div>
+                        <div class="footer-block-up-logo-img">
                             <img src="images-home/logo-black.svg" alt="">
                         </div>
                         <div>
@@ -197,22 +225,22 @@
                         </form>
                     </div>
                 </div>
-                <div class="footer-block-down"></div>
-                   <div class="footer-block-down-down">
-                    <div><p>Copyright &copy;2025; Designed by <span>NextGenIndustries</span></p></div>
-                    <div>
+                <div class="footer-block-down">
+                    <div class="copy-right-sec"><p>Copyright &copy;2025; Designed by <span>NextGenIndustries</span></p></div>
+                    <div class="termps-privacy-cookies">
                         <div><p>Terms</p></div>
                         <div><p>Privacy</p></div>
                         <div><p>Cookies</p></div>
                     </div>
-                    <div>
+                    <div class="designed-by">
                         <p>Designed by Team G15(10)</p>
                     </div>
-                   </div>
                 </div>
             </div>
         </footer>
     </section>
 <script src="js/nav.js"></script>
+<script src="js/animation-home.js"></script>
+
 </body>
 </html>

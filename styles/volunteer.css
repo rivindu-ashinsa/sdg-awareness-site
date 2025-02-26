@@ -1,16 +1,11 @@
-*{
-    margin: 0 auto;
-    padding: 0;
-    /* box-sizing:content-box; */
-}
+/* This file contains the styles for the volunteer page */ 
 .volunteer{
-    display: flex;
-    flex-wrap: wrap;
+    margin-top: 100px;
+    display: grid;
     font-family: 'Roboto', serif;
 }
 .volunteer .headings{
-    display: flex;
-    flex-wrap: wrap;
+    display:grid;
     text-align: center;
 }
 .volunteer .headings h1, .volunteer .headings em{
@@ -25,7 +20,7 @@
 .volunteer .headings p{
     font-size: 1.2em;
     margin-top: 10px;
-    width: 70%;
+    margin: 0 20%;
     font-weight:550;
     line-height: 25px;
 }
@@ -77,7 +72,7 @@
 .advantages{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 20px;
     gap: 10px;
 }
@@ -98,7 +93,7 @@
 .outstanding{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 20px;
     gap: 30px;
     background: #E0AF97;
@@ -116,7 +111,7 @@
 .reviews{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 20px;
     gap: 10px;
 }
@@ -156,13 +151,6 @@
     font-style: normal;
     font-weight: bold;
 }
-.move{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-    gap: 40px;
-}
 .sendreview{
     background: #E0AF97;
     text-align: center;
@@ -170,6 +158,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
+    margin-top: 20px;
 }
 .sendreview h5{
     font-size: 1em;
@@ -216,61 +205,67 @@
     gap: 10px;
 }
 
-@media (max-width: 1200px) {
-    .subtopic {
+@media screen and (min-width: 1700px) {
+    .subtopic{
         width: 700px;
     }
 }
-
-@media (max-width: 992px) {
-    .subtopic {
-        width: 600px;
-    }
-    .volunteer .headings h1, .volunteer .headings em {
-        font-size: 2.6rem;
-    }
-    .volunteer .headings p {
-        width: 80%;
+@media screen and (min-width: 1080px) and (max-width: 1700px) {
+    .subtopic{
+        width: 650px;
     }
 }
-
+@media screen and (max-width: 1080px) and (min-width:768px) {
+    .subtopic{
+        width: 650px;
+    }
+}
 @media (max-width: 768px) {
-    .subtopic {
-        width: 550px;
+    .subtopic{
+        width: 400px;
     }
-    .volunteer .headings h1, .volunteer .headings em {
-        font-size: 2.2rem;
+    .advantages{
+        flex-wrap: wrap;
     }
-    .volunteer .headings p {
-        width: 90%;
-    }
-    .reviews .review {
-        width: 150px;
-    }
-    .rating-review{
-        margin-left: 100px;
-    }
-}
-
-@media (max-width: 576px) {
-    .subtopic {
+    .advantages .map, .advantages .time, .advantages .benifits{
         width: 100%;
     }
-    .volunteer .headings h1, .volunteer .headings em {
-        font-size: 1.9rem;
-    }
-    .volunteer .headings p {
+    .advantages p{
         width: 100%;
     }
-    .reviews .review {
+    .outstanding{
+        flex-wrap: wrap;
+    }
+    .outstanding h4{
+        width: 100%;
+    }
+    .reviews{
+        flex-wrap: wrap;
+    }
+    .reviews .review{
+        width: 100%;
+    }
+    .sendreview{
+        width: 100%;
+    }
+    .sendreview h5{
+        width: 100%;
+    }
+    .sendreview textarea{
         width: 100%;
     }
     .rating-review{
         margin-left: 0;
-        margin-top: 15px;
     }
     .rating-review img{
         width: 20px;
         height: 20px;
+    }
+    .rating img{
+        width: 15px;
+        height: 15px;
+    }
+    .sendreview .rate{
+        gap: 5px;
     }
 }
