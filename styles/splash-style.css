@@ -309,3 +309,25 @@ html, body{
         gap: 0.6rem;
     }
 }
+@media screen and (min-width: 1201px) { 
+    .intro h1{
+        font-size: 5rem;
+    }
+    .intro p{
+        font-size: 2rem;
+    }
+    .logo{
+        width: 10dvw;
+        margin-top: 6%;
+    }
+    .members{
+        margin-top: 4.5px;
+    }
+    .members h3{
+        font-size: 1.9rem;
+    }
+    .member-list{
+        font-size: 1.5rem;
+        gap: 0.6rem;
+    }
+}
