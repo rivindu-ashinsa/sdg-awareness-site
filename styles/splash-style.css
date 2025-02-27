@@ -98,7 +98,7 @@ html, body{
     align-items: center;
     margin-top: 20px;
     opacity: 0;
-    animation: fadeIn 7s ease-in-out forwards;
+    animation: fadeIn 5s ease-in-out forwards;
 }
 
 .dots-loader div {
