@@ -16,7 +16,7 @@ body{
     color: #FD6824;
 }
 
-.up-intro-title h1,span{
+.up-intro-title h1,.up-intro-title span{
     font-family: Lora, serif;
     margin-top: 10%;
     font-size: 5rem;
