@@ -230,7 +230,6 @@ body{
     .container {
         flex-direction: column;
     }
-
     .left-side-container,
     .right-side-container {
         width: 100%;
