@@ -1,9 +1,8 @@
 body{
-    height: 2300px;
+    height: auto;
     background-color: #FFF7F2;
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
-    height: 250vh;
     width: 100;
 }
 
@@ -26,10 +25,13 @@ body{
 
 .container{
     display: flex;
+    width: 85%;
     margin: 0 5%;
     height: auto;
     margin-top: 5%;
-    border-radius: 25px 25px 0px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 35px 35px 0px 0px;
     background-color: #fbbfa0;
     justify-content: space-between;
 }
@@ -37,7 +39,7 @@ body{
 .left-side-container{
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 60%;
 }
 
 .right-side-container{
@@ -47,22 +49,26 @@ body{
 
 .pfp-card{
     background: #FD6824;
-    border-radius: 25px 0px 0px 0px;
-    padding: 25px;
+    border-radius: 35px 0px 0px 0px;
+    padding: 3%;
     text-align: center;
     margin-bottom: 0.7%;
 }
 
 .pfp-container{
     background: #FFF7F2;
-    border-radius: 10px;    
+    border-radius: 35px;    
+    height: 60%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
 }
 
 .pfp-container img {
-    width: 100%;
+    width: 90%;
     height: 100%;
-    margin-top: -5%;
-    margin-bottom: -2.5%;
+    
 }
 
 .pfp-card h3 {
@@ -181,9 +187,9 @@ body{
 
 .contact-card{
     padding: 2%;
-    width: 90%;
+    width: 85%;
     height: 10%;
-    border-radius: 0px 0px 25px 25px;
+    border-radius: 0px 0px 35px 35px;
     background-color:#FD6824;
     margin-left: auto;
     margin-right: auto;

@@ -13,24 +13,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
     <header class="header">
-        <button class="menu-toggle" onclick="toggleMenu()">
-        ☰
-    </button>   
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>   
         <div class="header-logo">
             <img class="logo-img" src="images-home/logo.svg" alt="">
         </div>
         <div class="header-navigation">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="content.html">Content</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="team.html">Team</a></li>
-            </ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="content.html">Content</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li id="profile-le"><a href="user-profile.html">Profile</a></li>
         </div>
         <div class="header-profile">
             <img class="profile-icon" src="images-home/profile-icon.svg" alt="">
@@ -189,5 +186,74 @@
                 </div>
         </div>
     </main>
+
+    <footer>
+        <div class="footer-block">
+            <div class="footer-block-up">
+                <div class="footer-block-up-logo">
+                    <div class="footer-block-up-logo-img">
+                        <img src="images-home/logo-black.svg" alt="">
+                    </div>
+                    <div>
+                        <p style="text-align: center;">Follow Us On</p>
+                    </div>
+                    <div class="footer-block-up-logo-social">
+                        <img src="images-home/fb-logo.svg" alt="">
+                        <img src="images-home/insta-logo.svg" alt="">
+                        <img src="images-home/linkedin-logo.svg" alt="">
+                        <img src="images-home/twiter-logo.svg" alt="">
+
+                    </div>
+                </div>
+                <div class="footer-block-up-editors">
+                    <ul>
+                        <h5>Editors</h5>
+                        <li>Rivindu</li>
+                        <li>Senuka</li>
+                        <li>Afnan</li>
+                        <li>Limuthu</li>
+
+                    </ul>
+                </div>
+                <div class="footer-block-up-company">
+                    <ul>
+                        <h5>Company</h5>
+                        <li>Volunteer</li>
+                        <li>Sitemap</li>
+                        <li>Content</li>
+                        <li>Feedback</li>
+                        <li>Team</li>
+                    </ul>
+                </div>
+                <div class="footer-block-up-contact-info">
+                    <ul>
+                        <h5>Contact Info</h5>
+                        <li>No:134/5 Palace road, Colombo Sri Lanka</li>
+                        <li>Phone: +94 112 595 5982</li>
+                        <li>nextgenindustries@gmaill.com</li>
+                    </ul>
+                </div>
+                <div class="footer-block-up-stayuptodate">
+                    <h5>Stay up to date</h5>
+                    <p>Subscribe to our newsletter to stay up-to-date with the latest news, tips, and trends in the industry</p>
+                    <form action="#" method="post" class="subscribe-form">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-block-down">
+                <div class="copy-right-sec"><p>Copyright &copy;2025; Designed by <span>NextGenIndustries</span></p></div>
+                <div class="termps-privacy-cookies">
+                    <div><p>Terms</p></div>
+                    <div><p>Privacy</p></div>
+                    <div><p>Cookies</p></div>
+                </div>
+                <div class="designed-by">
+                    <p>Designed by Team G15(10)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
