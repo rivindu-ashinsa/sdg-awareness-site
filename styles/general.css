@@ -126,6 +126,12 @@ a {
     transform: rotate(360deg);
     transition: 0.6s ease-in-out;
 }
+.header-navigation a.active {
+    background-color: #FFF7F2;
+    color: #333;
+    font-weight: bold;
+    transform: scale(1.1);
+}
 
 footer {
     background-color: #FD6824;
