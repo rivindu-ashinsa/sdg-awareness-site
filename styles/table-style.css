@@ -1,18 +1,26 @@
+* {
+    margin: 0;
+}
+
 table {
-    width: 100%;
+    margin-top: 100px;
+    width: 80%;
     border-collapse: collapse;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
 }
 th, td {
     border: 1px solid #ddd;
     padding: 10px;
 }
 th {
-    background-color: #4CAF50;
+    background-color:#FD6824 ;
     color: white;
 }
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #f7b9a1;
 }
 img {
     width: 50px;

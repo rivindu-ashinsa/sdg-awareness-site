@@ -11,7 +11,7 @@ html, body{
     text-align: center;
     color: #fff;
     background-color: rgba(0, 0, 0, 0.5);
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .background_image{
@@ -34,7 +34,7 @@ html, body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 100dvh;
     padding: 20px;
 }
 #content{
@@ -44,6 +44,7 @@ html, body{
     height: auto;
     width: 90%;
     padding: 2% 0;
+    animation: slideIn 2s ease-in-out;
 }
 .intro{
     padding: 10px;
@@ -61,12 +62,12 @@ html, body{
 }
 
 .logo{
-    width: 150px;
+    width: 10dvw;
     margin-top: 50px;
 }
 
 .members{
-    max-width: 100rem;
+    width: 100%;
     padding: 20px;
     margin-top: 30px;
 }
@@ -96,6 +97,8 @@ html, body{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 5s ease-in-out forwards;
 }
 
 .dots-loader div {
@@ -118,6 +121,37 @@ html, body{
 .dots-loader div:nth-child(4){
     animation-delay: 0.6s;
     }
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+@keyframes slideIn-Loading {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
 
 @keyframes bounce {
     0%, 80%, 100% {
@@ -142,17 +176,17 @@ html, body{
         font-size: 1.4rem;
     }
     .intro p{
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
     .logo{
-        width: 90px;
+        width: 20dvw;
         margin-top: 5%;
     }
     .members{
         margin-top: 2px;
     }
     .members h3{
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
     .member-list{
         font-size: 0.7rem;
@@ -162,13 +196,13 @@ html, body{
 }
 @media screen and (max-width: 480px) and (min-width: 321px) { 
     .intro h1{
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     .intro p{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .logo{
-        width: 100px;
+        width: 20dvw;
         margin-top: 6%;
     }
     .members{
@@ -191,7 +225,7 @@ html, body{
         font-size: 1.2rem;
     }
     .logo{
-        width: 120px;
+        width: 20dvw;
         margin-top: 6%;
     }
     .members{
@@ -214,7 +248,7 @@ html, body{
         font-size: 1.4rem;
     }
     .logo{
-        width: 130px;
+        width: 15dvw;
         margin-top: 6%;
     }
     .members{
@@ -234,44 +268,66 @@ html, body{
         font-size: 3.8rem;
     }
     .intro p{
-        font-size: 1.6rem;
+        font-size: 1.7rem;
     }
     .logo{
-        width: 140px;
+        width: 12dvh;
         margin-top: 6%;
     }
     .members{
         margin-top: 4px;
     }
     .members h3{
-        font-size: 1.6rem;
+        font-size: 1.45rem;
     }
     .member-list{
-        font-size: 1rem;
+        font-size: 1.1rem;
         flex-direction: column;
         gap: 0.6rem;
     }
 }
 @media screen and (max-width: 1200px) and (min-width: 993px) { 
     .intro h1{
-        font-size: 4rem;
+        font-size: 4.3rem;
     }
     .intro p{
-        font-size: 1.6rem;
+        font-size: 1.9rem;
     }
     .logo{
-        width: 150px;
+        width: 13dvw;
         margin-top: 6%;
     }
     .members{
-        margin-top: 4px;
+        margin-top: 4.2px;
     }
     .members h3{
-        font-size: 1.6rem;
+        font-size: 1.8rem;
     }
     .member-list{
-        font-size: 1rem;
+        font-size: 1.4rem;
         flex-direction: column;
+        gap: 0.6rem;
+    }
+}
+@media screen and (min-width: 1201px) { 
+    .intro h1{
+        font-size: 5rem;
+    }
+    .intro p{
+        font-size: 2rem;
+    }
+    .logo{
+        width: 10dvw;
+        margin-top: 6%;
+    }
+    .members{
+        margin-top: 4.5px;
+    }
+    .members h3{
+        font-size: 1.9rem;
+    }
+    .member-list{
+        font-size: 1.5rem;
         gap: 0.6rem;
     }
 }
