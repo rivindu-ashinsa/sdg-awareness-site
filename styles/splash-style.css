@@ -242,10 +242,10 @@ html, body{
 }
 @media screen and (max-width: 768px) and (min-width: 577px) { 
     .intro h1{
-        font-size: 3.2rem;
+        font-size: 3rem;
     }
     .intro p{
-        font-size: 1.4rem;
+        font-size: 1.3rem;
     }
     .logo{
         width: 15dvw;
@@ -265,10 +265,10 @@ html, body{
 }
 @media screen and (max-width: 992px) and (min-width: 769px) { 
     .intro h1{
-        font-size: 3.8rem;
+        font-size: 3.2rem;
     }
     .intro p{
-        font-size: 1.7rem;
+        font-size: 1.4rem;
     }
     .logo{
         width: 12dvh;
@@ -288,10 +288,10 @@ html, body{
 }
 @media screen and (max-width: 1200px) and (min-width: 993px) { 
     .intro h1{
-        font-size: 4.3rem;
+        font-size: 3.8rem;
     }
     .intro p{
-        font-size: 1.9rem;
+        font-size: 1.5rem;
     }
     .logo{
         width: 13dvw;
@@ -311,10 +311,10 @@ html, body{
 }
 @media screen and (min-width: 1201px) { 
     .intro h1{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     .intro p{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .logo{
         width: 10dvw;
