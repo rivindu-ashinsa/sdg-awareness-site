@@ -1,5 +1,10 @@
 body{
-    margin-top: 15%;
+    height: 2300px;
+    background-color: #FFF7F2;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    height: 250vh;
+    width: 100;
 }
 
 
@@ -13,7 +18,10 @@ body{
 }
 
 .up-intro-title h1,span{
+    font-family: Lora, serif;
+    margin-top: 10%;
     font-size: 5rem;
+    font-weight: bold;
 }
 
 .container{
@@ -98,7 +106,7 @@ body{
 }
 
 .skill{
-    margin-bottom: 6%;
+    margin-bottom: 6%; 
 }
 
 .skill label{
@@ -174,6 +182,7 @@ body{
 .contact-card{
     padding: 2%;
     width: 90%;
+    height: 10%;
     border-radius: 0px 0px 25px 25px;
     background-color:#FD6824;
     margin-left: auto;
@@ -195,20 +204,23 @@ body{
 }
 
 .contact-mail, .contact-moblie, .contact-location, .contact-linkedin, .contact-twitter {
-    display: flex;
-    padding: 1%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: auto;
 }
 
 .contact-mail img, .contact-moblie img, .contact-location img, .contact-linkedin img, .contact-twitter img {
-    width: auto;
-    height: auto;
-
+    margin-right: 2%;
+    margin-left: 20%;
+    margin-bottom: -2%;
 }
 
 
+
 @media screen and (max-width: 1024px) {
+
+    .up-intro-title h1,span{
+        margin-top: 16%;
+    }
 
     .container {
         flex-direction: column;
