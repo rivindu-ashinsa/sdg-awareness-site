@@ -8,7 +8,7 @@
     display:grid;
     text-align: center;
 }
-.volunteer .headings h1, .volunteer .headings em{
+.volunteer .headings :where( h1, em){
     font-size: 3rem;
     font-weight: bold;
     margin-top: 20px;
@@ -28,7 +28,7 @@
     padding: 2%;
 }
 .topics h2{
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: bold;
 }
 .content{
@@ -66,6 +66,7 @@
     width: 100%;
     height: 18vh;
     min-height: 180px;
+    max-height: 250px;
     object-fit:cover;
 }
 .advantages{
@@ -79,9 +80,10 @@
     margin-bottom: 15px;
     text-wrap: wrap;
     width: 25dvw;
+    font-size: 1.2rem;
     max-width: 210px;
 }
-.advantages .map, .advantages .time, .advantages .benifits{
+.advantages :where(.map, .time, .benifits){
     border-radius: 20px;
     padding-top: 15px;
     background: #E0AF97;
@@ -164,7 +166,7 @@
     margin-top: 20px;
 }
 .sendreview h5{
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: bold;
     text-align: left;
     margin-top: 10px;
@@ -220,6 +222,118 @@
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    padding: 0 10px;
+    padding: 0 25px;
 }
 
+@keyframes review1{
+    0%{
+        display: block;
+    }
+    25%{
+        display: none;
+    }
+    50%{
+        display: none;
+    }
+    75%{
+        display: none;
+    }
+    100%{
+        display: none;
+    }
+}
+@keyframes review2{
+    0%{
+        display: none;
+    }
+    25%{
+        display: none;
+    }
+    50%{
+        display: block;
+    }
+    75%{
+        display: none;
+    }
+    100%{
+        display: none;
+    }
+}
+@keyframes review3{
+    0%{
+        display: none;
+    }
+    25%{
+        display: none;
+    }
+    50%{
+        display: none;
+    }
+    75%{
+        display: none;
+    }
+    100%{
+        display: block;
+    }
+}
+@media screen and (max-width: 320px) { 
+    .volunteer .headings :where( h1, em){
+        font-size: 2rem;
+    }
+    .volunteer .headings p{
+        font-size: 1.2rem;
+        padding: 0 8%;
+    }
+    .advantages .benifits{
+        display: none;
+    }
+    .advantages p{
+        font-size: 0.8rem;
+        width: 38dvw;
+    }
+    .reviews #review1{
+        animation: review1 15s ease-in-out infinite;
+    }
+    .reviews #review2{
+        animation: review2 15s ease-in-out infinite;
+    }
+    .reviews #review3{
+        animation: review3 15s ease-in-out infinite;
+    }
+    .sendreview .rate{
+        padding: 0 15px;
+    }
+    .sendreview h5{
+        font-size: 0.7rem;
+    }
+    .rating-review label {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 480px) and (min-width: 321px) { 
+    .volunteer .headings :where( h1, em){
+        font-size: 2.5rem;
+    }
+    .volunteer .headings p{
+        font-size: 1.4rem;
+        padding: 0 8%;
+    }
+    .reviews .review{
+        max-width: 80%;
+    }
+    .reviews #review1{
+        animation: review1 9s ease-in-out infinite;
+    }
+    .reviews #review2{
+        animation: review2 9s ease-in-out infinite;
+    }
+    .reviews #review3{
+        animation: review3 9s ease-in-out infinite;
+    }
+    .sendreview h5{
+        font-size: 0.8rem;
+    }
+    .rating-review label {
+        font-size: 18px;
+    }
+}
