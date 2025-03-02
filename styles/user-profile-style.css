@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 body{
     height: auto;
     background-color: #FFF7F2;
@@ -162,15 +164,114 @@ body{
     margin-left: 2%;
     padding: 4%;
     background-color: #E0AF97;
-    width: 30%;
-    height: 30rem;
+    width: 40%;
+    height: auto;
+}
+
+.calander-module{
+    width: 100%;
+    background-color: #FD6824;
+    border-radius: 25px;
+}
+
+.calander-module section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 25px;
+    margin-bottom: -10%;
+}
+
+section .current-date{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+section.icons span{
+    height: 38px;
+    width: 38px;
+    color: #878787;
+    font-size: 1.9rem;
+    margin: 0 1px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+}
+
+section .icons span:hover{
+    background: #f2f2f2;
+    cursor: pointer;
+}
+
+section .icons span:last-child{
+    margin-right: -10px;
+}
+
+.calander{
+    padding: 10px;
+}
+
+.calander .days{
+    margin-bottom: 20px;
+}
+
+.calander .weeks li{
+    font-weight: bold;
+}
+
+.calander .days li{
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 6px;
+}
+
+.days li.inactive{
+    color: #aaa;
+}
+
+.days li.active{
+    color: #fff;
+}
+
+.calander ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.calander ul li {
+    position: relative;
+    width: calc(100%/7);
+}
+
+.calander .days li::before{
+    position: absolute;
+    content: "";
+    height: 40px;
+    width: 40px;
+    top: 50%;
+    left: 50%;
+    z-index: -1;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.days li:hover:before{
+    background: #f2f2f2;
+}
+
+.days li.active::before{
+    background-color: #9B59B6;
 }
 
 .interest-card{
     margin-right: 2%;
     padding: 4%;
     background-color: #E0AF97;
-    width: 60%;
+    width: 50%;
     height: 30rem;
 }
 
