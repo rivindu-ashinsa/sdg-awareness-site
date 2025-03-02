@@ -168,6 +168,11 @@ body{
     height: auto;
 }
 
+.calander-card h2 {
+    text-align: center;
+
+}
+
 .calander-module{
     width: 100%;
     background-color: #FD6824;
@@ -264,7 +269,7 @@ section .icons span:last-child{
 }
 
 .days li.active::before{
-    background-color: #9B59B6;
+    background-color: #E0AF97;
 }
 
 .interest-card{
