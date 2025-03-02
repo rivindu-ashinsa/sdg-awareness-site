@@ -158,7 +158,8 @@ body{
 .cal-int-card{
     display: flex;
     justify-content: space-around;
-    height: 65.5%;
+    /* height: 65.5%; */
+    height: auto;
 }
 
 .calander-card{
@@ -240,7 +241,7 @@ section .icons span:last-child{
 }
 
 .days li.inactive{
-    color: #aaa;
+    color: #fbbfa0;
 }
 
 .days li.active{
