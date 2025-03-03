@@ -38,6 +38,7 @@ body{
 }
 
 .left-side-container{
+    background-color: #FFF7F2;
     display: flex;
     flex-direction: column;
     width: 900px;
@@ -46,6 +47,7 @@ body{
 .right-side-container{
     display: flex;
     flex-direction: column;
+    
 }
 
 .pfp-card{
@@ -53,13 +55,14 @@ body{
     border-radius: 35px 0px 0px 0px;
     padding: 3%;
     text-align: center;
+    height: 45rem;
     margin-bottom: 0.7%;
 }
 
 .pfp-container{
     background: #FFF7F2;
     border-radius: 35px;    
-    height: 60%;
+    height: 57.3%;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -67,9 +70,8 @@ body{
 }
 
 .pfp-container img {
-    width: 90%;
-    height: 100%;
-    
+    width: 20rem;
+    height: 25rem;
 }
 
 .pfp-card h3 {
@@ -102,18 +104,23 @@ body{
 
 .pf-skills{
     background: #FD6824;
-    padding: 10%;
+    padding: 5%;
     margin-top: 0.7%;
+    height: 31rem;
 }
 
 .pf-skills h3{
-    margin-top: -0.5rem;
-    margin-bottom: 6%;
-    font-size: 2.3rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+.skill-section{
+    margin-top: 10%;
 }
 
 .skill{
-    margin-bottom: 6%; 
+    margin-bottom: 4%; 
+    
 }
 
 .skill label{
@@ -122,11 +129,10 @@ body{
 
 .progress-bar{
     width: 95%;
-    height: 15px;
+    height: 19px;
     background: #fff;
     border-radius: 5px;
     overflow: hidden;
-    margin-top: 10px;
 }
 
 .progress{
@@ -157,18 +163,16 @@ body{
 
 .cal-int-card{
     display: flex;
-    justify-content: space-around;
-    /* height: 65.5%; */
-    height: auto;
+    justify-content: space-evenly;
+    height: 62.5%;
+    margin-bottom: 3%;
 }
 
 .calander-card{
     flex-direction: column;
-    margin-left: 2%;
     padding: 2%;
     background-color: #E0AF97;
     width: 40%;
-    height: auto;
 }
 
 .calander-card h2 {
@@ -280,22 +284,48 @@ section .icons span:last-child{
     background-color: #000;
 }
 
+.events{
+    padding: 10%;
+    margin-left: 3%;
+}
+.events li{
+    font-size: 1.8rem;
+    list-style: circle;
+    margin-top: 4%;
+}
+
+.events li span {
+    font-size: 1.2rem;
+}
+
 .interest-card{
-    margin-right: 2%;
-    padding: 4%;
+    padding: 2%;
     background-color: #E0AF97;
     width: 50%;
-    height: 30rem;
+}
+
+.interest-card h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 7%;
 }
 
 .experience-card{
-    margin-top: 2.5%;
     padding: 2%;
     background-color: #E0AF97;
-    width: 93%;
+    width: 93.25%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3%;
 
+}
+
+.experience-card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 2%;
 }
 
 .contact-card{
