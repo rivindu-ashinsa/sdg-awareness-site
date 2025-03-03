@@ -1,34 +1,202 @@
-* {
-    margin: 0;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url(../images-table/background.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+
 }
 
-table {
-    margin-top: 100px;
+
+
+h1{
+    color: #504E4D;
+    font-weight: bold;
+    font-family: Lora, serif;
+    font-size: 3.4rem;
+    line-height: 3.8rem;
+    opacity: 1;
+    animation: floatUp 3s infinite alternate ease-in-out;
+}
+
+.h1-table-2{
+    color: #FD6824;
+    font-weight: bold;
+    font-family: Lora, serif;
+    font-size: 3.4rem;
+    line-height: 3.8rem;
+    animation: floatUp 3s infinite alternate ease-in-out;
+
+
+}
+
+.table-container {
     width: 80%;
+    margin: 7rem auto;
+    animation: slideIn 1.5s ease-in-out forwards;
+
+}
+
+
+table {
+    width: 80%;
+    max-width: ;
+    margin: 20px auto;
     border-collapse: collapse;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    opacity: 0.95;
 }
 th, td {
+    padding: 12px;
     border: 1px solid #ddd;
-    padding: 10px;
+    text-align: center;
 }
 th {
-    background-color:#FD6824 ;
+    background-color: #FD6824;
     color: white;
+    position: relative;
+    font-size: 1.1rem;
 }
-tr:nth-child(even) {
-    background-color: #f7b9a1;
+tr:nth-child(even) 
+{background-color: #f2f2f2;}
+
+
+.th-table-1 h2{
+    font-size: 1.9rem;
+    font-family: Lora,serif;
+    padding: 10px;
+    text-align: left;
+    line-height: 2rem;
 }
-img {
-    width: 50px;
+th img {
+    width: 100px;
+    height: 100px;
 }
-a {
+th:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+tr:hover {
+    background-color: rgba(253, 104, 36, 0.1);
+    transition: 0.3s;
+}
+th:hover {
+    animation: bounce 0.5s ease-in-out;
+}
+
+td a {
     text-decoration: none;
-    color: blue;
+    color: #FD6824;
 }
-a:hover {
+td a:hover {
     text-decoration: underline;
+}
+.icon {
+    font-size: 20px;
+}
+/* Progress Bar Styling */
+.progress-container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-bar {
+    height: 20px;
+    background-color: #FD6824;
+    text-align: center;
+    color: white;
+    line-height: 20px;
+    width: 0%; /* Start at 0% */
+    animation: fillProgress 2s ease-in-out forwards;
+    animation-delay: 1s; /* Smooth entry delay */
+}
+
+/* Keyframes Animation */
+@keyframes fillProgress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--progress); /* Dynamic progress value */
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+    th, td {
+        padding: 8px;
+    }
+    th {
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    .icon {
+        font-size: 16px;
+    }
+    .th-table-1 h2{
+        font-size: 1.1rem;
+        font-family: Lora,serif;
+        padding: 10px;
+        text-align: left;
+        line-height: 2rem;
+    }
+}
+
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
 }

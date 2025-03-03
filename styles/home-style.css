@@ -233,6 +233,15 @@
     font-weight: bold;
 }
 
+.section-3-back{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    background-color: #f7b9a1;
+    border-radius: 10px;
+    height:100%;
+    width: 13rem;
+}
+
 .home-section-4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -596,6 +605,15 @@
         color: #333;
         font-weight: 700;
     }
+    .section-3-back{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr  ;
+        background-color: #f7b9a1;
+        border-radius: 10px;
+        height:100%;
+        width: 13rem;
+    }
+
 }
 
 /* For high resolution laptops */
@@ -673,6 +691,14 @@
         text-align: center;
         font-size: 1.2rem;
         color: #FFF7F2;
+    }
+    .section-3-back{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr  ;
+        background-color: #f7b9a1;
+        border-radius: 10px;
+        height:100%;
+        width: 13rem;
     }
 }
 
@@ -851,6 +877,14 @@
         font-weight: bold;
     }
 
+    .section-3-back{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr  ;
+        background-color: #f7b9a1;
+        border-radius: 10px;
+        height:100%;
+        width: 13rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1139,6 +1173,80 @@
         font-size: 2rem;
         font-weight: bold;
     }
+    .section-3-back {
+        background-color: #504E4D;
+        color: white;
+        transform: rotateY(180deg);
+        padding:0.5rem;
+    }
+    
+    .section-3-back{
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr  ;
+        background-color: #bc7051;
+        border-radius: 10px;
+        height:100%;
+        width: 13rem;
+    }
+    
+    .section-3-back-title{
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .section-3-back-description p{
+        font-size: 8px;
+        line-height: 10px;
+        padding: 0;
+        color: white ;
+    }
+    
+    .section-3-back-stats p{
+        font-size: 10px;
+        margin-top: -20px;
+    
+    }
+    .num-sec-3-back{
+        font-size: 0.7rem;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .num-num{
+        font-size: 0.7rem;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .more-info-sec-3{
+        border-color: white;
+        border-width: 1px;
+        border-style: solid;
+        width: 70%;
+        margin-left: auto;
+        padding: 0;
+        margin-right : auto;
+    }
+    .more-info-sec-3 p{
+        font-size: 0.5rem;
+        color: white;
+        margin: 0;
+    
+    }
+    .sec-3-rating p{
+        font-size: 0.4rem;
+        font-weight: bold;
+        color: white;
+    }
+    .stars{
+        margin-top: -12px;
+    }
+    .checked {
+        color: orange;
+      }
+    
+    
 }
 
 
@@ -1307,9 +1415,77 @@
     background-color: #504E4D;
     color: white;
     transform: rotateY(180deg);
-    padding: 1rem;
+    padding:0.5rem;
 }
 
+.section-3-back{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr  ;
+    background-color: #bc7051;
+    border-radius: 10px;
+    height:100%;
+    width: 13rem;
+}
+
+.section-3-back-title{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.section-3-back-description p{
+    font-size: 8px;
+    line-height: 10px;
+    padding: 0;
+    color: white ;
+}
+
+.section-3-back-stats p{
+    font-size: 10px;
+    margin-top: -20px;
+
+}
+.num-sec-3-back{
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+}
+
+.num-num{
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: white;
+}
+
+.more-info-sec-3{
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    width: 70%;
+    margin-left: auto;
+    padding: 0;
+    margin-right : auto;
+}
+.more-info-sec-3 p{
+    font-size: 0.5rem;
+    color: white;
+    margin: 0;
+
+}
+.sec-3-rating p{
+    font-size: 0.4rem;
+    font-weight: bold;
+    color: white;
+}
+.stars{
+    margin-top: -12px;
+}
+.checked {
+    color: orange;
+  }
+
+
+  
 /* Optional: Slight Lift Effect */
 .section-3-block:hover {
     transform: scale(1.05);
