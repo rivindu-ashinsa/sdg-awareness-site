@@ -106,19 +106,36 @@ td a:hover {
 .icon {
     font-size: 20px;
 }
+/* Progress Bar Styling */
 .progress-container {
     width: 100%;
     background-color: #ddd;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
 }
+
 .progress-bar {
     height: 20px;
     background-color: #FD6824;
     text-align: center;
     color: white;
     line-height: 20px;
+    width: 0%; /* Start at 0% */
+    animation: fillProgress 2s ease-in-out forwards;
+    animation-delay: 1s; /* Smooth entry delay */
 }
+
+/* Keyframes Animation */
+@keyframes fillProgress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--progress); /* Dynamic progress value */
+    }
+}
+
 
 
 @media screen and (max-width: 600px) {
