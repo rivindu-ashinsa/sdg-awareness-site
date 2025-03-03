@@ -1,7 +1,7 @@
 .volunteer{
     margin-top: 100px;
     display: grid;
-    font-family: 'Roboto', serif;
+    font-family: 'Roboto';
     user-select: none;
 }
 .volunteer .headings{
@@ -9,20 +9,24 @@
     text-align: center;
 }
 .volunteer .headings :where( h1, em){
-    font-size: 3rem;
+    font-size: 4rem;
+    margin-left: 0.7%;
+    margin-right: 0.7%;
     font-weight: bold;
     margin-top: 20px;
     line-height: normal;
+    font-family: 'Lora';
 }
 .volunteer .headings em{
     color: #FD6824;
 }
 .volunteer .headings p{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     margin-top: 10px;
     padding: 0 13%;
     font-weight:500;
     line-height: 30px;
+    font-family: 'Roboto';
 }
 .filter-Sort{
     margin: 3% 5%;
@@ -109,6 +113,7 @@
 .topics h2{
     font-size: 1.7rem;
     font-weight: bold;
+    margin-left: 1%;
 }
 .content{
     display: flex;
@@ -375,6 +380,10 @@
     }
 }
 @media screen and (max-width: 320px) { 
+    .volunteer{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
     .volunteer .headings :where( h1, em){
         font-size: 2rem;
     }
@@ -448,6 +457,10 @@
     }
 }
 @media screen and (max-width: 480px) and (min-width: 321px) { 
+    .volunteer{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
     .volunteer .headings :where( h1, em){
         font-size: 2.5rem;
     }
@@ -472,6 +485,9 @@
         width: 17px;
         height: 17px;
         line-height: 15px;
+    }
+    .topics h2{
+        font-size: 1.35rem;
     }
     .advantages .benifits{
         display: none;
@@ -545,6 +561,9 @@
         height: 20px;
         line-height: 20px;
     }
+    .topics h2{
+        font-size: 1.45rem;
+    }
     .advantages p{
         font-size: 1.1rem;
         width: 28dvw;
@@ -613,6 +632,9 @@
         width: 22px;
         height: 22px;
         line-height: 22px;
+    }
+    .topics h2{
+        font-size: 1.55rem;
     }
     .advantages p{
         font-size: 1.2rem;
