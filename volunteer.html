@@ -41,7 +41,27 @@
             <h1>Join the Movement for a <em>Sustainable Tomorrow!</em></h1>
             <p>Be part of our community and drive sustainable, innovative solutions for a greener future in industry and infrastructure. Together, we can make a difference!</p>
         </div>
-        <div class="topics" id="GreenTech&Sustain">
+        <div class="filter-Sort">
+            <fieldset class="filter">
+                <h3 class="filter-select"> Filter / Sort</h3>
+                <form class="filter-form">
+                    <fieldset class="filter-options">
+                        <fieldset class="filter-topics">
+                            <legend>Topics</legend>
+                            <label><input type="checkbox" name="options" value="GreenTechSustain" checked> Green Technology & Sustainability</label><br>
+                            <label><input type="checkbox" name="options" value="SmartCitiesInfra" checked> Smart Cities & Infrastructure</label><br>
+                            <label><input type="checkbox" name="options" value="InnoIndustries" checked> Innovative Industries</label><br>
+                        </fieldset>
+                        <fieldset class="filter-times">
+                            <legend>Time</legend>
+                            <label><input type="checkbox" name="time" value="1-Day" checked> 1-Day Events</label><br>
+                            <label><input type="checkbox" name="time" value="Flexible" checked> Flexible, Ongoing</label><br>
+                        </fieldset>
+                    </fieldset>
+                </form>
+            </fieldset>
+        </div>
+        <div class="topics GreenTechSustain">
             <h2>Green Technology & Sustainability</h2>
             <div class="content">
                 <div class="subtopic" id="topic1">
@@ -51,7 +71,7 @@
                     <div class="advantages">
                         <div class="map">
                             <img src="images-volunteer/map.png" alt="Map">
-                            <p>Community Centers & Renewable Energy Sites</p>
+                            <p>Community Centers</p>
                         </div>
                         <div class="time">
                             <img src="images-volunteer/time.png" alt="Time">
@@ -236,7 +256,7 @@
                 </div>
             </div>
         </div>
-        <div class="topics" id="SmartCities&Infra">
+        <div class="topics SmartCitiesInfra">
             <h2>Smart Cities & Infrastructure</h2>
             <div class="content">
                 <div class="subtopic" id="topic1">
@@ -431,7 +451,7 @@
                 </div>
             </div>
         </div>
-        <div class="topics" id="InnoIndustries">
+        <div class="topics InnoIndustries">
             <h2> Innovative Industries</h2>
             <div class="content">
                 <div class="subtopic" id="topic1">
@@ -699,6 +719,6 @@
     </section>
     <script src="js/nav.js"></script>
     <script src="js/active-page.js"></script>
-
+    <script src="js/volunteer-filter.js"></script>
 </body>
 </html>

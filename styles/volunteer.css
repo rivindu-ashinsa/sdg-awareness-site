@@ -24,8 +24,87 @@
     font-weight:500;
     line-height: 30px;
 }
+.filter-Sort{
+    margin: 3% 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.filter-Sort .filter{
+    border-width: 2px;
+    border-radius: 20px 20px 20px 20px;
+    border-style: solid;
+    border-color: #0000003d;
+}
+.filter-Sort .filter-select{
+    padding: 5px 10px;
+    width: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.filter-form {
+    padding: 1px;
+    font-family: 'Roboto', serif;
+    width: auto;
+    border-radius: 20px;
+}
+.filter-form fieldset{
+    padding: 10px;
+    margin: 0;
+}
+.filter-form .filter-options{
+    display: none;
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #000000;
+}
+.filter-form.active .filter-options {
+    display: block;
+}
+.filter-form fieldset legend{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.filter-form fieldset label{
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+.filter-form :is(.filter-topics, .filter-times){
+    border-radius: 20px;
+}
+.filter-form input[type="checkbox"]{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    margin-right: 8px;
+}
+.filter-form input[type="checkbox"]:checked::before {
+    content: "\2713";
+    display: block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    background: #FD6824;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+}
 .topics{
-    padding: 2%;
+    padding: 1%;
 }
 .topics h2{
     font-size: 1.7rem;
@@ -303,6 +382,24 @@
         font-size: 1.2rem;
         padding: 0 8%;
     }
+    .filter-Sort .filter-select{
+        font-size: 0.9rem;
+    }
+    .filter-form fieldset legend{
+        font-size: 0.9rem;
+    }
+    .filter-form fieldset label{
+        font-size: 0.9rem;
+    }
+    .filter-form input[type="checkbox"]{
+        width: 15px;
+        height: 15px;
+    }
+    .filter-form input[type="checkbox"]:checked::before {
+        width: 15px;
+        height: 15px;
+        line-height: 15px;
+    }
     .advantages .benifits{
         display: none;
     }
@@ -358,6 +455,24 @@
         font-size: 1.4rem;
         padding: 0 8%;
     }
+    .filter-Sort .filter-select{
+        font-size: 1rem;
+    }
+    .filter-form fieldset legend{
+        font-size: 1rem;
+    }
+    .filter-form fieldset label{
+        font-size: 1rem;
+    }
+    .filter-form input[type="checkbox"]{
+        width: 17px;
+        height: 17px;
+    }
+    .filter-form input[type="checkbox"]:checked::before {
+        width: 17px;
+        height: 17px;
+        line-height: 15px;
+    }
     .advantages .benifits{
         display: none;
     }
@@ -402,5 +517,124 @@
     }
     .sendreview .buttons{
         padding: 0 20px;
+    }
+}
+@media screen and (max-width: 576px) and (min-width: 481px) {
+    .volunteer .headings :where( h1, em){
+        font-size: 3rem;
+    }
+    .volunteer .headings p{
+        font-size: 1.6rem;
+        padding: 0 8%;
+    }
+    .filter-Sort .filter-select{
+        font-size: 1.1rem;
+    }
+    .filter-form fieldset legend{
+        font-size: 1.1rem;
+    }
+    .filter-form fieldset label{
+        font-size: 1.1rem;
+    }
+    .filter-form input[type="checkbox"]{
+        width: 20px;
+        height: 20px;
+    }
+    .filter-form input[type="checkbox"]:checked::before {
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+    .advantages p{
+        font-size: 1.1rem;
+        width: 28dvw;
+    }
+    .outstanding{
+        gap: 20px;
+    }
+    .outstanding h4{
+        font-size: 1.4rem;
+        line-height: 25px;
+    }
+    .outstanding p{
+        font-size: 1.1rem;
+    }
+    .reviews .review{
+        max-width: 80%;
+    }
+    .reviews #review1{
+        animation: review1 9s ease-in-out infinite;
+    }
+    .reviews #review2{
+        animation: review2 9s ease-in-out infinite;
+    }
+    .reviews #review3{
+        animation: review3 9s ease-in-out infinite;
+    }
+    .sendreview h5{
+        font-size: 1rem;
+    }
+    .rating-review label {
+        font-size: 1.2rem;
+    }
+    .sendreview textarea{
+        font-size: 1.1rem;
+    }
+    .sendreview :is(#reset, #submit){
+        font-size: 0.8rem;
+        width: 70px;
+    }
+    .sendreview .buttons{
+        padding: 0 25px;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 577px) {
+    .volunteer .headings :where( h1, em){
+        font-size: 3.5rem;
+    }
+    .volunteer .headings p{
+        font-size: 1.8rem;
+        padding: 0 8%;
+    }
+    .filter-Sort .filter-select{
+        font-size: 1.2rem;
+    }
+    .filter-form fieldset legend{
+        font-size: 1.2rem;
+    }
+    .filter-form fieldset label{
+        font-size: 1.2rem;
+    }
+    .filter-form input[type="checkbox"]{
+        width: 22px;
+        height: 22px;
+    }
+    .filter-form input[type="checkbox"]:checked::before {
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+    }
+    .advantages p{
+        font-size: 1.2rem;
+        width: 28dvw;
+    }
+    .reviews .review{
+        max-width: 31%;
+    }
+    .sendreview h5{
+        font-size: 1.1rem;
+    }
+    .rating-review label {
+        font-size: 1.4rem;
+    }
+    .sendreview textarea{
+        font-size: 1.2rem;
+    }
+    .sendreview :is(#reset, #submit){
+        font-size: 0.9rem;
+        width: 80px;
+    }
+    .sendreview .buttons{
+        padding: 0 30px;
     }
 }
