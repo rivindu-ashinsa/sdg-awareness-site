@@ -4,6 +4,9 @@
     font-family: 'Roboto';
     user-select: none;
 }
+ul{
+    list-style-type: none;
+}
 .volunteer .headings{
     display:grid;
     text-align: center;
