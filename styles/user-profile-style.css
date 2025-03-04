@@ -62,16 +62,16 @@ body{
 .pfp-container{
     background: #FFF7F2;
     border-radius: 35px;    
-    height: 57.3%;
-    width: 90%;
+    height: 45dvh;
+    width: 22dvw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3%;
 }
 
 .pfp-container img {
-    width: 20rem;
-    height: 25rem;
+    width: 100%;
+    height: 100%;
 }
 
 .pfp-card h3 {
@@ -375,9 +375,20 @@ section .icons span:last-child{
     .container {
         flex-direction: column;
     }
+
     .left-side-container,
     .right-side-container {
         width: 100%;
+    }
+
+    .pfp-card{
+        border-radius: 35px 35px 0px 0px;
+    }
+
+    .pfp-container{
+        width: 30dvw;
+        height: 40dvh;
+        margin-left: 1.5%;
     }
 
     .cal-int-card {
