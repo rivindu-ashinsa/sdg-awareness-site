@@ -64,7 +64,7 @@ a {
     align-items: center;
 }
 
-.header-navigation ul {
+ul {
     list-style: none;
     display: flex;
     gap: 20px;
