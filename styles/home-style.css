@@ -1018,6 +1018,7 @@
         align-items: center;
         width: 70vw; 
         margin: auto;
+        margin-bottom: 80px;
     }
     
     .section-3-head {
@@ -1062,7 +1063,7 @@
         overflow-x: auto;
         width: 100%;
         padding: 1rem 0;
-        height: 100%;
+        height: 100vh;
     }
 
     .section-3-block {
@@ -1423,7 +1424,7 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr  ;
     background-color: #bc7051;
     border-radius: 10px;
-    height:100%;
+    height:18rem;
     width: 13rem;
 }
 
