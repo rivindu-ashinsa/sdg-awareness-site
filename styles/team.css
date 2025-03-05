@@ -1,0 +1,112 @@
+body{
+    height: auto;
+    background-color: #FFF7F2;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    width: 100;
+}
+
+.team-head{
+    text-align: center;
+    padding: 0;
+}
+
+.team-header-color{
+    color: #FD6824;
+}
+
+h1 , .team-head,.team-header-color{
+    font-family: Lora, serif;
+    margin-top: 8%;
+    font-size: 5.7rem;
+    font-weight: bold;
+}
+
+.team-description{
+    text-align: center;
+    padding: 0;
+    margin: 3%;
+}
+
+.team-container{
+    display: flex;
+    width: 85%;
+    margin: 0 5%;
+    height: auto;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 15px;
+    justify-content: center;
+}
+
+.team-members{
+    width: 350px;
+    height: 500px;
+    background-color: #FD6824;
+    cursor: pointer;
+    transition: 0.5ms;
+}
+
+.team-members:hover{
+    height: 660px;
+    transition: 2s;
+}
+
+.canvas{
+    width: 300px;
+    height: 375px;
+    margin-top: 7%;
+    background-color: #FFF7F2;
+    margin-left: 25px;
+}
+
+img {
+    width: 100%;
+    height: 125%;
+}
+
+.member-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.member-name{
+    text-align: center;
+    font-size: 20px;
+    font-style: bold;
+    padding-top: 15px;
+}
+
+.member-links{
+    width: 80px;
+    height: 30px;
+    display: flex;
+    gap: 10px;
+    margin: 0px;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.member-roles{
+    font-size: 15px;
+    padding-top: 15px;
+    display: none;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.team-members:hover .member-roles{
+    display: block;
+    transition: 2s;
+}
+

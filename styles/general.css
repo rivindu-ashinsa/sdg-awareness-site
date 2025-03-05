@@ -65,14 +65,18 @@ a {
 }
 
 .header-navigation ul {
-    list-style: none;
+    /* list-style: none; */
     display: flex;
     gap: 20px;
+
 }
 
 .header-navigation li {
     justify-content: space-between;
+    list-style-type: none;
     border-radius: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .header-navigation a {
