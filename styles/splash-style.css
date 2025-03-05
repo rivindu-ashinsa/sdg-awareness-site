@@ -328,6 +328,13 @@ html, body{
     }
     .member-list{
         font-size: 1.5rem;
-        gap: 0.6rem;
+        gap: 2.5rem;
+    }
+    .member-list li::after{
+        content: '|';
+        margin-left: 25px;
+    }
+    .member-list li:last-child::after{
+        content: '';
     }
 }
