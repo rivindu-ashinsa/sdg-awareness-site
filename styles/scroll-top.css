@@ -1,0 +1,82 @@
+#top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 1%;
+    background-color: #FD6824;
+    color: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    padding: 15px;
+    opacity: 0.5;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    animation: top 2s infinite;
+    animation-play-state: running;
+}
+#top img{
+    width: 50%;
+    height: 50%;
+}
+
+#top:hover {
+    opacity: 1;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255);
+    padding: 12px;
+    transition: 0.3s;
+    animation-play-state: paused;
+}
+@keyframes top {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 320px) { 
+    #top {
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 10px;
+    }
+    #top:hover{
+        padding: 7px;
+    }
+}
+@media screen and (max-width: 480px) and (min-width: 321px) { 
+    #top {
+        width: 3rem;
+        height: 3rem;
+        padding: 11px;
+    }
+    #top:hover{
+        padding: 8px;
+    }
+}
+@media screen and (max-width: 576px) and (min-width: 481px) { 
+    #top {
+        width: 3.2rem;
+        height: 3.2rem;
+        padding: 12px;
+    }
+    #top:hover{
+        padding: 9px;
+    }
+}
+@media screen and (max-width: 768px) and (min-width: 577px) { 
+    #top {
+        width: 3.3rem;
+        height: 3.3rem;
+        padding: 13px;
+    }
+    #top:hover{
+        padding: 10px;
+    }
+}

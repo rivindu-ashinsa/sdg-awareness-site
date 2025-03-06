@@ -25,6 +25,7 @@
     align-items: flex-start;
     margin-left: 5%;
     margin-bottom: 3.5rem;
+    
 }
 
 .home-intro-title {
@@ -610,7 +611,7 @@
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr  ;
         background-color: #f7b9a1;
         border-radius: 10px;
-        height:100%;
+        height:18rem;
         width: 13rem;
     }
 
@@ -949,6 +950,7 @@
     .home-section-2 {
         width: 100%;
         padding: 0 20px;
+        margin-top: 5rem;
     }
     .section-2-head-h1 {
         font-size: 3rem;
@@ -1018,6 +1020,7 @@
         align-items: center;
         width: 70vw; 
         margin: auto;
+        margin-bottom: 80px;
     }
     
     .section-3-head {
@@ -1423,7 +1426,7 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr  ;
     background-color: #bc7051;
     border-radius: 10px;
-    height:100%;
+    height:18rem;
     width: 13rem;
 }
 

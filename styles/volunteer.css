@@ -1,8 +1,11 @@
 .volunteer{
     margin-top: 100px;
     display: grid;
-    font-family: 'Roboto';
+    font-family: "Roboto", sans-serif;
     user-select: none;
+}
+ul{
+    list-style-type: none;
 }
 .volunteer .headings{
     display:grid;
@@ -26,7 +29,7 @@
     padding: 0 13%;
     font-weight:500;
     line-height: 30px;
-    font-family: 'Roboto';
+    font-family: "Roboto", sans-serif;
 }
 .filter-Sort{
     margin: 3% 5%;
@@ -50,7 +53,7 @@
 }
 .filter-form {
     padding: 1px;
-    font-family: 'Roboto', serif;
+    font-family: "Roboto", sans-serif, serif;
     width: auto;
     border-radius: 20px;
 }
@@ -133,14 +136,14 @@
     overflow: hidden;
 }
 .subtopic h3{
-    font-family: 'Roboto', serif;
+    font-family: "Roboto", sans-serif, serif;
     font-size: 1.5em;
     padding: 10px;
     padding-top: 30px;
     font-weight: bold;
 }
 .subtopic p{
-    font-family: 'Roboto', serif;
+    font-family: "Roboto", sans-serif, serif;
     font-size: 1em;
     padding: 10px;
     line-height: 20px;
@@ -659,4 +662,4 @@
     .sendreview .buttons{
         padding: 0 30px;
     }
-}
+}  

@@ -65,14 +65,18 @@ a {
 }
 
 .header-navigation ul {
-    list-style: none;
+    /* list-style: none; */
     display: flex;
     gap: 20px;
+
 }
 
 .header-navigation li {
     justify-content: space-between;
+    list-style-type: none;
     border-radius: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .header-navigation a {
@@ -141,8 +145,10 @@ footer {
     padding: 20px 0;
     color: black;
     animation: fadeUp 0.6s ease-out;
+    position: relative; /* Ensure it stays in document flow */
+    z-index: 10; /* Higher than sidebar if needed */
+    width: 100%;
 }
-
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -162,6 +168,7 @@ footer {
     margin: auto;
     padding: 0 50px;
     max-width: 90%;
+    z-index: 1000;
 }
 
 .footer-block-up {
@@ -419,7 +426,6 @@ footer p {
     #profile-le a {
         text-align: center;
         justify-content: center;
-        margin-left: 21px;
     }
 }
 
