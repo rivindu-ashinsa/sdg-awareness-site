@@ -13,7 +13,8 @@
     border-radius: 30%;
     cursor: pointer;
     transition: opacity 0.3s;
-
+    animation: top 2s infinite;
+    animation-play-state: running;
 }
 #top img{
     width: 50%;
@@ -25,6 +26,18 @@
     box-shadow: 2px 2px 5px rgb(255, 255, 255);
     padding: 12px;
     transition: 0.3s;
+    animation-play-state: paused;
+}
+@keyframes top {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 
 @media screen and (max-width: 320px) { 
