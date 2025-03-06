@@ -145,8 +145,10 @@ footer {
     padding: 20px 0;
     color: black;
     animation: fadeUp 0.6s ease-out;
+    position: relative; /* Ensure it stays in document flow */
+    z-index: 10; /* Higher than sidebar if needed */
+    width: 100%;
 }
-
 @keyframes fadeUp {
     from {
         opacity: 0;
@@ -166,6 +168,7 @@ footer {
     margin: auto;
     padding: 0 50px;
     max-width: 90%;
+    z-index: 1000;
 }
 
 .footer-block-up {
