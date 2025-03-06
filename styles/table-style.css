@@ -6,6 +6,8 @@ body {
     background-size: cover;
     text-align: center;
     position: relative;
+    background-color: rgb(155, 255, 255,0.8); /* Add a semi-transparent overlay */
+    background-blend-mode: overlay; /* Blend the overlay with the background image */
 
 }
 
