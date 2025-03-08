@@ -424,12 +424,10 @@ ul{
     0%{
         opacity: 0;
         transform: translate(0, 200px);
-        display: none;
     }
     100%{
         opacity: 1;
         transform: translate(0, 0);
-        display: block;
     }
 }
 @keyframes show{
