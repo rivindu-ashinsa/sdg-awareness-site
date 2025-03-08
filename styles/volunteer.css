@@ -1,3 +1,17 @@
+.background_image{
+    background-image: url('https://files.123freevectors.com/wp-content/original/131830-abstract-yellow-and-white-polygonal-triangle-background-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+}
 .volunteer{
     margin-top: 100px;
     display: grid;
