@@ -1,0 +1,53 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 150px;
+}
+.intro-title{
+    text-align: center;
+}
+
+.intro-title h1{
+    font-size: 80px;
+}
+
+
+
+.intro-title span{
+    font-size: 80px;
+    color: #FD6824;
+}
+
+.title-description p{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.sitemap-tree{
+    padding: 100px;
+    margin-top: -50px;
+    margin-bottom: -70px;
+}
+
+.home-rect {
+    fill: #FEBE9F;
+    stroke: none;
+    rx: 2;
+}
+
+.home-text {
+    fill: #000000;
+    font-size: 5px;
+    font-weight: bold;
+}
+
+.text {
+    fill: #000000;
+    font-size: 2.5px;
+}
+
+.text-set1 {
+    fill: #000000;
+    font-size: 2.25px;
+}
+
