@@ -1,3 +1,17 @@
+.background_image{
+    background-image: url('https://files.123freevectors.com/wp-content/original/131830-abstract-yellow-and-white-polygonal-triangle-background-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    height: 100vh;
+    width: 100%;
+    z-index: -2;
+}
 .volunteer{
     margin-top: 100px;
     display: grid;
@@ -10,6 +24,11 @@ ul{
 .volunteer .headings{
     display:grid;
     text-align: center;
+    font-family: Lora, serif;
+}
+.volunteer .headings{
+    transform: translate(0, 200px);
+    animation: heading 2s ease-in-out forwards;
 }
 .volunteer .headings :where( h1, em){
     font-size: 4rem;
@@ -18,7 +37,6 @@ ul{
     font-weight: bold;
     margin-top: 20px;
     line-height: normal;
-    font-family: 'Lora';
 }
 .volunteer .headings em{
     color: #FD6824;
@@ -330,7 +348,19 @@ ul{
     gap: 10px;
     padding: 0 25px;
 }
-
+.topics {
+    opacity: 0;
+    display: none;
+    transform: translate(0, 200px);
+    animation: content 2s ease-in-out forwards;
+    animation-delay: 2s;
+}
+.filter-Sort{
+    opacity: 0;
+    transform: translate(0, 100px);
+    animation: show 2s ease-in-out forwards;
+    animation-delay: 2s;
+}
 @keyframes review1{
     0%{
         display: block;
@@ -380,6 +410,34 @@ ul{
     }
     100%{
         display: block;
+    }
+}
+@keyframes heading{
+    0%{
+        transform: translate(0, 200px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+}
+@keyframes content{
+    0%{
+        opacity: 0;
+        transform: translate(0, 200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@keyframes show{
+    0%{
+        opacity: 0;
+        transform: translate(0, 100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, 0);
     }
 }
 @media screen and (max-width: 320px) { 
@@ -662,4 +720,4 @@ ul{
     .sendreview .buttons{
         padding: 0 30px;
     }
-}  
+}

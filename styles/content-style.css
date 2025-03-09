@@ -64,6 +64,7 @@ h1{
     border-radius: 5px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -259,11 +260,12 @@ h1{
         color: #504E4D;
         font-weight: bold;
         font-family: Lora, serif;
-        font-size: 2.5rem;
-        line-height: 3rem;
+        font-size: 2.7rem;
+        line-height: 3.2rem;
         margin-bottom: 20px;
         max-width: 900px;
         margin-top: 2.5rem;
+        text-align: center;
     }
     .span-infra{
         color : #fd6924;
@@ -282,12 +284,21 @@ h1{
         margin-top: 2.5rem;
         /* margin-left: 8.1vw; */
         /* background-color: #f7b9a1; */
-        margin-right: 1.5rem;
+        margin-right: auto;
+        margin-left: auto;
         padding: 20px;
         border-radius: 10px;
         border: none;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2)
     
       
+    }
+
+    .title p{
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        padding: 15px;
     }
     
     .section h2{
