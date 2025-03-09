@@ -1,4 +1,4 @@
-t.background_image{
+.background_image{
     background-image: url('https://files.123freevectors.com/wp-content/original/131830-abstract-yellow-and-white-polygonal-triangle-background-vector.jpg');
     background-size: cover;
     background-position: center;
@@ -7,7 +7,7 @@ t.background_image{
     position: fixed;
     top: 0;
     left: 0;
-    opacity: 0.4;
+    opacity: 0.5;
     height: 100vh;
     width: 100%;
     z-index: -2;
@@ -33,7 +33,7 @@ ul{
     margin-right: 0.7%;
     font-weight: bold;
     font-family: Lora, serif;
-    margin-top: 20px;
+    margin-top: 10px;
     line-height: normal;
 }
 .volunteer .headings em{
@@ -255,11 +255,14 @@ ul{
     text-align: left;
     text-overflow: ellipsis;
 }
-.reviews .review p em{
-    font-size: 0.85rem;
-    line-height: 20px;
-    font-style: normal;
+.reviews .see_more{
+    font-size: 0.9rem;
     font-weight: bold;
+    color: #FD6824;
+    cursor:pointer;
+}
+.reviews .see_more:hover{
+    color: #5a5a5a;
 }
 .sendreview{
     background: #E0AF97;
@@ -371,14 +374,14 @@ ul{
 .topics {
     opacity: 0;
     transform: translate(0, 200px);
-    animation: content 2s ease-in-out forwards;
-    animation-delay: 2s;
+    animation: content 1s ease-in-out forwards;
+    animation-delay: 1s;
 }
 .filter-Sort{
     opacity: 0;
     transform: translate(0, 100px);
-    animation: show 2s ease-in-out forwards;
-    animation-delay: 2s;
+    animation: show 1s ease-in-out forwards;
+    animation-delay: 1s;
 }
 @keyframes review1{
     0%{
