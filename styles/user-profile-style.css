@@ -75,31 +75,32 @@ body{
 }
 
 .pfp-card h3 {
-    margin: 2.1rem 0;
+    margin-top: 25px;
     font-size: 30px;
     color: #000;
 }
 
-.pf-details{
+.pfp-details{
     text-align: left;
     color: #000;
     font-size: 20px;
 }
 
-.pf-details ul {
+.pfp-details ul{
     list-style: circle;
-    padding-left: 20px;
+    padding: 10px;
+    margin-left: 30px;
 }
 
-.pf-details li {
-    list-style: circle;
-    margin: 5px 0;
-    display: flex;
+.pfp-details li {
+    margin-top: 20px;
 }
 
-.pf-details span {
-    text-align: left;
-    margin-left: 20%;
+.pfp-details span {
+    padding: 10px;
+    text-align: center;
+    margin-left: 10px;
+    
 }
 
 .pf-skills{
