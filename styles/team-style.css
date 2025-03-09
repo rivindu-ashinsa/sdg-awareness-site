@@ -17,7 +17,7 @@ body{
     color: #FD6824;
 }
 
-.team-description p{
+.team-main .team-description p{
     font-size: 1.4rem;
     text-align: center;
     line-height: 1.5;
