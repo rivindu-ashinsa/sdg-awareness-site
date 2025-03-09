@@ -16,17 +16,15 @@
     margin-top: 100px;
     display: grid;
     font-family: "Roboto", sans-serif;
-    user-select: none;
+    /*user-select: none;*/
 }
 ul{
     list-style-type: none;
 }
 .volunteer .headings{
-    display:grid;
+    display: grid;
     text-align: center;
-    font-family: Lora, serif;
-}
-.volunteer .headings{
+    font-family: 'Lora', serif;
     transform: translate(0, 200px);
     animation: heading 2s ease-in-out forwards;
 }
@@ -568,7 +566,7 @@ ul{
         font-size: 0.9rem;
     }
     .reviews .review{
-        max-width: 80%;
+        max-width: 80%;;
     }
     .reviews #review1{
         animation: review1 9s ease-in-out infinite;

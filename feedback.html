@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
-    <link rel="stylesheet" href="styles/home-style.css">
+    <link rel="stylesheet" href="styles/feedback-style.css">
     <link rel="stylesheet" href="styles/general.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +23,6 @@
             <img class="logo-img" src="images-home/logo.svg" alt="">
         </div>
         <div class="header-navigation">
-            <!-- <ul> -->
                 <li><a href="home.html">Home</a></li>
                 <li><a href="volunteer.html">Volunteer</a></li>
                 <li><a href="sitemap.html">Sitemap</a></li>
@@ -31,11 +30,89 @@
                 <li><a href="feedback.html">Feedback</a></li>
                 <li><a href="team.html">Team</a></li>
                 <li id="profile-le"><a href="user-profile.html">Profile</a></li>
-            <!-- </ul> -->
         </div>
         <div class="header-profile">
             <img class="profile-icon" src="images-home/profile-icon.svg" alt="">
         </div>
     </header>
+
+    <main>
+        <div class="feedback-head">
+            <h1><span class="feedback-head-color">Share Your Thoughts</span> – Help Us Build a<br>Sustainable Future!</h1>
+        </div>
+
+        <div class="Feedback-description">
+            <p>Your feedback is essential in shaping volunteering programs for greener and more resilient communities. Let us know how we can improve!</p>
+        </div>
+
+        <div class="freedback-container">
+            <form id="form" method="get" action="/">
+
+                <div class="feedback-input">
+                    <label for="name">Full Name<span class= "highlighter"> (*Required)</span></label><br>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    <div class="error" id="name-error"></div>
+                </div>
+
+                <div class="form-parallel">
+
+                    <div class="feedback-horizontal-input">
+                        <label for="email">Email Address<span class= "highlighter"> (*Required)</span></label><br>
+                        <input type="email" id="email" name="email" placeholder="sample123@yourmail.com" required>
+                        <div class="error" id="name-error"></div>
+                    </div>
+
+                    <div class="feedback-horizontal-input">
+                        <label for="number">Telephone Number<span class= "highlighter"> (*Required)</span></label><br>
+                        <input type="tel" id="tel" name="tel" required>
+                        <div class="error" id="tel-error"></div>
+                    </div>
+
+                </div>
+
+                <div class="feedback-input">
+                    <label for="address">Residential Address<span class= "highlighter"> (*Required)</span></label><br>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error" id="address-error"></div>
+                </div>
+
+                <div class="form-parallel">
+
+                    <div class="feedback-horizontal-input">
+                        <label for="address">Your Rating </label>
+                        <ul class="rating">
+                            <li id="v1">★</li>
+                            <li id="v1">★</li>
+                            <li id="v1">★</li>
+                            <li id="v1">★</li>
+                            <li id="v1">★</li>
+                        </ul>
+                    </div>
+
+                    <div class="feedback-horizontal-input">
+                        <label for="area">Interested Area</label>
+                        <select name="area" id="area">
+                            <option value="Industry">Industry</option>
+                            <option value="Smart City">Smart City</option>
+                            <option value="Green Technology">Green Technology</option>
+                        </select>
+                    </div>
+
+                </div>
+                
+                <div class="feedback-input">
+                    <label for="message">Message / Suggestions</label><br>
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="If you have any additional message, please type it in here..."></textarea>
+                </div>
+
+                <div class="feedback-input">
+                    <button type="submit" id="submit">Submit</button>
+                </div>
+
+            </form>
+        </div>
+
+    </main>
+
 </body>
 </html>
