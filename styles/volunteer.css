@@ -300,6 +300,11 @@ ul{
     font-weight: bold;
     cursor: pointer;
 }
+.sendreview :is(#reset, #submit):hover{
+    background-color: #FD6824;
+    color: white;
+    border-color: #FD6824;
+}
 .sendreview .buttons{
     display: flex;
     justify-content:right;
