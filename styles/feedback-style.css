@@ -163,3 +163,25 @@ span.highlighter{
     display: flex;
     flex-wrap: wrap;
 }
+
+.file-upload{
+    width: 50%;
+    height: 120px;
+    background-color: #FEBE9F;
+    border-color: black;
+    border-width: 0.5px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 15px;
+    border-style: dashed;
+    border-width: 1px;
+}
+
+.file-upload{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
