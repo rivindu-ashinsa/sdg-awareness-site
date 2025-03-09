@@ -15,8 +15,8 @@
 .volunteer{
     margin-top: 100px;
     display: grid;
-    font-family:"Roboto", serif;
     user-select: none;
+    font-family: "Roboto", sans-serif, serif;
 }
 ul{
     list-style-type: none;
@@ -24,7 +24,6 @@ ul{
 .volunteer .headings{
     display: grid;
     text-align: center;
-    font-family: Lora, serif;
     transform: translate(0, 200px);
     animation: heading 2s ease-in-out forwards;
 }
@@ -33,6 +32,7 @@ ul{
     margin-left: 0.7%;
     margin-right: 0.7%;
     font-weight: bold;
+    font-family: Lora, serif;
     margin-top: 20px;
     line-height: normal;
 }
@@ -41,6 +41,7 @@ ul{
 }
 .volunteer .headings p{
     font-size: 1.6rem;
+    font-family: "Roboto", sans-serif, serif;
     margin-top: 10px;
     padding: 0 13%;
     font-weight:500;
@@ -243,6 +244,7 @@ ul{
     gap: 15px; ;
 }
 .reviews .review .head h5{
+    margin-top: 10px;
     font-size: 1rem;
     font-weight: bold;
 }
@@ -269,10 +271,10 @@ ul{
     margin-top: 20px;
 }
 .sendreview h5{
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
     text-align: left;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .sendreview textarea{
     height: 100px;
@@ -281,12 +283,14 @@ ul{
     font-size: 1rem;
     border-radius: 10px;
     background-color: #E0AF97;
+    font-family: "Open Sans", sans-serif;
     color: black;
     border-color: black;
-    width: 90%;
+    width: 92%;
 }
 .sendreview :is(#reset, #submit){
     margin:-10px 0 12px 0;
+    padding: 5px 0;
     border-radius: 10px;
     background-color: #FD6824;
     color: white;
@@ -326,24 +330,24 @@ ul{
     display: none;
   }
 
-  .rating-review label {
+  .rating-review .stars {
     font-size: 30px;
     color: #000000;
     cursor: pointer;
     transition: color 0.3s;
     text-shadow: 0px 0px 2px black;
   }
-  
-  .rating-review label:hover,
-  .rating-review label:hover ~ label {
+
+.rating-review .stars.selected,
+.rating-review .stars:hover, .rating-review .stars:hover~.stars {
     color: gold;
-  }
+}
 
 .sendreview .rate{
     display: flex;
     justify-content: space-between;
     gap: 10px;
-    padding: 0 25px;
+    padding: 0 30px;
 }
 .topics {
     opacity: 0;
