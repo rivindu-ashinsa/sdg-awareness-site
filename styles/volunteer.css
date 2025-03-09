@@ -251,7 +251,6 @@ ul{
 .reviews .review p{
     font-size: 0.8rem;
     padding: 10px;
-    line-height: 20px;
     text-align: left;
     text-overflow: ellipsis;
 }
@@ -260,8 +259,6 @@ ul{
     font-weight: bold;
     color: #FD6824;
     cursor: pointer;
-    margin-top: auto;
-    text-align: center;
 }
 .reviews .see_more:hover{
     color: #5a5a5a;

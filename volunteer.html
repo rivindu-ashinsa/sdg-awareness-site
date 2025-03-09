@@ -693,5 +693,18 @@
     <script src="js/active-page.js"></script>
     <script src="js/volunteer-filter.js"></script>
     <script src="js/scroll-top.js"></script>
+    <script>
+        function truncateText(selector, lines) {
+            let element = document.querySelector(selector);
+            let lineHeight = parseFloat(window.getComputedStyle(element).lineHeight);
+            let maxHeight = lineHeight * lines;
+            
+            while (element.scrollHeight > maxHeight) {
+                element.textContent = element.textContent.trim().slice(0, -1) + '…';
+            }
+        }
+
+        truncateText(".review p", 2);
+    </script>
 </body>
 </html>
