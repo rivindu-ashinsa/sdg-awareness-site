@@ -145,6 +145,7 @@ footer {
     padding: 20px 0;
     color: black;
     animation: fadeUp 0.6s ease-out;
+    font: 400 1rem/1.975rem "Open Sans", sans-serif;
     position: relative; /* Ensure it stays in document flow */
     z-index: 10; /* Higher than sidebar if needed */
     width: 100%;
