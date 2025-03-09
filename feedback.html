@@ -51,7 +51,7 @@
                 <form id="form" method="get" action="/" onsubmit="return validateFeedback()">
 
                     <div class="feedback-input">
-                        <label for="name">Full Name<span class= "highlighter"> (*Required)</span></label><br>
+                        <label for="name">Full Name<span class= "highlighter">(*Required)</span></label>
                         <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                         <div class="error" id="name-error"></div>
                     </div>
@@ -59,13 +59,13 @@
                     <div class="form-parallel">
 
                         <div class="feedback-horizontal-input">
-                            <label for="email">Email Address<span class= "highlighter"> (*Required)</span></label><br>
+                            <label for="email">Email Address<span class= "highlighter">(*Required)</span></label>
                             <input type="email" id="email" name="email" placeholder="sample123@yourmail.com" required>
                             <div class="error" id="email-error"></div>
                         </div>
 
                         <div class="feedback-horizontal-input">
-                            <label for="number">Telephone Number<span class= "highlighter"> (*Required)</span></label><br>
+                            <label for="number">Telephone Number<span class= "highlighter">(*Required)</span></label>
                             <input type="tel" id="tel" name="tel" required>
                             <div class="error" id="tel-error"></div>
                         </div>
@@ -73,7 +73,7 @@
                     </div>
 
                     <div class="feedback-input">
-                        <label for="address">Residential Address<span class= "highlighter"> (*Required)</span></label><br>
+                        <label for="address">Residential Address<span class= "highlighter">(*Required)</span></label>
                         <input type="text" id="address" name="address" required>
                         <div class="error" id="address-error"></div>
                     </div>
@@ -102,13 +102,15 @@
 
                     </div>
                     
-                    <div class="feedback-input">
-                        <label for="message">Message / Suggestions</label><br>
-                        <textarea name="message" id="message" cols="30" rows="5" placeholder="If you have any additional message, please type it in here..."></textarea>
-                        <div class="error"></div>
+                    <div class="feedback-box">
+                        <div class="feedback-input">
+                            <label for="message">Message / Suggestions</label><br>
+                            <textarea name="message" id="message" cols="30" rows="5" placeholder="If you have any additional message, please type it in here..."></textarea>
+                            <div class="error"></div>
+                        </div>
                     </div>
 
-                    <div class="feedback-input">
+                    <div class="feedback-radio">
                         <label for="message">Feedback Type</label><br>
                         <input type="radio" id="experiance" name="feedback" value="experiance">
                         <label for="experiance">Website Experience</label>
