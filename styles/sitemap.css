@@ -30,9 +30,9 @@ body{
 }
 
 .home-rect {
-    fill: #FEBE9F;
+    fill: #ff905d;
     stroke: none;
-    rx: 2;
+    rx: 1;
 }
 
 .home-text {

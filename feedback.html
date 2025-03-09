@@ -80,18 +80,18 @@
 
                     <div class="form-parallel">
 
-                        <div class="feedback-horizontal-input">
+                        <div class="feedback-rating">
                             <label for="address">Your Rating </label>
-                            <ul class="rating">
-                                <li class="star">★</li>
-                                <li class="star">★</li>
-                                <li class="star">★</li>
-                                <li class="star">★</li>
-                                <li class="star">★</li>
-                            </ul>
+                            <div class="rating-review">
+                                <span class="stars" data-value="1">★</span>
+                                <span class="stars" data-value="2">★</span>
+                                <span class="stars" data-value="3">★</span>
+                                <span class="stars" data-value="4">★</span>
+                                <span class="stars" data-value="5">★</span>
+                            </div>
                         </div>
 
-                        <div class="feedback-horizontal-input">
+                        <div class="feedback-dropdown">
                             <label for="area">Interested Area</label>
                             <select name="area" id="area">
                                 <option value="Industry">Industry</option>
@@ -104,7 +104,7 @@
                     
                     <div class="feedback-box">
                         <div class="feedback-input">
-                            <label for="message">Message / Suggestions</label><br>
+                            <label for="message">Message / Suggestions</label>
                             <textarea name="message" id="message" cols="30" rows="5" placeholder="If you have any additional message, please type it in here..."></textarea>
                             <div class="error"></div>
                         </div>
@@ -123,7 +123,7 @@
                     </div>
                     
                     <div class="file-upload">
-                        <input type="file" id="file"/>
+                        <input type="file" id="file">
                         <label for="file">Drag & Drop or choose file to upload<br>Select zip,image,pdf or ms.word</label>
                     </div>
 
