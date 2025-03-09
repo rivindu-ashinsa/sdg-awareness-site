@@ -114,6 +114,17 @@ h1{
     /* margin-left: 8.1vw; */
 }
 
+.title p{
+    font-size: 1.2rem;
+    font-weight: normal;
+    color:#504E4D;
+    font-family: Roboto, serif;
+    margin-bottom: 20px;
+    /* max-width: 900px; */
+    margin-top: 2.5rem;
+    line-height: 1.7rem;
+}
+
 .title:hover {
     color: #fd6924;
 }
@@ -125,6 +136,7 @@ h1{
     margin-bottom: 20px;
     /* max-width: 900px; */
     margin-top: 2.5rem;
+    line-height: 1.7rem;
 
 }
 
@@ -143,6 +155,17 @@ h1{
     margin-left: 2rem;
     color: #504E4D;
 
+}
+
+.content ul li{
+    font-size: 1rem;
+    font-weight: normal;
+    color:#504E4D;
+    font-family: Roboto, serif;
+    /* margin-bottom: 20px; */
+    /* max-width: 900px; */
+    margin-top: 1rem;
+    line-height: 1.3rem;
 }
 .section {
     margin-bottom: 40px;
