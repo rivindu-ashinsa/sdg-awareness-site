@@ -145,8 +145,9 @@ main{
     
 }
 
-.skill label{
-    font-weight: bold;
+.skill p{
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 .progress-bar{
@@ -157,39 +158,40 @@ main{
     overflow: hidden;
 }
 
+
 .comm-progress{
     height: 100%;
     background: #000;
     width:70%;
-    animation: comm 3s;
+    animation: comm 4s;
 }
 
 .problem-progress{
     height: 100%;
     background: #000;
     width:50%;
-    animation: problem 3s;
+    animation: problem 4s;
 }
 
 .team-progress{
     height: 100%;
     background: #000;
     width:90%;
-    animation: team 3s;
+    animation: team 4s;
 }
 
 .presen-progress{
     height: 100%;
     background: #000;
     width:40%;
-    animation: presen 3s;
+    animation: presen 4s;
 }
 
 .time-progress{
     height: 100%;
     background: #000;
     width:60%;
-    animation: time 3s;
+    animation: time 4s;
 }
 
 .card-divider{
@@ -425,7 +427,7 @@ section .icons span:last-child{
 @media screen and (max-width: 1024px) {
 
     .up-intro-title h1,span{
-        margin-top: 16%;
+        margin-top: 25%;
     }
 
     .container {
@@ -446,9 +448,10 @@ section .icons span:last-child{
     }
 
     .pfp-container{
-        width: 30dvw;
+        width: 70%;
         height: 40dvh;
-        margin-left: 1.5%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .card-divider{
