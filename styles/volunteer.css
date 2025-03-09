@@ -231,8 +231,6 @@ ul{
     background: #E0AF97;
     border-radius: 10px;
     text-align: center;
-    position: relative;
-    overflow: hidden;
 }
 .reviews .review .head img{
     width: 25px;
@@ -253,15 +251,6 @@ ul{
     padding: 10px;
     text-align: left;
     text-overflow: ellipsis;
-}
-.reviews .see_more{
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: #FD6824;
-    cursor: pointer;
-}
-.reviews .see_more:hover{
-    color: #5a5a5a;
 }
 .sendreview{
     background: #E0AF97;
