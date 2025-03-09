@@ -22,7 +22,6 @@ body{
 
 .team-main h1 , .team-head,.team-header-color{
     font-family: Lora, serif;
-    margin-top: 8%;
     font-size: 5.7rem;
     font-weight: bold;
 }
@@ -382,10 +381,6 @@ body{
         margin-top: 7%;
     }
 
-    .team-main{
-        margin-top: 120px;
-    }
-
     .team-main h2{
         font-size: 20px;
     }
@@ -423,73 +418,4 @@ body{
         gap: 65px;
     }
 
-    .team-main{
-        margin-top: 150px;
-    }
-
-    
-}
-
-@media screen and (max-width: 1400px) and (min-width: 1199px) {
-
-    .team-description p{
-        font-size: 1.5rem;
-    }
-    
-    .team-main h1 , .team-head,.team-header-color{
-        font-size: 4.5rem;
-
-    }
-    .team-container{
-        gap: 75px;
-    }
-
-    .team-main{
-        margin-top: 150px;
-    }
-}   
-@media screen and (max-width: 1600px) and (min-width: 1399px){
-
-    .team-description p{
-        font-size: 1.7rem;
-    }
-    
-    .team-main h1 , .team-head,.team-header-color{
-        font-size: 5rem;
-
-    }
-    .team-main{
-        margin-top: 180px;
-    }
-}
-
-@media screen and (max-width: 1800px) and (min-width: 1599px) {
-
-    .team-description p{
-        font-size: 1.9rem;
-    }
-    
-    .team-main h1 , .team-head,.team-header-color{
-        font-size: 5.5rem;
-
-    }
-    .team-main{
-        margin-top: 180px;
-    }
-}
-
-@media screen and (max-width: 2000px) and (min-width: 1799px) {
-
-    .team-description p{
-        font-size: 2.1rem;
-    }
-    
-    .team-main h1 , .team-head,.team-header-color{
-        font-size: 6rem;
-
-    }
-    .team-main{
-        margin-top: 180px;
-    }
-    
 }
