@@ -224,7 +224,6 @@ section .icons span:hover{
     cursor: pointer;
 }
 
-
 section .icons span:last-child{
     margin-right: -10px;
 }
