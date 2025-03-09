@@ -1446,7 +1446,7 @@
 
 .section-3-back-stats p{
     font-size: 10px;
-    margin-top: -20px;
+    /* margin-top: -20px; */
 
 }
 .num-sec-3-back{
@@ -1482,7 +1482,7 @@
     color: white;
 }
 .stars{
-    margin-top: -12px;
+    margin-top: 4px;
 }
 .checked {
     color: orange;
