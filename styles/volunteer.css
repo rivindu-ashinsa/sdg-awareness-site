@@ -22,11 +22,9 @@ ul{
     list-style-type: none;
 }
 .volunteer .headings{
-    display:grid;
+    display: grid;
     text-align: center;
-    font-family: Lora, serif;
-}
-.volunteer .headings{
+    font-family: 'Lora', serif;
     transform: translate(0, 200px);
     animation: heading 2s ease-in-out forwards;
 }
