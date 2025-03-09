@@ -9,11 +9,15 @@ body{
     padding: 0;
 }
 
+.team-main main{
+    margin-top: 100px;
+}
+
 .team-header-color{
     color: #FD6824;
 }
 
-.team-main .team-description p{
+.team-description p{
     font-size: 1.4rem;
     text-align: center;
     line-height: 1.5;
