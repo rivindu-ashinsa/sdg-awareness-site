@@ -3,7 +3,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-main{
+.feedback-main{
     margin-top: 100px;
 }
 
@@ -16,7 +16,7 @@ main{
     color: #FD6824;
 }
 
-h1 , .feedback-head,.feedback-head-color{
+.feedback-main h1 , .feedback-head,.feedback-head-color{
     font-family: Lora, serif;
     margin-top: 6%;
     font-size: 4.5rem;
@@ -57,29 +57,49 @@ h1 , .feedback-head,.feedback-head-color{
     margin-top: 1%;
 }
 
-.feedback-rating{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.feedback-rating input{
-    display: none;
-}
-
-.feedback-rating label{
-    display: block;
-    cursor: pointer;
-}
-
 .rating{
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+    padding-bottom: 5px;
+    list-style: none;
+    text-shadow: 0px 0px 2px black;
+}
+
+.rating #v1{
+    color: gold;
+}
+
+.rating-review{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin-top: 11px;
+}
+
+.rating-review input {
+    display: none;
+}
+
+.rating-review label {
+    font-size: 30px;
+    color: #000000;
+    cursor: pointer;
+    transition: color 0.3s;
+    text-shadow: 0px 0px 2px black;
+}
+  
+.rating-review label:hover,
+.rating-review label:hover ~ label {
+    color: gold;
 }
 
 
 @media screen and (max-width: 320px) {
-    h1 , .feedback-head,.feedback-head-color{
+    .feedback-main h1 , .feedback-head,.feedback-head-color{
         font-size: 1.1rem;
     }
 
@@ -89,7 +109,7 @@ h1 , .feedback-head,.feedback-head-color{
 }
 
 @media screen and (max-width: 480px) and (min-width: 321px) {
-    h1 , .feedback-head,.feedback-head-color{
+    .feedback-main h1 , .feedback-head,.feedback-head-color{
         font-size: 1.5rem;
     }
 
@@ -99,7 +119,7 @@ h1 , .feedback-head,.feedback-head-color{
 }
 
 @media screen and (max-width: 576px) and (min-width: 481px) {
-    h1 , .feedback-head,.feedback-head-color{
+    .feedback-main h1 , .feedback-head,.feedback-head-color{
         font-size: 2rem;
     }
 
@@ -108,4 +128,12 @@ h1 , .feedback-head,.feedback-head-color{
     }
 }
 
-@media screen and (max-width: 768px) and (min-width: 577px) {}
+@media screen and (max-width: 768px) and (min-width: 577px) {
+    .feedback-main h1 , .feedback-head,.feedback-head-color{
+        font-size: 2.5rem;
+    }
+
+    .Feedback-description p{
+        font-size: 1.1rem;
+    }
+}
