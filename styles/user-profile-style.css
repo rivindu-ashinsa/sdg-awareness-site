@@ -47,7 +47,6 @@ body{
 .right-side-container{
     display: flex;
     flex-direction: column;
-    
 }
 
 .pfp-card{
@@ -55,7 +54,7 @@ body{
     border-radius: 35px 0px 0px 0px;
     padding: 3%;
     text-align: center;
-    height: 45rem;
+    height: auto;
     margin-bottom: 0.7%;
 }
 
@@ -63,7 +62,7 @@ body{
     background: #FFF7F2;
     border-radius: 35px;    
     height: 50dvh;
-    width: 22dvw;
+    width: 21dvw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3%;
@@ -81,27 +80,44 @@ body{
 }
 
 .pfp-details{
-    text-align: left;
     color: #000;
-    font-size: 20px;
+    display: flex;
+    padding: 10px;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 30px;
+
 }
 
-.pfp-details ul{
+.left-side-circles{
     list-style: circle;
-    padding: 10px;
-    margin-left: 30px;
+    font-size: 30px;
+    margin-top: 11px;
 }
 
-.pfp-details li {
-    margin-top: 20px;
-}
-
-.pfp-details span {
-    padding: 10px;
-    text-align: center;
+.left-side-details{
     margin-left: 10px;
-    
+    text-align: left;
+    list-style: none;
+    font-size: 22px;
 }
+
+.left-side-details li{
+    margin-top: 12px;
+}
+
+
+.right-side-details {
+   list-style: none;
+   text-align: left;
+   font-size: 22px;
+   margin-left: 30px;
+}
+
+.right-side-details li{
+    margin-top: 12px;
+}
+
 
 .pf-skills{
     background: #FD6824;
@@ -113,7 +129,7 @@ body{
 
 
 .pf-skills h3{
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     font-size: 3rem;
 }
 
@@ -323,7 +339,6 @@ section .icons span:last-child{
     width: 93.25%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 3%;
 
 }
 
