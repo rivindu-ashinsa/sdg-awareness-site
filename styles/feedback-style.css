@@ -29,85 +29,61 @@ body{
     padding: 0;
     margin: 1%;
     line-height: 1.5;
-    font-size: 1.5rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
 }
-.freedback-container{
+
+#form{
+    margin-top: 3%;
     display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    height: auto;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 25px;
+}
+
+.feedback-input, .feedback-horizontal-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feedback-input, .feedback-horizontal-input label{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+span.highlighter{
+    margin-left: 10px;
+    color: red;
+    font-size: 20px;
+}
+
+.feedback-input input {
+    width: 1500px;
+    height: 60px;
+    background-color: #FEBE9F;
+    border-color: black;
+    border-width: 0.5px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 15px;
 }
 
 .form-parallel{
     display: flex;
-    flex-wrap: wrap;
-    width: auto;
-    height: auto;
-    gap: 55px;
+    flex-direction: row;
+    gap: 50px;
 }
 
-.highlighter{
-    font-size: 8px;
-    color: red;
-}
-
-.label{
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-top: 1%;
-}
-
-.feedback-rating{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.feedback-rating input{
-    display: none;
-}
-
-.feedback-rating label{
-    display: block;
-    cursor: pointer;
-}
-
-.rating{
-    display: flex;
-    justify-content: center;
-}
-
-
-@media screen and (max-width: 320px) {
-    .feedback-main h1 , .feedback-head,.feedback-head-color{
-        font-size: 1.1rem;
-    }
-
-    .Feedback-description p{
-        font-size: 0.5rem;
-    }
-}
-
-@media screen and (max-width: 480px) and (min-width: 321px) {
-    .feedback-main h1 , .feedback-head,.feedback-head-color{
-        font-size: 1.5rem;
-    }
-
-    .Feedback-description p{
-        font-size: 0.7rem;
-    }
-}
-
-@media screen and (max-width: 576px) and (min-width: 481px) {
-    .feedback-main h1 , .feedback-head,.feedback-head-color{
-        font-size: 2rem;
-    }
-
-    .Feedback-description p{
-        font-size: 0.9rem;
-    }
-}
-
-@media screen and (max-width: 768px) and (min-width: 577px) {
+.feedback-horizontal-input input{
+    width: 726px;
+    height: 60px;
+    background-color: #FEBE9F;
+    border-color: black;
+    border-width: 0.5px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 15px;
     
 }

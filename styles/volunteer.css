@@ -1,4 +1,4 @@
-.background_image{
+t.background_image{
     background-image: url('https://files.123freevectors.com/wp-content/original/131830-abstract-yellow-and-white-polygonal-triangle-background-vector.jpg');
     background-size: cover;
     background-position: center;
@@ -165,7 +165,7 @@ ul{
     line-height: 20px;
     font-weight: bolder;
 }
-.subtopic #main{
+.subtopic .main{
     width: 100%;
     height: 18vh;
     min-height: 180px;
@@ -288,7 +288,7 @@ ul{
     border-color: black;
     width: 92%;
 }
-.sendreview :is(#reset, #submit){
+.sendreview :is(.reset, .submit){
     margin:-10px 0 12px 0;
     padding: 5px 0;
     border-radius: 10px;
@@ -297,24 +297,24 @@ ul{
     font-weight: bold;
     cursor: pointer;
 }
-.sendreview #reset{
+.sendreview .reset{
     width: 80px;
     background-color: #5b5a5a;    
     border-color: #5b5b5b;
 }
-.sendreview #submit{
+.sendreview .submit{
     width: 140px;
     background-color: #FD6824;    
     border-color: #FD6824;
 }
-.sendreview :is(#reset, #submit):hover{
+.sendreview :is(.reset, .submit):hover{
     color: #000;
     transition: 1s;
 }
-.sendreview #submit:hover{
+.sendreview .submit:hover{
     background-color: #ff946d;
 }
-.sendreview #reset:hover{
+.sendreview .reset:hover{
     background-color: #aaaaaa;
 }
 .sendreview .buttons{
@@ -333,7 +333,7 @@ ul{
     list-style: none;
     text-shadow: 0px 0px 2px black;
 }
-.rating #v1{
+.rating .v1{
     color: gold;
 }
 .rating-review{
@@ -370,7 +370,6 @@ ul{
 }
 .topics {
     opacity: 0;
-    display: none;
     transform: translate(0, 200px);
     animation: content 2s ease-in-out forwards;
     animation-delay: 2s;
@@ -508,13 +507,13 @@ ul{
     .outstanding p{
         font-size: 0.7rem;
     }
-    .reviews #review1{
+    .reviews .review1{
         animation: review1 15s ease-in-out infinite;
     }
-    .reviews #review2{
+    .reviews .review2{
         animation: review2 15s ease-in-out infinite;
     }
-    .reviews #review3{
+    .reviews .review3{
         animation: review3 15s ease-in-out infinite;
     }
     .sendreview .rate{
@@ -530,7 +529,7 @@ ul{
     .sendreview textarea{
         font-size: 0.8rem;
     }
-    .sendreview :is(#reset, #submit){
+    .sendreview :is(.reset, .submit){
         font-size: 0.6rem;
         width: 60px;
     }
@@ -591,13 +590,13 @@ ul{
     .reviews .review{
         max-width: 80%;;
     }
-    .reviews #review1{
+    .reviews .review1{
         animation: review1 9s ease-in-out infinite;
     }
-    .reviews #review2{
+    .reviews .review2{
         animation: review2 9s ease-in-out infinite;
     }
-    .reviews #review3{
+    .reviews .review3{
         animation: review3 9s ease-in-out infinite;
     }
     .sendreview h5{
@@ -610,7 +609,7 @@ ul{
     .sendreview textarea{
         font-size: 0.9rem;
     }
-    .sendreview :is(#reset, #submit){
+    .sendreview :is(.reset, .submit){
         font-size: 0.6rem;
         width: 60px;
     }
@@ -664,13 +663,13 @@ ul{
     .reviews .review{
         max-width: 80%;
     }
-    .reviews #review1{
+    .reviews .review1{
         animation: review1 9s ease-in-out infinite;
     }
-    .reviews #review2{
+    .reviews .review2{
         animation: review2 9s ease-in-out infinite;
     }
-    .reviews #review3{
+    .reviews .review3{
         animation: review3 9s ease-in-out infinite;
     }
     .sendreview h5{
@@ -682,7 +681,7 @@ ul{
     .sendreview textarea{
         font-size: 1.1rem;
     }
-    .sendreview :is(#reset, #submit){
+    .sendreview :is(.reset, .submit){
         font-size: 0.8rem;
         width: 70px;
     }
@@ -735,7 +734,7 @@ ul{
     .sendreview textarea{
         font-size: 1.2rem;
     }
-    .sendreview :is(#reset, #submit){
+    .sendreview :is(.reset, .submit){
         font-size: 0.9rem;
         width: 80px;
     }
