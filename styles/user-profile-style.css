@@ -448,9 +448,10 @@ section .icons span:last-child{
     }
 
     .pfp-container{
-        width: 30dvw;
+        width: 55dvw;
         height: 40dvh;
-        margin-left: 1.5%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .card-divider{
