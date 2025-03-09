@@ -244,8 +244,9 @@ section .icons span:last-child{
     z-index: 1;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 17.5px;
+    margin-top: 21px;
 }
+
 
 .days li.inactive{
     color: #fbbfa0;
