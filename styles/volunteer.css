@@ -331,7 +331,7 @@ ul{
   }
 
   .rating-review .stars {
-    font-size: 30px;
+    font-size: 1.8rem;
     color: #000000;
     cursor: pointer;
     transition: color 0.3s;
@@ -342,7 +342,9 @@ ul{
 .rating-review .stars:hover, .rating-review .stars:hover~.stars {
     color: gold;
 }
-
+.stars.selected {
+    color: gold;
+}
 .sendreview .rate{
     display: flex;
     justify-content: space-between;
@@ -503,8 +505,9 @@ ul{
     }
     .sendreview h5{
         font-size: 0.7rem;
+        margin-top: 15px;
     }
-    .rating-review label {
+    .rating-review .stars {
         font-size: 0.8rem;
     }
     .sendreview textarea{
@@ -582,9 +585,10 @@ ul{
     }
     .sendreview h5{
         font-size: 0.8rem;
+        margin-top: 15px;
     }
-    .rating-review label {
-        font-size:0.96rem;
+    .rating-review .stars {
+        font-size:0.9rem;
     }
     .sendreview textarea{
         font-size: 0.9rem;
@@ -655,8 +659,8 @@ ul{
     .sendreview h5{
         font-size: 1rem;
     }
-    .rating-review label {
-        font-size: 1.2rem;
+    .rating-review .stars {
+        font-size: 1.4rem;
     }
     .sendreview textarea{
         font-size: 1.1rem;
@@ -708,8 +712,8 @@ ul{
     .sendreview h5{
         font-size: 1.1rem;
     }
-    .rating-review label {
-        font-size: 1.4rem;
+    .rating-review .stars {
+        font-size: 1.6rem;
     }
     .sendreview textarea{
         font-size: 1.2rem;
