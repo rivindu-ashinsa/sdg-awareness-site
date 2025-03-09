@@ -42,9 +42,10 @@ body{
     gap: 25px;
 }
 
-.feedback-input{
+.feedback-input, .feedback-horizontal-input {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .feedback-input, .feedback-horizontal-input label{
@@ -60,10 +61,13 @@ span.highlighter{
 
 .feedback-input input {
     width: 1500px;
-    height: 50px;
+    height: 60px;
     background-color: #FEBE9F;
     border-color: black;
     border-width: 0.5px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 15px;
 }
 
 .form-parallel{
@@ -74,8 +78,12 @@ span.highlighter{
 
 .feedback-horizontal-input input{
     width: 726px;
-    height: 50px;
+    height: 60px;
     background-color: #FEBE9F;
     border-color: black;
     border-width: 0.5px;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 15px;
+    
 }
