@@ -8,6 +8,10 @@ body{
     width: 100;
 }
 
+main{
+    margin-bottom: 10%;
+}
+
 .up-intro-title{
     text-align: center;
     padding: 0;
@@ -55,7 +59,7 @@ body{
     padding: 3%;
     text-align: center;
     height: auto;
-    margin-bottom: 0.7%;
+    margin-bottom: 0.8%;
 }
 
 .pfp-container{
@@ -122,7 +126,6 @@ body{
 .pf-skills{
     background: #FD6824;
     padding: 5%;
-    margin-top: 0.7%;
     height: auto;
 
 }
@@ -161,8 +164,9 @@ body{
 
 .card-divider{
     display: flex;
-    padding: 0.6%;
+    padding: 0.8%;
     background-color: #FD6824;
+    margin-bottom: 0.8%;
 }
 
 .descritpion-container{
@@ -207,7 +211,7 @@ body{
     width: 100%;
     background-color: #FD6824;
     border-radius: 25px;
-    
+    user-select: none;
 }
 
 .calander-module section{
@@ -239,6 +243,7 @@ section.icons span{
 section .icons span:hover{
     background: #f2f2f2;
     cursor: pointer;
+    border-radius: 40%;
 }
 
 section .icons span:last-child{
