@@ -6,113 +6,136 @@
     <title>Feedback</title>
     <link rel="stylesheet" href="styles/feedback-style.css">
     <link rel="stylesheet" href="styles/general.css">
+    <link rel="icon" type="image/x-icon" href="images-home/next-gen-industries-logo-png.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400..800&display=swap" 
-    rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@400..700;1,400..700&family=Syne:wght@400..800&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
-        <button class="menu-toggle" onclick="toggleMenu()">
-        ☰
-    </button>   
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>   
         <div class="header-logo">
             <img class="logo-img" src="images-home/logo.svg" alt="">
         </div>
         <div class="header-navigation">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="volunteer.html">Volunteer</a></li>
-                <li><a href="sitemap.html">Sitemap</a></li>
-                <li><a href="content.html">Content</a></li>
-                <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li id="profile-le"><a href="user-profile.html">Profile</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="content.html">Content</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li id="profile-le"><a href="user-profile.html">Profile</a></li>
         </div>
         <div class="header-profile">
-            <img class="profile-icon" src="images-home/profile-icon.svg" alt="">
+            <a href="user-profile.html">
+                <img class="profile-icon" src="images-home/profile-icon.svg" alt="">
+            </a>
         </div>
     </header>
 
     <main>
-        <div class="feedback-head">
-            <h1><span class="feedback-head-color">Share Your Thoughts</span> – Help Us Build a<br>Sustainable Future!</h1>
-        </div>
+        <div class="feedback-main">
+            <div class="feedback-head">
+                <h1><span class="feedback-head-color">Share Your Thoughts</span> – Help Us Build a<br>Sustainable Future!</h1>
+            </div>
 
-        <div class="Feedback-description">
-            <p>Your feedback is essential in shaping volunteering programs for greener and more resilient communities. Let us know how we can improve!</p>
-        </div>
+            <div class="Feedback-description">
+                <p>Your feedback is essential in shaping volunteering programs for greener and more resilient communities. Let us know how we can improve!</p>
+            </div>
 
-        <div class="freedback-container">
-            <form id="form" method="get" action="/">
+            <div class="feedback-container">
+                <form id="form" method="get" action="/" onsubmit="return validateFeedback()">
 
-                <div class="feedback-input">
-                    <label for="name">Full Name<span class= "highlighter"> (*Required)</span></label><br>
-                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                    <div class="error" id="name-error"></div>
-                </div>
-
-                <div class="form-parallel">
-
-                    <div class="feedback-horizontal-input">
-                        <label for="email">Email Address<span class= "highlighter"> (*Required)</span></label><br>
-                        <input type="email" id="email" name="email" placeholder="sample123@yourmail.com" required>
+                    <div class="feedback-input">
+                        <label for="name">Full Name<span class= "highlighter"> (*Required)</span></label><br>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                         <div class="error" id="name-error"></div>
                     </div>
 
-                    <div class="feedback-horizontal-input">
-                        <label for="number">Telephone Number<span class= "highlighter"> (*Required)</span></label><br>
-                        <input type="tel" id="tel" name="tel" required>
-                        <div class="error" id="tel-error"></div>
+                    <div class="form-parallel">
+
+                        <div class="feedback-horizontal-input">
+                            <label for="email">Email Address<span class= "highlighter"> (*Required)</span></label><br>
+                            <input type="email" id="email" name="email" placeholder="sample123@yourmail.com" required>
+                            <div class="error" id="email-error"></div>
+                        </div>
+
+                        <div class="feedback-horizontal-input">
+                            <label for="number">Telephone Number<span class= "highlighter"> (*Required)</span></label><br>
+                            <input type="tel" id="tel" name="tel" required>
+                            <div class="error" id="tel-error"></div>
+                        </div>
+
                     </div>
 
-                </div>
-
-                <div class="feedback-input">
-                    <label for="address">Residential Address<span class= "highlighter"> (*Required)</span></label><br>
-                    <input type="text" id="name" name="name" required>
-                    <div class="error" id="address-error"></div>
-                </div>
-
-                <div class="form-parallel">
-
-                    <div class="feedback-horizontal-input">
-                        <label for="address">Your Rating </label>
-                        <ul class="rating">
-                            <li id="v1">★</li>
-                            <li id="v1">★</li>
-                            <li id="v1">★</li>
-                            <li id="v1">★</li>
-                            <li id="v1">★</li>
-                        </ul>
+                    <div class="feedback-input">
+                        <label for="address">Residential Address<span class= "highlighter"> (*Required)</span></label><br>
+                        <input type="text" id="address" name="address" required>
+                        <div class="error" id="address-error"></div>
                     </div>
 
-                    <div class="feedback-horizontal-input">
-                        <label for="area">Interested Area</label>
-                        <select name="area" id="area">
-                            <option value="Industry">Industry</option>
-                            <option value="Smart City">Smart City</option>
-                            <option value="Green Technology">Green Technology</option>
-                        </select>
+                    <div class="form-parallel">
+
+                        <div class="feedback-horizontal-input">
+                            <label for="address">Your Rating </label>
+                            <ul class="rating">
+                                <li class="star">★</li>
+                                <li class="star">★</li>
+                                <li class="star">★</li>
+                                <li class="star">★</li>
+                                <li class="star">★</li>
+                            </ul>
+                        </div>
+
+                        <div class="feedback-horizontal-input">
+                            <label for="area">Interested Area</label>
+                            <select name="area" id="area">
+                                <option value="Industry">Industry</option>
+                                <option value="Smart City">Smart City</option>
+                                <option value="Green Technology">Green Technology</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    
+                    <div class="feedback-input">
+                        <label for="message">Message / Suggestions</label><br>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="If you have any additional message, please type it in here..."></textarea>
+                        <div class="error"></div>
                     </div>
 
-                </div>
-                
-                <div class="feedback-input">
-                    <label for="message">Message / Suggestions</label><br>
-                    <textarea name="message" id="message" cols="30" rows="5" placeholder="If you have any additional message, please type it in here..."></textarea>
-                </div>
+                    <div class="feedback-input">
+                        <label for="message">Feedback Type</label><br>
+                        <input type="radio" id="experiance" name="feedback" value="experiance">
+                        <label for="experiance">Website Experience</label>
+                        <br>
+                        <input type="radio" id="volunteer" name="feedback" value="volunteer">
+                        <label for="volunteer">Volunteering Program Feedback</label>
+                        <br>
+                        <input type="radio" id="suggestion" name="feedback" value="suggestion">
+                        <label for="suggestion">Event Suggestion</label>
+                    </div>
+                    
+                    <div class="file-upload">
+                        <input type="file" id="file"/>
+                        <label for="file">Drag & Drop or choose file to upload<br>Select zip,image,pdf or ms.word</label>
+                    </div>
 
-                <div class="feedback-input">
-                    <button type="submit" id="submit">Submit</button>
-                </div>
+                    <div class="feedback-button">
+                        <button type="reset" id="reset">Reset</button>
+                        <button type="submit" id="submit">Submit</button>
+                    </div>
 
-            </form>
+                </form>
+            </div>
         </div>
-
     </main>
-
+    <script src="js/nav.js"></script>
+    <script src="js/active-page.js"></script>
+    <script src="js/feedback.js"></script>
 </body>
 </html>
