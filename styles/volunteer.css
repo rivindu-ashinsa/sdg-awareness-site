@@ -25,7 +25,7 @@ ul{
     display: grid;
     text-align: center;
     transform: translate(0, 200px);
-    animation: heading 2s ease-in-out forwards;
+    animation: heading 1s ease-in-out forwards;
 }
 .volunteer .headings :where( h1, em){
     font-size: 4rem;
@@ -259,7 +259,9 @@ ul{
     font-size: 0.9rem;
     font-weight: bold;
     color: #FD6824;
-    cursor:pointer;
+    cursor: pointer;
+    margin-top: auto;
+    text-align: center;
 }
 .reviews .see_more:hover{
     color: #5a5a5a;
@@ -350,13 +352,13 @@ ul{
     display: none;
   }
 
-  .rating-review .stars {
+.rating-review .stars {
     font-size: 1.8rem;
     color: #000000;
     cursor: pointer;
     transition: color 0.3s;
     text-shadow: 0px 0px 2px black;
-  }
+}
 
 .rating-review .stars.selected,
 .rating-review .stars:hover, .rating-review .stars:hover~.stars {
