@@ -292,18 +292,30 @@ ul{
     margin:-10px 0 12px 0;
     padding: 5px 0;
     border-radius: 10px;
-    background-color: #FD6824;
     color: white;
-    border-color: #FD6824;
     font-size: 0.8rem;
-    width: 80px;
     font-weight: bold;
     cursor: pointer;
 }
-.sendreview :is(#reset, #submit):hover{
-    background-color: #FD6824;
-    color: white;
+.sendreview #reset{
+    width: 80px;
+    background-color: #5b5a5a;    
+    border-color: #5b5b5b;
+}
+.sendreview #submit{
+    width: 140px;
+    background-color: #FD6824;    
     border-color: #FD6824;
+}
+.sendreview :is(#reset, #submit):hover{
+    color: #000;
+    transition: 1s;
+}
+.sendreview #submit:hover{
+    background-color: #ff946d;
+}
+.sendreview #reset:hover{
+    background-color: #aaaaaa;
 }
 .sendreview .buttons{
     display: flex;
