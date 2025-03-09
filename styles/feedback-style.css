@@ -1,0 +1,111 @@
+body{
+    background-color: #FFF7F2;
+    font-family: 'Roboto', sans-serif;
+}
+
+main{
+    margin-top: 100px;
+}
+
+.feedback-head{
+    text-align: center;
+    padding: 0;
+}
+
+.feedback-head-color{
+    color: #FD6824;
+}
+
+h1 , .feedback-head,.feedback-head-color{
+    font-family: Lora, serif;
+    margin-top: 6%;
+    font-size: 4.5rem;
+    font-weight: bold;
+    line-height: normal;
+}
+
+.Feedback-description p{
+    text-align: center;
+    padding: 0;
+    margin: 1%;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+.freedback-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+}
+
+.form-parallel{
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    gap: 55px;
+}
+
+.highlighter{
+    font-size: 8px;
+    color: red;
+}
+
+.label{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1%;
+}
+
+.feedback-rating{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.feedback-rating input{
+    display: none;
+}
+
+.feedback-rating label{
+    display: block;
+    cursor: pointer;
+}
+
+.rating{
+    display: flex;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 320px) {
+    h1 , .feedback-head,.feedback-head-color{
+        font-size: 1.1rem;
+    }
+
+    .Feedback-description p{
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 321px) {
+    h1 , .feedback-head,.feedback-head-color{
+        font-size: 1.5rem;
+    }
+
+    .Feedback-description p{
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 576px) and (min-width: 481px) {
+    h1 , .feedback-head,.feedback-head-color{
+        font-size: 2rem;
+    }
+
+    .Feedback-description p{
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 577px) {}
