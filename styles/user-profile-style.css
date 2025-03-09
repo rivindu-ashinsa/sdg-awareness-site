@@ -157,9 +157,39 @@ main{
     overflow: hidden;
 }
 
-.progress{
+.comm-progress{
     height: 100%;
     background: #000;
+    width:70%;
+    animation: comm 3s;
+}
+
+.problem-progress{
+    height: 100%;
+    background: #000;
+    width:50%;
+    animation: problem 3s;
+}
+
+.team-progress{
+    height: 100%;
+    background: #000;
+    width:90%;
+    animation: team 3s;
+}
+
+.presen-progress{
+    height: 100%;
+    background: #000;
+    width:40%;
+    animation: presen 3s;
+}
+
+.time-progress{
+    height: 100%;
+    background: #000;
+    width:60%;
+    animation: time 3s;
 }
 
 .card-divider{
@@ -483,6 +513,48 @@ section .icons span:last-child{
     }
 }
 
+@keyframes comm{
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
 
+@keyframes problem{
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
 
+@keyframes team{
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes presen{
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+
+@keyframes time{
+    0% {
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
 
