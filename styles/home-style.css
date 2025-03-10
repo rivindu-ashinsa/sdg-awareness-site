@@ -620,6 +620,39 @@
         height:18rem;
         width: 13rem;
     }
+    .section-4-description {
+        width: 100%;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out;
+    }
+    .section-4-head {
+        text-align: left;
+        max-width: 900px;
+    }
+    
+    .section-4-head h1 {
+        color: black;
+        font-weight: bold;
+        font-family: Lora, serif;
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+    
+    /* Paragraph */
+    .section-4-paragraph {
+        color: #504E4D;
+        min-width: 100px;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: left;
+    }
+    
+    .section-4-paragraph p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    
 
 }
 
