@@ -8,11 +8,6 @@ body {
     padding: 0;
 }
 
-<<<<<<< HEAD
-
-/* .feedback-main{ */
-=======
->>>>>>> b079a3a295b4804fcca084feca991619f1794048
 .feedback-main {
     margin-top: 100px;
 }
@@ -197,7 +192,8 @@ span.highlighter {
 .feedback-submit {
     display: flex;
     flex-wrap: wrap;
-    gap: 15%
+    justify-content: center;
+    gap: 15px
 }
 
 .feedback-click {
@@ -205,7 +201,6 @@ span.highlighter {
     align-items: center;
     margin-bottom: 10px;
     font-size: 15px;
-    margin-left: px;
 }
 
 .feedback-click input {
@@ -648,9 +643,4 @@ span.highlighter {
         width: 18%;
         padding: 8px 15px;
     }
-}
-
-@media screen and (max-width: 1500px) and (min-width: 1346px) {
-
-    
 }
