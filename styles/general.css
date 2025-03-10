@@ -191,6 +191,13 @@ footer {
     width: 100%;
 }
 
+.footer-block-up-logo-img  img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
 .footer-block-up-logo-social {
     display: flex;
     justify-content: space-between;
@@ -198,6 +205,17 @@ footer {
     padding-right: 20px;
     min-width: 168px;
     max-width: 208px;
+    margin: auto;
+}
+
+.footer-block-up-logo-social img {
+    display: flex;
+    justify-content: space-between;
+    padding-left: auto;
+    padding-right: auto;
+    width: 24px;
+    min-width: auto;
+    max-width: auto;
     margin: auto;
 }
 
@@ -210,6 +228,11 @@ footer .div-title {
     font-weight: bolder;
     font-size: 1.3rem;
     text-align: left;
+    color: #333;
+}
+
+footer a{
+    color:black;
 }
 
 
