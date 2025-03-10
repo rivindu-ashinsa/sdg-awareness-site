@@ -195,7 +195,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 70%;
+    max-width: 170px;
 }
 
 .footer-block-up-logo-social {
@@ -213,9 +214,9 @@ footer {
     justify-content: space-between;
     padding-left: auto;
     padding-right: auto;
-    width: 24px;
-    min-width: auto;
-    max-width: auto;
+    width: auto;
+    /* min-width: auto;*/
+    max-width: 208px; 
     margin: auto;
 }
 
@@ -228,7 +229,7 @@ footer .div-title {
     font-weight: bolder;
     font-size: 1.3rem;
     text-align: left;
-    color: #333;
+    color: black;
 }
 
 footer a{
