@@ -79,7 +79,7 @@ body{
 
 .error {
     color: red;
-    font-size: 0.5em;
+    font-size: 0.8rem;
     display: none;
 }
 
@@ -156,6 +156,7 @@ span.highlighter{
     gap: 15px;
 }
 
+
 .feedback-input textarea {
     width: 100%;
     max-width: 100%;
@@ -170,23 +171,14 @@ span.highlighter{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/*
-.feedback-lable{
-    font-size: 15px;
-    gap: 10px;
-}
 
-.feedback-click {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-}
+
 
 .feedback-file{
     display: flex;
     flex-wrap: wrap;
 }
-
+/*
 .file-upload {
     width: 100%;
     max-width: 400px;
@@ -202,110 +194,38 @@ span.highlighter{
     padding: 20px;
     font-size: 18px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-
-}
-
-.feedback-reviews {
-    background-color: #FFF7F2;
-    border: 2px solid #FD6824;
-    border-radius: 16px;
-    padding: 24px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-}
-
-.feedback-reviews h4 {
-    color: #FD6824;
-    font-family: 'Lora', serif;
-    margin-bottom: 12px;
-}
-
-.feedback-reviews {
-    background-color: #FFF7F2;
-    border: 2px solid #000000;
-    border-radius: 16px;
-    padding: 24px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    margin-bottom: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.feedback-reviews h4 {
-    color: #000000;
-    font-family: 'Lora', serif;
-    font-size: 2rem;
-    margin-bottom: 12px;
-    text-align: center;
-}
-
-
-.rating-review {
-    display: flex;
-    gap: 5px;
-}
-
-.stars {
-    font-size: 28px;
-    color: #ccc;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.stars:hover,
-.stars.active {
-    color: #FD6824;
-}
+}*/
 
 
 .feedback-dropdown select {
-    width: 100%;
-    height: 52px;
+    width: 40%;
+    height: 30px;
     background-color: #FEBE9F;
     border: 0.5px solid #000000;
-    border-radius: 15px;
-    padding: 10px;
-    font-size: 15px;
+    border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 
 .feedback-date input {
-    width: 100%;
-    height: 52px;
+    width: 40%;
+    height: 30px;
     background-color: #FEBE9F;
     border: 0.5px solid #000000;
-    border-radius: 15px;
-    padding: 10px;
-    font-size: 15px;
+    border-radius: 5px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
-
-
-textarea {
-    width: 100%;
-    max-width: 100%;
-    height: 100px;
-    background-color: #FEBE9F;
-    border: 0.5px solid #000000;
-    border-radius: 15px;
-    padding: 10px;
-    font-size: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    resize: none;
-}
-
 
 .feedback-click {
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 8px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    margin-left: 15px;
 }
+
 
 .feedback-click input {
     accent-color: #FD6824;
@@ -323,6 +243,7 @@ textarea {
     transition: background-color 0.3s ease;
 }
 
+
 .file-upload:hover {
     background-color: rgba(254, 190, 159, 0.7);
 }
@@ -333,11 +254,12 @@ textarea {
     color: #FFF;
     border: none;
     border-radius: 15px;
-    padding: 12px 20px;
+    padding: 8px 15px;
     cursor: pointer;
-    width: 100%;
+    width: 15%;
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
 }
 
 #reset:hover, #submit:hover {
@@ -351,13 +273,6 @@ textarea {
 
 #reset:hover {
     background-color: #B3B3B3;
-}*/
-
-
-
-
-
-
-
+}
 
 

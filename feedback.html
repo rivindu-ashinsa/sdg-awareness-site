@@ -110,7 +110,7 @@
                         </div>
 
                         <div class="feedback-date">
-                            <label for="date">Date and Time : </label>
+                            <label for="date">Date & Time of Submission : </label>
                             <input type="datetime-local" id="date" name="date">
                         </div>
                     
@@ -122,35 +122,38 @@
                             </div>
                         </div>
 
-                            <div class="feedback-lable">
-                                <h4>Feedback Type :</h4>
+                            <div class>
+                                <div class="feedback-lable">
+                                    <h4>Feedback Type :</h4>
 
-                                <div class="feedback-click">
-                                    <input type="checkbox" id="experiance" name="feedback" value="experiance">
-                                    <label for="experiance">Website Experience</label>
+                                    <div class="feedback-click">
+                                        <input type="checkbox" id="experiance" name="feedback" value="experiance">
+                                        <label for="experiance">Website Experience</label>
+                                    </div>
+
+                                    <div class="feedback-click">
+                                        <input type="checkbox" id="volunteer" name="feedback" value="volunteer">
+                                        <label for="volunteer">Volunteering Program Feedback</label>
+                                    </div>
+
+                                    <div class="feedback-click">
+                                        <input type="checkbox" id="suggestion" name="feedback" value="suggestion">
+                                        <label for="suggestion">Event Suggestion</label>
+                                    </div>
+
                                 </div>
-
-                                <div class="feedback-click">
-                                    <input type="checkbox" id="volunteer" name="feedback" value="volunteer">
-                                    <label for="volunteer">Volunteering Program Feedback</label>
+                                
+                                <div class="file-upload">
+                                    <p>Drag & Drop or choose file to upload
+                                    <br>Select zip,image,pdf or ms.word</p>
+                                    <input type="file" id="file">
                                 </div>
-
-                                <div class="feedback-click">
-                                    <input type="checkbox" id="suggestion" name="feedback" value="suggestion">
-                                    <label for="suggestion">Event Suggestion</label>
-                                </div>
-
                             </div>
-                            
-                            <div class="file-upload">
-                                <p>Drag & Drop or choose file to upload
-                                <br>Select zip,image,pdf or ms.word</p>
-                                <input type="file" id="file">
-                            </div>
 
-
+                            <div class="feedback-button">
                             <button type="reset" id="reset">Reset</button>
                             <button type="submit" id="submit">Submit</button>
+                            </div>
                         </div>
 
                 </form>
