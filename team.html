@@ -15,29 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <header class="header">
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>   
-        <div class="header-logo">
-            <img class="logo-img" src="images-home/logo.svg" alt="">
-        </div>
-        <div class="header-navigation">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="volunteer.html">Volunteer</a></li>
-            <li><a href="content.html">Content</a></li>
-            <li><a href="sitemap.html">Sitemap</a></li>
-            <li><a href="table.html">Table</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
-            <li><a href="team.html">Team</a></li>
-            <li id="profile-le"><a href="user-profile.html">Profile</a></li>
-        </div>
-        <div class="header-profile">
-            <a href="user-profile.html">
-                <img class="profile-icon" src="images-home/profile-icon.svg" alt="">
-            </a>
-        </div>
-    </header>
-
+    <div id="header"></div>
     <main>
         <div class="team-main">
             <div class="team-head">
@@ -188,6 +166,11 @@
     </main>
     <div id="footer"></div>
     <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
         fetch('footer.html')
             .then(response => response.text())
             .then(data => {
