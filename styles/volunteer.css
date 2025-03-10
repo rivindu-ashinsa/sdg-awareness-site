@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .background_image{
     background-image: url('https://files.123freevectors.com/wp-content/original/131830-abstract-yellow-and-white-polygonal-triangle-background-vector.jpg');
     background-size: cover;
@@ -54,7 +59,7 @@ ul{
     line-height: 30px;
 }
 .filter-Sort{
-    margin: 3% 5%;
+    margin: 0 5%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -81,7 +86,6 @@ ul{
 }
 .filter-form fieldset{
     padding: 10px;
-    margin: 0;
 }
 .filter-form .filter-options{
     display: none;
@@ -237,8 +241,6 @@ ul{
     background: #E0AF97;
     border-radius: 10px;
     text-align: center;
-    position: relative;
-    overflow: hidden;
 }
 .reviews .review .head img{
     width: 25px;
@@ -257,20 +259,8 @@ ul{
 .reviews .review p{
     font-size: 0.8rem;
     padding: 10px;
-    line-height: 20px;
     text-align: left;
     text-overflow: ellipsis;
-}
-.reviews .see_more{
-    font-size: 0.9rem;
-    font-weight: bold;
-    color: #FD6824;
-    cursor: pointer;
-    margin-top: auto;
-    text-align: center;
-}
-.reviews .see_more:hover{
-    color: #5a5a5a;
 }
 .sendreview{
     background: #E0AF97;
