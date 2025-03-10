@@ -3,22 +3,29 @@
     box-sizing: border-box;
 }
 
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
+} */
 
 body::-webkit-scrollbar {
     display: none;
 }
 
+body {
+    margin: 0;
+}
+
+
 a {
     text-decoration: none;
+    padding: 0px;
+;
 }
 
 .header {
     display: flex;
-    width: 100%;
+    width: 100vw;
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
@@ -27,6 +34,7 @@ a {
     position: fixed;
     font: 400 1rem/1.975rem "Open Sans", sans-serif;
     top: 0;
+    margin-left: 0;
     z-index: 1000;
     animation: slideDown 1s ease-out;
 }
@@ -67,7 +75,7 @@ a {
 .header-navigation ul {
     /* list-style: none; */
     display: flex;
-    gap: 20px;
+    gap: 0;
 
 }
 

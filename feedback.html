@@ -48,40 +48,49 @@
             </div>
 
             <div class="feedback-container">
-                <form id="form" method="get" action="/" onsubmit="return validateFeedback()">
+                
+                <form id="form" novalidate onsubmit="return validateFeedback()">
 
-                    <div class="feedback-input">
-                        <label for="name">Full Name<span class= "highlighter">(*Required)</span></label>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                        <div class="error" id="name-error"></div>
-                    </div>
+                    <div class="formbox-user-details">
 
-                    <div class="form-parallel">
-
-                        <div class="feedback-horizontal-input">
-                            <label for="email">Email Address<span class= "highlighter">(*Required)</span></label>
-                            <input type="email" id="email" name="email" placeholder="sample123@yourmail.com" required>
-                            <div class="error" id="email-error"></div>
+                        <h3>Personal Details</h3>
+                
+                        <div class="feedback-input">
+                            <label for="name">Full Name <span class="highlighter">(*Required)</span></label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required
+                                title="Enter your full name.">
+                            <div class="error" id="name-error">** Please enter your full name.</div>
                         </div>
-
-                        <div class="feedback-horizontal-input">
-                            <label for="number">Telephone Number<span class= "highlighter">(*Required)</span></label>
-                            <input type="tel" id="tel" name="tel" required>
-                            <div class="error" id="tel-error"></div>
+                
+                        <div class="feedback-input">
+                            <label for="email">Email Address <span class="highlighter">(*Required)</span></label>
+                            <input type="email" id="email" name="email" placeholder="sample123@yourmail.com" required
+                                title="sample123@domain.com">
+                            <div class="error" id="email-error">** Please enter a valid email address.</div>
                         </div>
-
+                
+                        <div class="feedback-input">
+                            <label for="tel">Telephone Number <span class="highlighter">(*Required)</span></label>
+                            <input type="tel" id="tel" name="tel" placeholder="+94XXXXXXXXX"
+                                pattern="^\+94\d{9}$" required
+                                title="Phone number eg.+94123456789">
+                            <div class="error" id="tel-error">** Enter a valid telephone number</div>
+                        </div>
+                
+                        <div class="feedback-input">
+                            <label for="address">Residential Address <span class="highlighter">(*Required)</span></label>
+                            <input type="text" id="address" name="address" placeholder="Enter your full address" required
+                                title="Residential address.">
+                            <div class="error" id="address-error">** Please provide your residential address.</div>
+                        </div>
                     </div>
 
-                    <div class="feedback-input">
-                        <label for="address">Residential Address<span class= "highlighter">(*Required)</span></label>
-                        <input type="text" id="address" name="address" required>
-                        <div class="error" id="address-error"></div>
-                    </div>
+                    <div class="feedback-reviews">
 
-                    <div class="form-parallel">
+                        <h3>Feedback Details</h3>
 
                         <div class="feedback-rating">
-                            <label for="address">Your Rating </label>
+                            <label for="address">Your Rating : </label>
                             <div class="rating-review">
                                 <span class="stars" data-value="1">★</span>
                                 <span class="stars" data-value="2">★</span>
@@ -92,7 +101,7 @@
                         </div>
 
                         <div class="feedback-dropdown">
-                            <label for="area">Interested Area</label>
+                            <label for="area">Interested Area : </label>
                             <select name="area" id="area">
                                 <option value="Industry">Industry</option>
                                 <option value="Smart City">Smart City</option>
@@ -100,48 +109,51 @@
                             </select>
                         </div>
 
-                    </div>
+                        <div class="feedback-date">
+                            <label for="date">Date & Time of Submission : </label>
+                            <input type="datetime-local" id="date" name="date">
+                        </div>
                     
-                    <div class="feedback-box">
-                        <div class="feedback-input">
-                            <label for="message">Message / Suggestions</label>
-                            <textarea name="message" id="message" cols="30" rows="5" placeholder="If you have any additional message, please type it in here..."></textarea>
-                            <div class="error"></div>
+                        <div class="feedback-box">
+                            <div class="feedback-input">
+                                <label for="message">Message / Suggestions</label>
+                                <textarea name="message" id="message" cols="30" rows="5" placeholder="If you have any additional message, please type it in here..."></textarea>
+                                <div class="error"></div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="feedback-file">
-                        <div class="feedback-radio">
-                            <h4>Feedback Type</h4>
+                            <div class="feedback-submit">
+                                <div class="feedback-lable">
+                                    <h4>Feedback Type :</h4>
 
-                            <div class="feedback-click">
-                                <input type="radio" id="experiance" name="feedback" value="experiance">
-                                <label for="experiance">Website Experience</label>
+                                    <div class="feedback-click">
+                                        <input type="checkbox" id="experiance" name="feedback" value="experiance">
+                                        <label for="experiance">Website Experience</label>
+                                    </div>
+
+                                    <div class="feedback-click">
+                                        <input type="checkbox" id="volunteer" name="feedback" value="volunteer">
+                                        <label for="volunteer">Volunteering Program Feedback</label>
+                                    </div>
+
+                                    <div class="feedback-click">
+                                        <input type="checkbox" id="suggestion" name="feedback" value="suggestion">
+                                        <label for="suggestion">Event Suggestion</label>
+                                    </div>
+
+                                </div>
+                                
+                                <div class="file-upload">
+                                    <p>Drag & Drop or choose file to upload Select zip,image,pdf or ms.word</p>
+                                    <input type="file" id="file">
+                                </div>
                             </div>
 
-                            <div class="feedback-click">
-                                <input type="radio" id="volunteer" name="feedback" value="volunteer">
-                                <label for="volunteer">Volunteering Program Feedback</label>
+                            <div class="feedback-button">
+                            <button type="reset" id="reset">Reset</button>
+                            <button type="submit" id="submit">Submit</button>
                             </div>
-
-                            <div class="feedback-click">
-                                <input type="radio" id="suggestion" name="feedback" value="suggestion">
-                                <label for="suggestion">Event Suggestion</label>
-                            </div>
-
                         </div>
-                        
-                        <div class="file-upload">
-                            <p>Drag & Drop or choose file to upload
-                            <br>Select zip,image,pdf or ms.word</p>
-                            <input type="file" id="file">
-                        </div>
-                    </div>
-
-                    <div class="feedback-button">
-                        <button type="reset" id="reset">Reset</button>
-                        <button type="submit" id="submit">Submit</button>
-                    </div>
 
                 </form>
             </div>

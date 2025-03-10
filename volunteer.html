@@ -693,22 +693,5 @@
     <script src="js/active-page.js"></script>
     <script src="js/volunteer-filter.js"></script>
     <script src="js/scroll-top.js"></script>
-    <script>
-        function showFullReview(button) {
-        const reviewText = button.parentElement;
-        const shortText = reviewText.querySelector('.short-text');
-        const fullText = reviewText.querySelector('.full-text');
-
-        if (shortText.style.display !== 'none') {
-            shortText.style.display = 'none';
-            fullText.style.display = 'block';
-            button.textContent = 'See Less';
-        } else {
-            shortText.style.display = '-webkit-box';
-            fullText.style.display = 'none';
-            button.textContent = 'See More';
-        }
-}
-    </script>
 </body>
 </html>

@@ -1,13 +1,13 @@
-body{
+body {
     background-color: #FFF7F2;
     font-family: 'Roboto', sans-serif;
 }
 
-.feedback-main{
+.feedback-main {
     margin-top: 100px;
 }
 
-.feedback-head{
+.feedback-head {
     text-align: center;
     padding: 0;
 }
@@ -16,7 +16,7 @@ body{
     color: #FD6824;
 }
 
-.feedback-main h1, .feedback-head, .feedback-head-color{
+.feedback-main h1, .feedback-head, .feedback-head-color {
     font-family: Lora, serif;
     margin-top: 6%;
     font-size: 4.5rem;
@@ -31,59 +31,97 @@ body{
     font-size: 1.4rem;
 }
 
-#form{
+#form {
     margin-top: 8%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 25px;
-    margin: 0 10%;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    margin: 2% 10%;
 }
 
-.feedback-input, .feedback-horizontal-input {
+#form > * {
+    flex-basis: 50%;
+}
+
+.formbox-user-details, .feedback-reviews {
+    background-color: #FFF7F2;
+    border: 2px solid #000000;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.formbox-user-details h3 {
+    color: #FD6824;
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.feedback-reviews h3 {
+    color: #000000;
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.error {
+    color: red;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.show-error {
+    display: block;
+}
+
+.feedback-input {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.feedback-input, .feedback-horizontal-input label{
-    font-size: 30px;
+.feedback-input, .feedback-rating, .feedback-dropdown, .feedback-date label {
+    font-size: 20px;
     font-weight: bold;
 }
 
-span.highlighter{
+.feedback-lable h4 {
+    margin-top: 0px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+span.highlighter {
     margin-left: 10px;
     color: red;
-    font-size: 20px;
+    font-size: 12px;
 }
 
 .feedback-input input {
     width: 100%;
     max-width: 100%;
-    height: 60px;
+    height: 45px;
     background-color: #FEBE9F;
     border-color: black;
     border-width: 0.5px;
     border-radius: 15px;
-    padding: 20px;
+    padding: 10px;
     font-size: 15px;
-}
-
-.form-parallel{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-}
-
-.feedback-horizontal-input input{
-    width: 745px;
-    height: 60px;
-    background-color: #FEBE9F;
-    border-color: black;
-    border-width: 0.5px;
-    border-radius: 15px;
-    padding: 20px;
-    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .rating-review{
@@ -91,17 +129,17 @@ span.highlighter{
     flex-wrap: wrap;
     flex-direction: row-reverse;
     gap: 10px;
-    margin-top: 11px;
+    margin-top: -5px;
 }
+
 .rating-review input {
     display: none;
 }
 
 .rating-review .stars {
-    margin-top: -8%;
     padding-right: 2%;
-    font-size: 2rem;
-    width: 30px;
+    font-size: 1.5rem;
+    width: 15px;
     color: #000000;
     cursor: pointer;
     transition: color 0.3s;
@@ -113,75 +151,99 @@ span.highlighter{
     color: gold;
 }
 
-.feedback-rating{
+.feedback-rating {
     display: flex;
     gap: 15px;
 }
 
-.feedback-rating, .feedback-dropdown, label{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.feedback-radio h4{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.feedback-dropdown {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 25px;
-}
-
 .feedback-input textarea {
     width: 100%;
+    max-width: 100%;
     height: 120px;
     background-color: #FEBE9F;
     border-color: black;
-    border-width: 0.5px;
-    border-radius: 15px;
-    padding: 20px;
-    font-size: 15px;
     border-style: dashed;
-    border-width: 1px;
+    border-width: 2px;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-.feedback-radio label {
-    font-size: 15px;
-    gap: 10px;
+.feedback-file {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feedback-dropdown select, .feedback-date input {
+    width: 40%;
+    height: 30px;
+    background-color: #FEBE9F;
+    border: 0.5px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feedback-submit {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12.5%
 }
 
 .feedback-click {
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
     margin-bottom: 10px;
-    margin-left: 5px;
-}
-
-.feedback-file{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.file-upload{
-    width: 50%;
-    height: 120px;
-    background-color: #FEBE9F;
-    border-color: black;
-    border-width: 0.5px;
-    border-radius: 15px;
-    padding: 20px;
     font-size: 15px;
-    border-style: dashed;
-    border-width: 1px;
+    margin-left: 15px;
 }
 
-.file-upload{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+.feedback-click input {
+    accent-color: #FD6824;
 }
 
+.file-upload {
+    width: 50%;
+    border: 2px dashed #000000;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+    background-color: #FEBE9F;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+.file-upload p {
+    margin-bottom: 15px;
+    font-size: 80%;
+}
+
+.file-upload:hover {
+    background-color: rgba(254, 190, 159, 0.7);
+}
+
+#reset, #submit {
+    background-color: #FD6824;
+    color: #FFF;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+    width: 15%;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#reset:hover, #submit:hover {
+    background-color: #E65A1F;
+}
+
+#reset {
+    background-color: #ccc;
+    color: #333;
+}
+
+#reset:hover {
+    background-color: #B3B3B3;
+}
