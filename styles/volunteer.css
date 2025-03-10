@@ -262,6 +262,17 @@ ul{
     text-align: left;
     text-overflow: ellipsis;
 }
+.see_more, .see_less{
+    font-weight: bold;
+    color: #FD6824;
+    cursor:pointer;
+}
+.see_more:hover, .see_less:hover{
+    color: #6a6a6a;
+}
+.hidden {
+    display: none;
+}
 .sendreview{
     background: #E0AF97;
     text-align: center;
