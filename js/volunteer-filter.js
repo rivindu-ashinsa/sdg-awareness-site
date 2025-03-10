@@ -2,6 +2,21 @@
 document.querySelector(".filter-select").addEventListener("click", function () {
     document.querySelector(".filter-form").classList.toggle("active");
 });
+// User reviews Show More/Show Less
+// Add an event listener to each button to toggle visibility of full-text and short-text
+document.querySelectorAll('.see_more, .see_less').forEach(function(button) {
+    button.addEventListener('click', function() {
+        // Find the closest parent section
+        const section = button.closest('.text-section');
+
+        // Toggle visibility of full-text and short-text within the same section
+        const fullText = section.querySelector('.full-text');
+        const shortText = section.querySelector('.short-text');
+
+        fullText.classList.toggle('hidden');
+        shortText.classList.toggle('hidden');
+    });
+});
 
 // Green Technology & Sustainability
 const GreenTechSustain_checkbox = document.querySelector('input[type="checkbox"][value="GreenTechSustain"]');
