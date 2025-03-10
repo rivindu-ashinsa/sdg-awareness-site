@@ -3,7 +3,17 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+<<<<<<< HEAD
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.feedback-main{
+=======
 .feedback-main {
+>>>>>>> 8b4e0a2a754bff46c63c3c4979ded0e30994de1d
     margin-top: 100px;
 }
 

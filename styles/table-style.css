@@ -11,6 +11,11 @@ body {
 
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 
 
 h1{
@@ -65,7 +70,7 @@ tr:nth-child(even)
 {background-color: #f2f2f2;}
 
 
-.th-table-1 h2{
+.th-table-1 p{
     font-size: 1.9rem;
     font-family: Lora,serif;
     padding: 10px;
