@@ -1,10 +1,12 @@
 document.getElementById('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
     const inputs = document.querySelectorAll('input[required]');
     let isValid = true;
 
     inputs.forEach(input => {
         const errorDiv = document.getElementById(`${input.id}-error`);
-        
+
         if (!input.checkValidity()) {
             errorDiv.classList.add('show-error');
             input.classList.add('invalid');
@@ -15,7 +17,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
         }
     });
 
-    if (!isValid) {
-        event.preventDefault(); // Prevent form submission if errors are present
+    if (isValid) {
+        this.submit();  
     }
 });
