@@ -156,7 +156,6 @@ body{
     }
 }
 
-/* Media Queries */
 @media screen and (max-width: 320px) {
 
     .team-description p{
