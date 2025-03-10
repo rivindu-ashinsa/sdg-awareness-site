@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
     margin-top: 150px;
@@ -59,6 +64,10 @@ body{
 
 
 @media screen and (max-width: 1024px) {
+
+    .intro-title{
+        margin-top: 130px;
+    }
     .sitemap-tree{
         padding: 0px;
         margin-top: 60px;
