@@ -48,43 +48,49 @@
             </div>
 
             <div class="feedback-container">
-
-                <form id="form" method="get" action="/" onsubmit="return validateFeedback()">
                 
+                <form id="form" novalidate onsubmit="return validateFeedback()">
+
                     <div class="formbox-user-details">
 
-                        <h3> User details</h3>
-
+                        <h3>User details</h3>
+                
                         <div class="feedback-input">
-                            <label for="name">Full Name<span class= "highlighter">(*Required)</span></label>
-                            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-                            <div class="error" id="name-error"></div>
+                            <label for="name">Full Name <span class="highlighter">(*Required)</span></label>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" required
+                                title="Enter your full name.">
+                            <div class="error" id="name-error">** Please enter your full name.</div>
                         </div>
-
+                
                         <div class="feedback-input">
-                            <label for="email">Email Address<span class= "highlighter">(*Required)</span></label>
-                            <input type="email" id="email" name="email" placeholder="sample123@yourmail.com" title="Enter a valid email address" required>
-                            <div class="error" id="email-error"></div>
+                            <label for="email">Email Address <span class="highlighter">(*Required)</span></label>
+                            <input type="email" id="email" name="email" placeholder="sample123@yourmail.com" required
+                                title="sample123@domain.com">
+                            <div class="error" id="email-error">** Please enter a valid email address.</div>
                         </div>
-
+                
                         <div class="feedback-input">
-                            <label for="tel">Telephone Number<span class= "highlighter">(*Required)</span></label>
-                            <input type="tel" id="tel" name="tel" pattern="^\+94\d{9}$" title="Phone number must be in the country code formet eg: +94XXXXXXXXX" required>
-                            <div class="error" id="tel-error"></div>
+                            <label for="tel">Telephone Number <span class="highlighter">(*Required)</span></label>
+                            <input type="tel" id="tel" name="tel" placeholder="+94XXXXXXXXX"
+                                pattern="^\+94\d{9}$" required
+                                title="Phone number eg.+94123456789">
+                            <div class="error" id="tel-error">** Enter a valid telephone number</div>
                         </div>
-
+                
                         <div class="feedback-input">
-                            <label for="address">Residential Address<span class= "highlighter">(*Required)</span></label>
-                            <input type="text" id="address" name="address" required>
-                            <div class="error" id="address-error"></div>
+                            <label for="address">Residential Address <span class="highlighter">(*Required)</span></label>
+                            <input type="text" id="address" name="address" placeholder="Enter your full address" required
+                                title="Residential address.">
+                            <div class="error" id="address-error">** Please provide your residential address.</div>
                         </div>
-                        
                     </div>
 
                     <div class="feedback-reviews">
 
+                        <h3> Feedback details</h3>
+
                         <div class="feedback-rating">
-                            <label for="address">Your Rating </label>
+                            <label for="address">Your Rating : </label>
                             <div class="rating-review">
                                 <span class="stars" data-value="1">★</span>
                                 <span class="stars" data-value="2">★</span>
@@ -95,7 +101,7 @@
                         </div>
 
                         <div class="feedback-dropdown">
-                            <label for="area">Interested Area</label>
+                            <label for="area">Interested Area : </label>
                             <select name="area" id="area">
                                 <option value="Industry">Industry</option>
                                 <option value="Smart City">Smart City</option>
@@ -104,7 +110,7 @@
                         </div>
 
                         <div class="feedback-date">
-                            <label for="date">Preferred Date and Time</label>
+                            <label for="date">Date and Time : </label>
                             <input type="datetime-local" id="date" name="date">
                         </div>
                     
@@ -117,7 +123,7 @@
                         </div>
 
                             <div class="feedback-lable">
-                                <h4>Feedback Type</h4>
+                                <h4>Feedback Type :</h4>
 
                                 <div class="feedback-click">
                                     <input type="checkbox" id="experiance" name="feedback" value="experiance">
