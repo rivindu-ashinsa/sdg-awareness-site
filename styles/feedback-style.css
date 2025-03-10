@@ -8,8 +8,11 @@ body {
     padding: 0;
 }
 
+<<<<<<< HEAD
 
 /* .feedback-main{ */
+=======
+>>>>>>> cf00b3e7664da3aaa9a1a82e11eaf6b04f7716b7
 .feedback-main {
     margin-top: 100px;
 }
@@ -194,7 +197,8 @@ span.highlighter {
 .feedback-submit {
     display: flex;
     flex-wrap: wrap;
-    gap: 15%
+    justify-content: center;
+    gap: 15px
 }
 
 .feedback-click {
@@ -202,11 +206,12 @@ span.highlighter {
     align-items: center;
     margin-bottom: 10px;
     font-size: 15px;
-    margin-left: 15px;
 }
 
 .feedback-click input {
     accent-color: #FD6824;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .file-upload {
@@ -606,62 +611,6 @@ span.highlighter {
         flex-wrap: wrap;
         flex-direction: column;
         margin: 3% 10%;
-        gap: 50px;
-    }
-
-    #form > * {
-        flex-basis: 100%;
-    }
-
-    .formbox-user-details, .feedback-reviews {
-        padding: 24px;
-        gap: 15px;
-    }
-
-    .formbox-user-details h3, .feedback-reviews h3 {
-        font-size: 3.8rem;
-    }
-
-    .feedback-input, .feedback-rating, .feedback-dropdown, .feedback-date label {
-        font-size: 20px;
-    }
-
-    .feedback-input input, .feedback-input textarea {
-        font-size: 16px;
-    }
-
-    .feedback-dropdown select, .feedback-date input {
-        width: 100%;
-    }
-
-    .file-upload {
-        width: 100%;
-        padding: 20px;
-    }
-
-    #reset, #submit {
-        width: 18%;
-        padding: 8px 15px;
-    }
-}
-
-@media screen and (max-width: 1500px) and (min-width: 1346px) {
-
-    .feedback-main h1, .feedback-head, .feedback-head-color {
-        font-size: 4rem;
-        margin-top: 5%;
-    }
-
-    .feedback-description {
-        font-size: 1.4rem;
-        margin-top: 1%;
-        margin-bottom: 3%;
-    }
-
-    #form {
-        flex-wrap: wrap;
-        flex-direction: column;
-        margin: 2% 10%;
         gap: 50px;
     }
 

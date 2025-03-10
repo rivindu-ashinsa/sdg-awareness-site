@@ -543,7 +543,12 @@ ul{
     }
     .sendreview :is(.reset, .submit){
         font-size: 0.6rem;
+    }
+    .sendreview .reset{
         width: 60px;
+    }
+    .sendreview .submit{
+        width: 100px;
     }
     .sendreview .buttons{
         padding: 0 15px;
@@ -623,7 +628,12 @@ ul{
     }
     .sendreview :is(.reset, .submit){
         font-size: 0.6rem;
+    }
+    .sendreview .reset{
         width: 60px;
+    }
+    .sendreview .submit{
+        width: 100px;
     }
     .sendreview .buttons{
         padding: 0 20px;
@@ -695,7 +705,12 @@ ul{
     }
     .sendreview :is(.reset, .submit){
         font-size: 0.8rem;
+    }
+    .sendreview .reset{
         width: 70px;
+    }
+    .sendreview .submit{
+        width: 120px;
     }
     .sendreview .buttons{
         padding: 0 25px;
@@ -748,7 +763,12 @@ ul{
     }
     .sendreview :is(.reset, .submit){
         font-size: 0.9rem;
+    }
+    .sendreview .reset{
         width: 80px;
+    }
+    .sendreview .submit{
+        width: 130px;
     }
     .sendreview .buttons{
         padding: 0 30px;
