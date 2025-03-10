@@ -460,7 +460,7 @@ section .icons span:last-child{
     }
 
     .pfp-container img{
-        margin-bottom: -2%;
+        margin-bottom: -1.5%;
     }
 
     .card-divider{
@@ -513,14 +513,14 @@ section .icons span:last-child{
 
     .contact-mail p, .contact-moblie p, .contact-location p, .contact-linkedin p, .contact-twitter p {
         margin-right: 3%;
-        margin-left: 20%;
+        margin-left: 15%;
         margin-top: 2%;
         text-align: left;
     }
     
     .contact-mail img, .contact-moblie img, .contact-location img, .contact-linkedin img, .contact-twitter img {
         margin-right: 5%;
-        margin-left: 15%;
+        margin-left: 1%;
 
     }
 }
