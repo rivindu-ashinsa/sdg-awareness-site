@@ -378,6 +378,72 @@ section .icons span:last-child{
     margin-bottom: 7%;
 }
 
+.goal1{
+    padding: 10px;
+    background-color: #FD6824;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    animation: fade-up 1s;
+}
+
+.goal2{
+    padding: 10px;
+    background-color: #FD6824;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    animation: fade-up 1s;
+}
+
+.goal3{
+    padding: 10px;
+    background-color: #FD6824;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    animation: fade-up 1s;
+}
+
+.goal4{
+    padding: 10px;
+    background-color: #FD6824;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    animation: fade-up 1s;
+}
+
+.goal-description span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.goals-section{
+    margin-bottom: 10%;
+}
+
+.UN-goals{
+    display: flex;
+    flex-direction: column;
+}
+
+.UN-goals-section1{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.UN-goals-section2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.UN-goal-img img{
+    width: 120px;
+    height: 120px;
+    animation: fade-up 1s;
+}
+
+.UN-goal-img{
+    padding: 10px;
+}
+
 .experience-card{
     padding: 2%;
     background-color: #E0AF97;
