@@ -194,7 +194,6 @@ span.highlighter {
 .feedback-submit {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 15px
 }
 
@@ -229,7 +228,7 @@ span.highlighter {
 }
 
 .file-upload:hover {
-    background-color: rgba(254, 190, 159, 0.7);
+    background-color: #fd6924c4;
 }
 
 #reset, #submit {

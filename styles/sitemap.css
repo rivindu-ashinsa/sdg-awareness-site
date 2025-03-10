@@ -1,6 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
-    margin-top: 150px;
 }
 .intro-title{
     text-align: center;
@@ -14,6 +18,7 @@ body{
 
 .intro-title h1{
     font-size: 80px;
+    margin-top: 150px;
 }
 
 
@@ -31,7 +36,6 @@ body{
 
 .sitemap-tree{
     padding: 100px;
-    margin-top: -50px;
     margin-bottom: -70px;
 }
 
@@ -59,6 +63,10 @@ body{
 
 
 @media screen and (max-width: 1024px) {
+
+    .intro-title{
+        margin-top: 130px;
+    }
     .sitemap-tree{
         padding: 0px;
         margin-top: 60px;
