@@ -762,20 +762,5 @@
     <script src="js/active-page.js"></script>
     <script src="js/volunteer-filter.js"></script>
     <script src="js/scroll-top.js"></script>
-    <script>
-        document.querySelectorAll('.see_more, .see_less').forEach(function(button) {
-    button.addEventListener('click', function() {
-        // Find the closest parent section
-        const section = button.closest('.text-section');
-
-        // Toggle visibility of full-text and short-text within the same section
-        const fullText = section.querySelector('.full-text');
-        const shortText = section.querySelector('.short-text');
-
-        fullText.classList.toggle('hidden');
-        shortText.classList.toggle('hidden');
-    });
-});
-    </script>
 </body>
 </html>
