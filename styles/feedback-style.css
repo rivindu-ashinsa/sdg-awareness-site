@@ -642,3 +642,59 @@ span.highlighter {
         padding: 8px 15px;
     }
 }
+
+@media screen and (max-width: 1500px) and (min-width: 1346px) {
+
+    .feedback-main h1, .feedback-head, .feedback-head-color {
+        font-size: 4rem;
+        margin-top: 5%;
+    }
+
+    .feedback-description {
+        font-size: 1.4rem;
+        margin-top: 1%;
+        margin-bottom: 3%;
+    }
+
+    #form {
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 2% 10%;
+        gap: 50px;
+    }
+
+    #form > * {
+        flex-basis: 100%;
+    }
+
+    .formbox-user-details, .feedback-reviews {
+        padding: 24px;
+        gap: 15px;
+    }
+
+    .formbox-user-details h3, .feedback-reviews h3 {
+        font-size: 3.8rem;
+    }
+
+    .feedback-input, .feedback-rating, .feedback-dropdown, .feedback-date label {
+        font-size: 20px;
+    }
+
+    .feedback-input input, .feedback-input textarea {
+        font-size: 16px;
+    }
+
+    .feedback-dropdown select, .feedback-date input {
+        width: 100%;
+    }
+
+    .file-upload {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #reset, #submit {
+        width: 18%;
+        padding: 8px 15px;
+    }
+}
