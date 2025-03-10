@@ -3,6 +3,12 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
 .feedback-main{
     margin-top: 100px;
 }

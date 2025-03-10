@@ -3,6 +3,11 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .team-head{
     font-family: Lora, serif;
     text-align: center;

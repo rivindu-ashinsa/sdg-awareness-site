@@ -16,6 +16,11 @@
     background-position: center;
 }
 
+*{
+    padding: 0;
+    margin: 0;
+}
+
 .home-section-1 {
     margin-top: 100px;
     display: flex;
@@ -1238,8 +1243,8 @@
         margin: 0;
     
     }
-    .sec-3-rating p{
-        font-size: 0.4rem;
+    .sec-3-rating span{
+        font-size: 0.1rem;
         font-weight: bold;
         color: white;
     }
@@ -1476,8 +1481,8 @@
     margin: 0;
 
 }
-.sec-3-rating p{
-    font-size: 0.4rem;
+.sec-3-rating span{
+    font-size: 0.8rem;
     font-weight: bold;
     color: white;
 }
