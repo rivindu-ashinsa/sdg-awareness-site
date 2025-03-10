@@ -154,6 +154,7 @@ footer {
     position: relative; /* Ensure it stays in document flow */
     z-index: 10; /* Higher than sidebar if needed */
     width: 100%;
+    flex-shrink: 0;
 }
 @keyframes fadeUp {
     from {
