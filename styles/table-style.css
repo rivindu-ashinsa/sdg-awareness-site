@@ -92,6 +92,7 @@ th:hover::after {
     padding: 5px;
     border-radius: 5px;
     white-space: nowrap;
+    z-index: 1000;
 }
 
 tr:hover {
