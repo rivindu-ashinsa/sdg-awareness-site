@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Editor Student - provide your student name</title>
+
+    <link rel="stylesheet" href="css/pageEditor_validator.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <!-- External CSS link -->
+
+</head>
+
+<body>
+
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+
+    <header id="top">
+        <header class="header">
+            <!-- <button class="menu-toggle" onclick="toggleMenu()">☰</button>    -->
+            <div class="header-logo">
+                <img class="logo-img" src="images-home/logo.svg" alt="">
+            </div>
+            <nav class="header-navigation">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                    <li><a href="content.html">Content</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                    <li><a href="table.html">Table</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li id="profile-le"><a href="user-profile.html">Profile</a></li>
+                </ul>
+            </nav>
+            <div class="header-profile">
+                <a href="user-profile.html">
+                    <img class="profile-icon" src="images-home/profile-icon.svg" alt="">
+                </a>
+            </div>
+        </header>
+    </header>
+
+    <section class="stud">
+        <h2> Limuthu Gelaka , Student 04</h2>
+    </section>
+
+    <div class="container">
+        <!-- Main content area -->
+        <main>
+
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="splash">User Profile Page</h2>
+                <h3>Technical Description</h3>
+                <p>To implement the user profile page, key HTML tags such as <code>&lt;header&gt;</code>,
+                    <code>&lt;section&gt;</code>, and <code>&lt;footer&gt;</code> are used to ensure proper structure
+                    and accessibility. The <code>&lt;header&gt;</code> contains the page's title and navigation links,
+                    allowing users to easily access various sections of the profile. The <code>&lt;section&gt;</code>
+                    tags divide the content into meaningful segments, such as the user's profile, goals, skills, and
+                    contact information, improving the organization and readability of the content. The
+                    <code>&lt;footer&gt;</code> tag is used for the copyright and additional links to enhance the
+                    overall user experience.
+                </p>
+                <p>CSS properties like <code>display: flex</code>, <code>justify-content</code>, and
+                    <code>align-items</code> ensure a responsive layout that adapts to different screen sizes, providing
+                    a mobile-friendly design. Color schemes and font-family choices are applied to enhance the visual
+                    appeal and provide consistency across the page. Background colors, padding, and margin are used
+                    effectively to create spacing and improve readability, ensuring a clean and pleasant user interface.
+                </p>
+                <p>By utilizing these HTML and CSS techniques, the page is designed to be both accessible and visually
+                    attractive, enhancing the user experience and providing ease of navigation across the different
+                    profile sections.</p>
+
+                <h3>Accessibility</h3>
+                <p>Accessibility has been prioritized in the design of the user profile page. The navigation elements,
+                    including <code>&lt;a&gt;</code> links within the profile and menu, are keyboard accessible,
+                    allowing users with motor disabilities to easily navigate using keyboard shortcuts. All
+                    <code>&lt;img&gt;</code> elements, such as the profile picture and other relevant images, are
+                    equipped with <code>alt</code> attributes to ensure that descriptions are provided for screen
+                    readers.
+                </p>
+                <p>Interactive elements, such as buttons for updating profile information or navigation, are clearly
+                    labeled with <code>aria-label</code> attributes for proper identification by assistive technologies.
+                    The page features a high contrast between text and background to improve visibility for users with
+                    visual impairments. Additionally, the page supports text resizing, ensuring readability for all
+                    users.</p>
+                <p>The structure of the page is semantically correct, with proper use of <code>&lt;header&gt;</code>,
+                    <code>&lt;section&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code> elements,
+                    which contributes to a logical flow of content for screen readers. Lists and descriptions are
+                    well-organized using <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code> , and <code>&lt;p&gt;</code>
+                    tags, which aid in clear navigation, especially for dynamic content. The use of ARIA (Accessible
+                    Rich Internet Applications) attributes ensures that all interactive and dynamic elements are well
+                    understood by users relying on assistive technologies.
+                </p>
+
+                <h3>Link to the validation page</h3>
+                <!-- Update the path to link the Page Editor with the splash page -->
+                <p><a href="validation_ST4.html#userval">Validation Page</a>, use the marker to jump to the corresponding
+                    section of the validation page.</p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                <h3>Link to the page</h3>
+                <p><a href="user-profile.html">User Profile Page.</a></p>
+            </section>
+
+            <section>
+                <h2 id="volunteer">Sitemap Page</h2>
+                <h3>Technical Description</h3>
+                <p>The sitemap page is designed using HTML and CSS to visually represent the website's structure, aiding
+                    navigation and user experience. The page utilizes <code>&lt;svg&gt;</code> elements to create a
+                    structured visual representation of the site's hierarchy, with <code>&lt;rect&gt;</code> elements
+                    defining the sections and <code>&lt;text&gt;</code> elements labeling them. These elements are
+                    styled using CSS properties such as <code>fill</code> for color, <code>stroke</code> for outlines,
+                    and <code>font-size</code> for readability.</p>
+                <p>To enhance visual engagement, animations are applied using <code>@keyframes fade-down</code>,
+                    creating a smooth transition effect for elements as they load. CSS properties like
+                    <code>padding</code>, <code>margin</code>, and <code>text-align</code> ensure proper spacing and
+                    readability. The layout is responsive, with a media query
+                    (<code>@media screen and (max-width: 1024px)</code>) that adjusts the sitemap's positioning and
+                    dimensions for different screen sizes.
+                </p>
+
+                <h3>Accessibility</h3>
+                <p>Accessibility considerations have been integrated into the sitemap page to ensure usability for all
+                    users. The <code>&lt;text&gt;</code> elements within the SVG include sufficient contrast between the
+                    text and background, making it easier to read for users with visual impairments. Additionally, text
+                    sizes are appropriately set to maintain readability across different screen resolutions.</p>
+                <p></p>
+
+                <h3>Link to the validation page</h3>
+                <!-- Update the path to link the Page Editor with the splash page -->
+                <p><a href="validation_ST4.html#sitemapval">Validation page</a>, use the marker to jump to the corresponding
+                    section of the validation page.</p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+
+                <h3>Link to the page</h3>
+                <p><a href="sitemap.html">Sitemap page.</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                <h3>Technical Description</h3>
+                <p>The given HTML structure represents a webpage dedicated to SDG-9: Industry, Innovation, and
+                    Infrastructure. It follows a clean and responsive design approach using various HTML elements to
+                    organize and display content effectively. The <code>&lt;header&gt;</code> section contains a
+                    navigation bar with links to essential pages such as Home, Volunteer, Content, Sitemap, Table,
+                    Feedback, and Team. A menu toggle button is provided to control the visibility of the navigation
+                    links. The <code>&lt;main&gt;</code> section is organized into multiple sections, each focused on
+                    different aspects of SDG-9, such as Industry, Innovation, Infrastructure, and the way forward
+                    towards achieving the goal.
+
+                    The content of each section is embedded using <code>&lt;iframe&gt;</code> elements, which load
+                    external content from separate HTML files, making it easy to organize and present detailed
+                    information without cluttering the main page. For example, the first iframe loads content about
+                    'Industry' with a focus on its significance as the backbone of economic growth, while subsequent
+                    iframes load related content on 'Innovation,' 'Infrastructure,' and 'Entrepreneurship.'
+
+                    The <code>&lt;footer&gt;</code> section includes company information, social media links, and an
+                    option for users to subscribe to a newsletter for updates. CSS styles such as
+                    <code>display: flex</code> are used to create a responsive and user-friendly layout, ensuring that
+                    the page adapts to different screen sizes. Additionally, interactive elements such as the sidebar
+                    and top-button ensure easy navigation and enhanced user experience across the site.
+                </p>
+
+
+                <h3>Accessibility</h3>
+                <p> The website has been designed with accessibility in mind, featuring a navigation system that is
+                    fully keyboard-navigable, allowing users with disabilities to easily access various sections. All
+                    interactive elements, such as buttons and links, have been provided with descriptive alt text for
+                    screen reader compatibility. The sidebar menu and main content sections use clear headings, ensuring
+                    that users can easily understand the structure of the page. Additionally, all images within the
+                    content and iframes are equipped with alt attributes for screen readers. The page also ensures
+                    sufficient color contrast between text and background, improving readability for individuals with
+                    visual impairments. </p>
+
+                <h3>Link to the validation page</h3>
+                <!-- Update the path to link the Page Editor with the splash page -->
+                <p><a href="validation_ST4.html#contentVal">Include a link to the validation page</a>, use the marker to
+                    jump to the corresponding section of the validation page.</p>
+                <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+
+                <h3>Link to the page</h3>
+                <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                <p><strong>Challenges:</strong></p>
+                <p>nsuring a smooth, intuitive user experience across all pages is a constant challenge. Poor
+                    navigation, slow load times, or a confusing layout can lead to high bounce rates and lower user
+                    satisfaction</p>
+
+                <p>With increasing mobile web traffic, pages must be optimized for various screen sizes. Failing to do
+                    so can result in users having difficulty reading, scrolling, or interacting with elements on the
+                    page.</p>
+
+                <p>Writing compelling, relevant, and engaging content that resonates with the target audience can be
+                    difficult. Users may leave if they don't find the content valuable or interesting.</p>
+
+                <p><strong>Learnings:</strong></p>
+                <p>Prioritize simple, clean, and accessible designs. Consistent and clear navigation, fast load times,
+                    and intuitive layouts improve user retention and engagement. Always conduct user testing and gather
+                    feedback for continuous improvement</p>
+
+                <p>Implement responsive web design principles. Use flexible layouts, scalable images, and CSS media
+                    queries to ensure that the page is fully functional and looks great on all devices, especially
+                    mobile phones.</p>
+
+                <p>Craft content that is both informative and engaging. Use visuals, bullet points, and headings to
+                    break up long paragraphs. Regularly update content to keep it fresh, and ensure it's optimized for
+                    the audience's interests and needs.</p>
+
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                <p>The User Profile Page, Sitemap Page, and Content Page have been designed with full adherence to
+                    modern web accessibility and usability standards, aligning with WCAG 2.1 guidelines. The pages
+                    utilize semantic HTML5 elements like<code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>,
+                    <code>&lt;footer&gt;</code>, and <code>&lt;section&gt;</code> to ensure a clear and machine-readable
+                    content structure. This approach enhances content discoverability for both users and search engines,
+                    ensuring that the structure is logical and consistent across different devices and screen sizes.
+                </p>
+
+                <p>For accessibility, we've ensured that images are provided with relevant <code>alt</code> attributes
+                    (e.g., <code>alt="Profile Picture"</code> on the User Profile Page) to make the pages fully
+                    compatible with screen readers. This enables visually impaired users to understand the context of
+                    the images. Furthermore, high-contrast color schemes have been applied, with a focus on readability
+                    (e.g., #2c3e50 on a white background on the User Profile Page and Sitemap Page). This ensures that
+                    text is easy to read for users with visual impairments.
+                </p>
+
+                <p>The Sitemap Page uses proper HTML structure for presenting navigational elements, ensuring clarity
+                    with lists and semantic tags for easy interpretation by screen readers. This structure helps users,
+                    especially those with visual impairments, to navigate the website efficiently and find the
+                    information they need without difficulty.</p>
+
+                <p>On the Content Page (Industry Content Page), appropriate headings (<code>&lt;h1&gt;</code>,
+                    <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>) are used to structure the content, allowing users
+                    to navigate easily through sections. This hierarchy of headings is crucial for users who rely on
+                    screen readers, as it provides a clear outline of the page content. Additionally, bullet points and
+                    images have been used to enhance visual clarity while supporting accessibility by breaking up the
+                    text and making the page more engaging.</p>
+
+
+
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified
+                    style). For example:<br><br>
+                <ul class="ref">
+                    <li>iStock (2025) <i>iStock.</i> Available at: <a
+                            href="https://www.istockphoto.com/">https://www.istockphoto.com/</a> (Last accessed: 11 Feb
+                        2025).</li>
+                    <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc.
+                            Indianappolis.</i></li>
+                </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+            <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 1</li>
+                <ul>
+                    <li><a href="index.html">Splash page</a></li>
+                    <li><a href="volunteer.html">Volunteer page</a></li>
+                    <li><a href="content.html">Content page</a></li>
+                </ul>
+                <li>Student 2</li>
+                <ul>
+                    <li><a href="home.html">Home page </a></li>
+                    <li><a href="table.html">Table page</a></li>
+                    <li><a href="content.html">Content page</a></li>
+                </ul>
+                <li>Student 3</li>
+                <ul>
+                    <li><a href="feedback.html">Feedback page</a> </li>
+                    <li><a href="team.html">Team page</a></li>
+                    <li><a href="content.html">Content page</a></li>
+                </ul>
+                <li>Student 4</li>
+                <ul>
+                    <li><a href="user-profile.html">Profile page </a></li>
+                    <li><a href="sitemap.html">Sitemap page</a></li>
+                    <li><a href="content.html">Content page</a></li>
+                </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="footer-block">
+            <div class="footer-block-up">
+                <div class="footer-block-up-logo">
+                    <div class="footer-block-up-logo-img">
+                        <img src="images-home/logo-black.svg" alt="">
+                    </div>
+                    <div>
+                        <p style="text-align: center;">Follow Us On</p>
+                    </div>
+                    <div class="footer-block-up-logo-social">
+                        <img src="images-home/fb-logo.svg" alt="">
+                        <img src="images-home/insta-logo.svg" alt="">
+                        <img src="images-home/linkedin-logo.svg" alt="">
+                        <img src="images-home/twiter-logo.svg" alt="">
+
+                    </div>
+                </div>
+                <div class="footer-block-up-editors">
+                    <ul>
+                        <li class="div-title">Editors</li>
+                        <li>Rivindu</li>
+                        <li>Senuka</li>
+                        <li>Afnan</li>
+                        <li>Limuthu</li>
+
+                    </ul>
+                </div>
+                <div class="footer-block-up-company">
+                    <ul>
+                        <li class="div-title">Company</li>
+                        <li>Volunteer</li>
+                        <li>Sitemap</li>
+                        <li>Content</li>
+                        <li>Feedback</li>
+                        <li>Team</li>
+                    </ul>
+                </div>
+                <div class="footer-block-up-contact-info">
+                    <ul>
+                        <li class="div-title">Contact Info</li>
+                        <li>No:134/5 Palace road, Colombo Sri Lanka</li>
+                        <li>Phone: +94 112 595 5982</li>
+                        <li>nextgenindustries@gmaill.com</li>
+                    </ul>
+                </div>
+                <div class="footer-block-up-stayuptodate">
+                    <h5>Stay up to date</h5>
+                    <p>Subscribe to our newsletter to stay up-to-date with the latest news, tips, and trends in the
+                        industry</p>
+                    <form action="#" method="post" class="subscribe-form">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-block-down">
+                <div class="copy-right-sec">
+                    <p>Copyright &copy;2025; Designed by <span>NextGenIndustries</span></p>
+                </div>
+                <div class="termps-privacy-cookies">
+                    <div>
+                        <p>Terms</p>
+                    </div>
+                    <div>
+                        <p>Privacy</p>
+                    </div>
+                    <div>
+                        <p>Cookies</p>
+                    </div>
+                </div>
+                <div class="designed-by">
+                    <p>Designed by Team G15(10)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

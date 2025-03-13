@@ -469,6 +469,7 @@ section .icons span:last-child{
     background-color:#FD6824;
     margin-left: auto;
     margin-right: auto;
+    animation: fade-up 1s;
 }
 
 .contact-card h2{
@@ -571,6 +572,7 @@ section .icons span:last-child{
         flex-direction: column;
         padding: 10px;
         justify-content: center;
+        
     }
 
     .contact-mail, .contact-moblie, .contact-location, .contact-linkedin, .contact-twitter {
