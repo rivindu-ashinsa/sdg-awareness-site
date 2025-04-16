@@ -1,5 +1,4 @@
 document.getElementById('form').addEventListener('submit', function(event) {
-    event.preventDefault();
     
     const inputs = document.querySelectorAll('input[required]');
     let isValid = true;
