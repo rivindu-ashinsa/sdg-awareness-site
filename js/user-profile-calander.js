@@ -3,7 +3,7 @@ daysTag = document.querySelector(".days"),
 PrevNextIcons = document.querySelectorAll(".icons span");
 
 let date = new Date(),
-currYear = date.getFullYear(),
+currYear = date.getFullYear(), 
 currMonth = date.getMonth();
 
 // console.log(date, currYear, currMonth);
