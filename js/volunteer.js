@@ -67,3 +67,21 @@ if (SmartCitiesInfra_checkbox.checked) {
 if (InnoIndustries_checkbox.checked) {
     InnoIndustries_div.style.display = "block";
 }
+
+document.querySelectorAll('.rating-review').forEach(ratingContainer => {
+    const stars = ratingContainer.querySelectorAll('.stars');
+
+    stars.forEach(star => {
+        star.addEventListener('click', () => {
+            const selectedValue = parseInt(star.getAttribute('data-value'));
+
+            stars.forEach(s => s.classList.remove('selected'));
+
+            stars.forEach(s => {
+                if (parseInt(s.getAttribute('data-value')) >= selectedValue) {
+                    s.classList.add('selected');
+                }
+            });
+        });
+    });
+});
