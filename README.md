@@ -16,11 +16,48 @@ This project is a comprehensive, interactive website designed to raise awareness
 - **Validation & Editor Pages:** Documentation of development, validation, and individual student contributions.
 
 ## Folder Structure
-Workspace
-(rerun without)
-Collecting workspace information
 
-. ├── content-student1.html ├── content-student2.html ├── content-student3.html ├── content-student4.html ├── content.html ├── countdown.js ├── feedback.html ├── footer.html ├── header.html ├── home.html ├── index.html ├── info.txt ├── new.html ├── pageEditor_ST1.html ├── pageEditor_ST2.html ├── pageEditor_ST3.html ├── pageEditor_ST4.html ├── README.md ├── sitemap.html ├── table.html ├── team.html ├── user-profile.html ├── validation_ST1.html ├── validation_ST2.html ├── validation_ST3.html ├── validation_ST4.html ├── volunteer.html ├── .vscode/ ├── css/ ├── images-content/ ├── images-feedback/ ├── images-home/ ├── images-splash/ ├── images-team/ ├── images-user-profile/ ├── images-volunteer/ ├── js/ ├── styles/ └── validationSnapshots/
+```
+.
+├── content-student1.html
+├── content-student2.html
+├── content-student3.html
+├── content-student4.html
+├── content.html
+├── countdown.js
+├── feedback.html
+├── footer.html
+├── header.html
+├── home.html
+├── index.html
+├── info.txt
+├── new.html
+├── pageEditor_ST1.html
+├── pageEditor_ST2.html
+├── pageEditor_ST3.html
+├── pageEditor_ST4.html
+├── README.md
+├── sitemap.html
+├── table.html
+├── team.html
+├── user-profile.html
+├── validation_ST1.html
+├── validation_ST2.html
+├── validation_ST3.html
+├── validation_ST4.html
+├── volunteer.html
+├── .vscode/
+├── css/
+├── images-content/
+├── images-feedback/
+├── images-home/
+├── images-splash/
+├── images-team/
+├── images-user-profile/
+├── images-volunteer/
+├── js/
+├── styles/
+└──
 ## Technologies Used
 
 - **HTML5**: Semantic, accessible markup for all pages.
