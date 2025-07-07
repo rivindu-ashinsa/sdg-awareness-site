@@ -58,6 +58,8 @@ This project is a comprehensive, interactive website designed to raise awareness
 ├── js/
 ├── styles/
 └──
+
+```
 ## Technologies Used
 
 - **HTML5**: Semantic, accessible markup for all pages.
@@ -96,6 +98,5 @@ See individual `pageEditor_STx.html` files for detailed documentation and valida
 All images are sourced from Freepik or other free repositories and used according to their licensing terms.  
 This project is for educational purposes only.
 
----
 
 *Designed by Team G15(10) for the Web Design and Development Seminar.*
